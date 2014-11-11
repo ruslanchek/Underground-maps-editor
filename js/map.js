@@ -65,6 +65,8 @@ var SText = function(s, data, shape){
     }
 
     function createTextAndBg(){
+        createBg(); // todo: СДЕЛАТЬ ОПЦИЮ, ЧТОБЫ ГРУЗИТЬ/НЕ ГРУЗИТЬ ФОН ПРОЗРАЧНЫЙ
+
         text = s.text(0, 0, data.name);
 
         var coords = getSnapCoords();
@@ -76,15 +78,22 @@ var SText = function(s, data, shape){
             cursor: 'pointer'
         });
 
-        createBg(); // todo: СДЕЛАТЬ ОПЦИЮ, ЧТОБЫ ГРУЗИТЬ/НЕ ГРУЗИТЬ ФОН ПРОЗРАЧНЫЙ
         snapBg();
     }
+
+    this.getText = function(){
+        return bg;
+    };
+
+    this.getBg = function(){
+        return bg;
+    };
 
     createTextAndBg();
 };
 
 var SShape = function(s, data){
-    this.shape = null;
+    var shape = null;
 
     function createCircle(){
         var shape = s.circle(data.x, data.y, data.width * 2 - 1);
@@ -92,7 +101,7 @@ var SShape = function(s, data){
         shape.attr({
             fill: 'rgba(0,0,0,0)',
             stroke: data.color,
-            strokeWidth: data.stroke_width,
+            strokeWidth: data.stroke_width + 1,
             cursor: 'pointer'
         });
 
@@ -105,7 +114,7 @@ var SShape = function(s, data){
         shape.attr({
             fill: data.color,
             stroke: data.color,
-            strokeWidth: 3,
+            strokeWidth: 3 + 1,
             cursor: 'pointer'
         });
 
@@ -122,7 +131,7 @@ var SShape = function(s, data){
         shape.attr({
             fill: 'rgba(0,0,0,0)',
             stroke: data.color,
-            strokeWidth: data.stroke_width,
+            strokeWidth: data.stroke_width + 1,
             cursor: 'pointer'
         });
 
@@ -147,29 +156,100 @@ var SShape = function(s, data){
 
     create();
 
-    this.getObject = function(){
+    this.getShape = function(){
         return shape;
     };
 };
 
-var SStation = function(s, data){
-    function dataNormalizer(){
-        data.x = parseFloat(data.x);
-        data.y = parseFloat(data.y);
-        data.width = parseInt(data.width);
-        data.stroke_width = parseInt(data.stroke_width);
-        data.rotate = parseInt(data.rotate);
-        data.margin = parseInt(data.margin);
-    }
+var SStation = function(s, data, options){
+    var _this = this;
 
-    dataNormalizer();
+    // Normalize data
+    data.x = parseFloat(data.x);
+    data.y = parseFloat(data.y);
+    data.width = parseInt(data.width);
+    data.stroke_width = parseInt(data.stroke_width);
+    data.rotate = parseInt(data.rotate);
+    data.margin = parseInt(data.margin);
 
     var _shape = new SShape(s, data),
-        _text = new SText(s, data, _shape.getObject());
+        _text = new SText(s, data, _shape.getShape()),
+        group = null;
+
+    this.options = $.extend({
+        onClick: function(e, data){
+
+        },
+        onMouseOver: function(e, data){
+
+        },
+        onMouseOut: function(e, data){
+
+        }
+    }, options);
+
+    function getHoverStyle(){
+        switch(data.type){
+            case 'bar':
+            case 'end': {
+                return {
+                    fill: 'red',
+                    stroke: 'red'
+                }
+            } break;
+
+            case 'circle': {
+                return {
+                    stroke: 'red'
+                }
+            } break;
+        }
+    }
+
+    function getNormalStyle(){
+        switch(data.type){
+            case 'bar':
+            case 'end': {
+                return {
+                    fill: data.color,
+                    stroke: data.color
+                }
+            } break;
+
+            case 'circle': {
+                return {
+                    stroke: data.color
+                }
+            } break;
+        }
+    }
+
+    function createGroup(){
+        var shape = _shape.getShape(),
+            text = _text.getText(),
+            text_bg = _text.getBg();
+
+        group = s.g(text_bg, shape, text);
+
+        group.hover(function(e){
+            _this.options.onMouseOver(e, data);
+            shape.animate(getHoverStyle(), 100);
+        }, function(e){
+            _this.options.onMouseOut(e, data);
+            shape.animate(getNormalStyle(), 100);
+        });
+
+        group.click(function(e){
+            _this.options.onClick(e, data);
+        });
+    }
+
+    createGroup();
 };
 
 var SMap = function(options) {
-    var _this = this;
+    var _this = this,
+        stations = [];
 
     this.options = $.extend({
         selector: '',
@@ -205,7 +285,7 @@ var SMap = function(options) {
                     drag: false
                 });
 
-                _this.zoomInit(function(){
+                zoomInit(function(){
                     onLoad();
                 });
             });
@@ -213,7 +293,7 @@ var SMap = function(options) {
     }
 
     function drawStation(data){
-        var station = new SStation(s, data);
+        stations.push(new SStation(s, data));
     }
 
 	function loadStations(done){
@@ -231,6 +311,10 @@ var SMap = function(options) {
 		})
 	}
 
+    function zoomInit (done){
+        if(done) done();
+    }
+
     // Public methods
     this.zoomOut = function(immediately){
         s.zoomTo(this.options.max_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
@@ -240,11 +324,7 @@ var SMap = function(options) {
         s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
     };
 
-    this.zoomInit = function(done){
-        s.attr({
-            opacity: 1
-        });
-    };
+
 
     this.init = function() {
         draw();
