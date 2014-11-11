@@ -1,0 +1,30 @@
+.map {
+	width: 900px;
+	height: 900px;
+  	overflow: hidden;
+  	font-family: sans-serif;
+}
+
+.container {
+  	width: 900px;
+  	height: 900px;
+  	border: 1px solid #ddd;
+  	margin: 0 auto 0;
+  	position: relative;
+
+  	.zoomer {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 40px;
+	  height: 40px;
+	  background: #eee;
+	  opacity: 0.75;
+	  display: block;
+
+	  &.active {
+		background: yellowgreen;
+	  }
+  	}
+}
+
