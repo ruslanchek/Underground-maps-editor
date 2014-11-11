@@ -82,7 +82,7 @@ var SText = function(s, data, shape){
     }
 
     this.getText = function(){
-        return bg;
+        return text;
     };
 
     this.getBg = function(){
@@ -162,7 +162,8 @@ var SShape = function(s, data){
 };
 
 var SStation = function(s, data, options){
-    var _this = this;
+    var _this = this,
+        selected = false;
 
     // Normalize data
     data.x = parseFloat(data.x);
@@ -174,7 +175,8 @@ var SStation = function(s, data, options){
 
     var _shape = new SShape(s, data),
         _text = new SText(s, data, _shape.getShape()),
-        group = null;
+        group = null,
+        hover_color = 'rgb(195, 0, 0)';
 
     this.options = $.extend({
         onClick: function(e, data){
@@ -193,14 +195,32 @@ var SStation = function(s, data, options){
             case 'bar':
             case 'end': {
                 return {
-                    fill: 'red',
-                    stroke: 'red'
+                    fill: hover_color,
+                    stroke: hover_color
                 }
             } break;
 
             case 'circle': {
                 return {
-                    stroke: 'red'
+                    stroke: hover_color
+                }
+            } break;
+        }
+    }
+
+    function getSelectedStyle(){
+        switch(data.type){
+            case 'bar':
+            case 'end': {
+                return {
+                    fill: hover_color,
+                    stroke: hover_color
+                }
+            } break;
+
+            case 'circle': {
+                return {
+                    stroke: hover_color
                 }
             } break;
         }
@@ -224,6 +244,48 @@ var SStation = function(s, data, options){
         }
     }
 
+    function select(e, shape, text){
+        if(selected){
+            selected = false;
+
+            shape.attr(getNormalStyle());
+
+            text.attr({
+                fill: '#000'
+            });
+        }else{
+            selected = true;
+
+            shape.attr(getSelectedStyle());
+
+            text.attr({
+                fill: '#000'
+            });
+        }
+
+        _this.options.onClick(e, data);
+    }
+
+    function mouseOver(e, shape, text){
+        _this.options.onMouseOver(e, data);
+
+        shape.attr(getHoverStyle());
+
+        text.attr({
+            fill: hover_color
+        });
+    }
+
+    function mouseOut(e, shape, text){
+        _this.options.onMouseOut(e, data);
+
+        shape.attr(getNormalStyle());
+
+        text.attr({
+            fill: '#000'
+        });
+    }
+
     function createGroup(){
         var shape = _shape.getShape(),
             text = _text.getText(),
@@ -232,15 +294,13 @@ var SStation = function(s, data, options){
         group = s.g(text_bg, shape, text);
 
         group.hover(function(e){
-            _this.options.onMouseOver(e, data);
-            shape.animate(getHoverStyle(), 100);
+            mouseOver(e, shape, text);
         }, function(e){
-            _this.options.onMouseOut(e, data);
-            shape.animate(getNormalStyle(), 100);
+            mouseOut(e, shape, text);
         });
 
         group.click(function(e){
-            _this.options.onClick(e, data);
+            select(e, shape, text);
         });
     }
 

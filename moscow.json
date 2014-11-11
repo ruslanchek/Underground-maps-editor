@@ -1178,7 +1178,7 @@
     "text_side": "top",
     "name": "Арбатская",
     "text_bg_opacity": 0.75,
-    "margin": 8,
+    "margin": 4,
     "stroke_width": 5,
     "selected_color": "#FF0000",
     "_id": "53d272bc1686418855892cdd"
