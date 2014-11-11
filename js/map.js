@@ -1,9 +1,11 @@
 var config = {
+    text_idle_fill_color  : 'rgba(0, 0, 0, 1)',
+
     shape_idle_fill_color : 'rgba(0, 0, 0, 0)',
     selected_color        : 'rgba(240, 0, 0, 1)',
+
     hover_color           : 'rgba(200, 0, 0, 1)',
     hover_selected_color  : 'rgba(220, 0, 0, 1)',
-    text_idle_fill_color  : 'rgba(0, 0, 0, 1)',
 
     bar_width             : 7,
     bar_height            : 7,
@@ -23,6 +25,13 @@ var config = {
 };
 
 var SText = function(s, data, shape){
+    this.empty = false;
+
+    if(!data.name){
+        this.empty = true;
+        return;
+    }
+
     var _this = this,
         text = null,
         bg = null,
@@ -209,6 +218,10 @@ var SStation = function(s, data, options){
         }
     }, options);
 
+    function setTextAttrs(text, attrs){
+        text.attr(attrs);
+    }
+
     function getHoverStyle(){
         switch(data.type){
             case 'bar': {
@@ -325,7 +338,7 @@ var SStation = function(s, data, options){
 
             shape.attr(getNormalStyle());
 
-            text.attr({
+            setTextAttrs(text, {
                 fill: config.text_idle_fill_color
             });
         }else{
@@ -333,7 +346,7 @@ var SStation = function(s, data, options){
 
             shape.attr(getSelectedStyle());
 
-            text.attr({
+            setTextAttrs(text, {
                 fill: config.selected_color
             });
         }
@@ -353,7 +366,7 @@ var SStation = function(s, data, options){
         }else{
             shape.attr(getHoverStyle());
 
-            text.attr({
+            setTextAttrs(text, {
                 fill: config.hover_color
             });
         }
@@ -371,7 +384,7 @@ var SStation = function(s, data, options){
         }else{
             shape.attr(getNormalStyle());
 
-            text.attr({
+            setTextAttrs(text, {
                 fill: config.text_idle_fill_color
             });
         }
@@ -379,10 +392,18 @@ var SStation = function(s, data, options){
 
     function createGroup(){
         var shape = _shape.getShape(),
-            text = _text.getText(),
-            text_bg = _text.getBg();
+            text = null,
+            text_bg = null,
+            group;
 
-        group = s.g(text_bg, shape, text);
+        if(!_text.empty) {
+            text_bg = _text.getBg();
+            text = _text.getText();
+
+            group = s.g(shape, text_bg, text);
+        }else{
+            group = s.g(shape);
+        }
 
         group.hover(function(e){
             mouseOver(e, shape, text);
@@ -474,8 +495,6 @@ var SMap = function(options) {
     this.zoomIn = function(immediately){
         s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
     };
-
-
 
     this.init = function() {
         draw();

@@ -721,7 +721,7 @@
     "type": "circle",
     "rotate": 0,
     "text_side": "left",
-    "name": "1",
+    "name": "",
     "margin": 3,
     "_id": "53da3c0b4c5073a0174f96dd"
   },
@@ -763,6 +763,7 @@
     "x": 987,
     "y": 288,
     "type": "bar",
+    "text_width": 100,
     "rotate": 0,
     "text_side": "right",
     "name": "Преображенская площадь",
