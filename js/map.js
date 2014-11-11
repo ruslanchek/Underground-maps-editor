@@ -24,8 +24,6 @@ var config = {
     circle_stroke_width_selected: 5
 };
 
-var m;
-
 var SText = function(s, data, shape){
     this.empty = false;
 
@@ -192,7 +190,7 @@ var SShape = function(s, data){
     };
 };
 
-var SStation = function(s, data, options){
+var SStation = function(s, data, options, map_superclass){
     var _this = this,
         selected = false;
 
@@ -437,7 +435,7 @@ var SStation = function(s, data, options){
         if(data.bind) {
             for (var i = 0; i < data.bind.length; i++) {
                 var obj = data.bind[i],
-                    bs = m.getStationById(obj);
+                    bs = map_superclass.getStationById(obj);
 
                 if(bs && !bs.isSelected()){
                     bs.select();
@@ -450,7 +448,7 @@ var SStation = function(s, data, options){
         if(data.bind) {
             for (var i = 0; i < data.bind.length; i++) {
                 var obj = data.bind[i],
-                    bs = m.getStationById(obj);
+                    bs = map_superclass.getStationById(obj);
 
                 if(bs && bs.isSelected()){
                     bs.unselect();
@@ -540,7 +538,7 @@ var SMap = function(options) {
             onMouseOut: function(station){
 
             }
-        }));
+        }, _this));
     }
 
     function loadStations(done){
