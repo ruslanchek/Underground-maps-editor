@@ -1,3 +1,27 @@
+var config = {
+    shape_idle_fill_color : 'rgba(0, 0, 0, 0)',
+    selected_color        : 'rgba(245, 0, 0, 1)',
+    hover_color           : 'rgba(195, 0, 0, 1)',
+    hover_selected_color  : 'rgba(230, 0, 0, 1)',
+    text_idle_fill_color  : 'rgba(0, 0, 0, 1)',
+
+    bar_width             : 7,
+    bar_height            : 7,
+
+    bar_width_selected    : 7,
+    bar_height_selected   : 7,
+
+    end_width             : 19,
+    end_height            : 7,
+
+    end_width_selected    : 19,
+    end_height_selected   : 7,
+
+    circle_radius         : 7,
+    circle_stroke_width   : 5,
+    circle_stroke_width_selected: 5
+};
+
 var SText = function(s, data, shape){
     var _this = this,
         text = null,
@@ -96,12 +120,12 @@ var SShape = function(s, data){
     var shape = null;
 
     function createCircle(){
-        var shape = s.circle(data.x, data.y, data.width * 2 - 1);
+        var shape = s.circle(data.x, data.y, config.circle_radius);
 
         shape.attr({
-            fill: 'rgba(0,0,0,0)',
+            fill: config.shape_idle_fill_color,
             stroke: data.color,
-            strokeWidth: data.stroke_width + 1,
+            strokeWidth: config.circle_stroke_width,
             cursor: 'pointer'
         });
 
@@ -109,12 +133,10 @@ var SShape = function(s, data){
     }
 
     function createBar(){
-        var shape = s.rect(data.x, data.y, data.width, 4);
+        var shape = s.rect(data.x, data.y, config.bar_width, config.bar_height);
 
         shape.attr({
             fill: data.color,
-            stroke: data.color,
-            strokeWidth: 3 + 1,
             cursor: 'pointer'
         });
 
@@ -126,12 +148,10 @@ var SShape = function(s, data){
     }
 
     function createEnd(){
-        var shape = s.circle(data.x, data.y, data.width * 2 - 1);
+        var shape = s.rect(data.x, data.y, config.end_width, config.end_height);
 
         shape.attr({
-            fill: 'rgba(0,0,0,0)',
-            stroke: data.color,
-            strokeWidth: data.stroke_width + 1,
+            fill: data.color,
             cursor: 'pointer'
         });
 
@@ -175,8 +195,7 @@ var SStation = function(s, data, options){
 
     var _shape = new SShape(s, data),
         _text = new SText(s, data, _shape.getShape()),
-        group = null,
-        hover_color = 'rgb(195, 0, 0)';
+        group = null;
 
     this.options = $.extend({
         onClick: function(e, data){
@@ -192,17 +211,25 @@ var SStation = function(s, data, options){
 
     function getHoverStyle(){
         switch(data.type){
-            case 'bar':
+            case 'bar': {
+                return {
+                    fill: config.selected_color,
+                    width: config.bar_width,
+                    height: config.bar_height
+                }
+            } break;
+
             case 'end': {
                 return {
-                    fill: hover_color,
-                    stroke: hover_color
+                    fill: config.hover_color,
+                    width: config.end_width,
+                    height: config.end_height
                 }
             } break;
 
             case 'circle': {
                 return {
-                    stroke: hover_color
+                    stroke: config.hover_color
                 }
             } break;
         }
@@ -210,17 +237,55 @@ var SStation = function(s, data, options){
 
     function getSelectedStyle(){
         switch(data.type){
-            case 'bar':
+            case 'bar': {
+                return {
+                    fill: config.selected_color,
+                    width: config.bar_width_selected,
+                    height: config.bar_height_selected
+                }
+            } break;
+
             case 'end': {
                 return {
-                    fill: hover_color,
-                    stroke: hover_color
+                    fill: config.selected_color,
+                    width: config.end_width_selected,
+                    height: config.end_height_selected
                 }
             } break;
 
             case 'circle': {
                 return {
-                    stroke: hover_color
+                    stroke: config.selected_color,
+                    fill: config.selected_color,
+                    strokeWidth: config.circle_stroke_width_selected
+                }
+            } break;
+        }
+    }
+
+    function getSelectedHoverStyle(){
+        switch(data.type){
+            case 'bar': {
+                return {
+                    fill: config.hover_selected_color,
+                    width: config.bar_width_selected,
+                    height: config.bar_height_selected
+                }
+            } break;
+
+            case 'end': {
+                return {
+                    fill: config.hover_selected_color,
+                    width: config.end_width_selected,
+                    height: config.end_height_selected
+                }
+            } break;
+
+            case 'circle': {
+                return {
+                    stroke: config.hover_selected_color,
+                    fill: config.hover_selected_color,
+                    strokeWidth: config.circle_stroke_width_selected
                 }
             } break;
         }
@@ -228,17 +293,27 @@ var SStation = function(s, data, options){
 
     function getNormalStyle(){
         switch(data.type){
-            case 'bar':
+            case 'bar': {
+                return {
+                    fill: data.color,
+                    width: config.bar_width,
+                    height: config.bar_height
+                }
+            } break;
+
             case 'end': {
                 return {
                     fill: data.color,
-                    stroke: data.color
+                    width: config.end_width,
+                    height: config.end_height
                 }
             } break;
 
             case 'circle': {
                 return {
-                    stroke: data.color
+                    stroke: data.color,
+                    fill: config.shape_idle_fill_color,
+                    strokeWidth: config.circle_stroke_width
                 }
             } break;
         }
@@ -251,7 +326,7 @@ var SStation = function(s, data, options){
             shape.attr(getNormalStyle());
 
             text.attr({
-                fill: '#000'
+                fill: config.text_idle_fill_color
             });
         }else{
             selected = true;
@@ -259,7 +334,7 @@ var SStation = function(s, data, options){
             shape.attr(getSelectedStyle());
 
             text.attr({
-                fill: '#000'
+                fill: config.selected_color
             });
         }
 
@@ -269,21 +344,37 @@ var SStation = function(s, data, options){
     function mouseOver(e, shape, text){
         _this.options.onMouseOver(e, data);
 
-        shape.attr(getHoverStyle());
+        if(selected){
+            shape.attr(getSelectedHoverStyle());
 
-        text.attr({
-            fill: hover_color
-        });
+            text.attr({
+                fill: config.hover_selected_color
+            });
+        }else{
+            shape.attr(getHoverStyle());
+
+            text.attr({
+                fill: config.hover_color
+            });
+        }
     }
 
     function mouseOut(e, shape, text){
         _this.options.onMouseOut(e, data);
 
-        shape.attr(getNormalStyle());
+        if(selected){
+            shape.attr(getSelectedStyle());
 
-        text.attr({
-            fill: '#000'
-        });
+            text.attr({
+                fill: config.selected_color
+            });
+        }else{
+            shape.attr(getNormalStyle());
+
+            text.attr({
+                fill: config.text_idle_fill_color
+            });
+        }
     }
 
     function createGroup(){
