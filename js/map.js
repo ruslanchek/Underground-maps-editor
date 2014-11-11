@@ -399,7 +399,6 @@ var SStation = function(s, data, options){
         if(!_text.empty) {
             text_bg = _text.getBg();
             text = _text.getText();
-
             group = s.g(shape, text_bg, text);
         }else{
             group = s.g(shape);
@@ -436,8 +435,6 @@ var SMap = function(options) {
     }, options);
 
     var $container = $(this.options.selector),
-        c_width = $container.width(),
-        c_height = $container.height(),
         s = null;
 
     function onLoad(){
