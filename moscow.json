@@ -8,7 +8,7 @@
     "text_side": "right",
     "name": "Кузнецкий мост",
     "margin": 3,
-    "_id": "53d269f5c39442335546341f"
+    "id": "53d269f5c39442335546341f"
   },
   {
     "color": "#0074C1",
@@ -19,7 +19,7 @@
     "text_side": "bottom",
     "name": "Площадь Революции",
     "margin": 1,
-    "_id": "53d26a19c394423355463421"
+    "id": "53d26a19c394423355463421"
   },
   {
     "color": "#FF0300",
@@ -30,7 +30,7 @@
     "text_side": "right",
     "name": "Охотный ряд",
     "margin": 3,
-    "_id": "53d26a19c394423355463423"
+    "id": "53d26a19c394423355463423"
   },
   {
     "color": "#02C15D",
@@ -41,7 +41,7 @@
     "text_side": "right",
     "name": "Театральная",
     "margin": 3,
-    "_id": "53d26a06c394423355463420"
+    "id": "53d26a06c394423355463420"
   },
   {
     "color": "#FF0300",
@@ -52,7 +52,7 @@
     "text_side": "right",
     "name": "Лубянка",
     "margin": 3,
-    "_id": "53d26a19c394423355463422"
+    "id": "53d26a19c394423355463422"
   },
   {
     "color": "#FF0300",
@@ -63,7 +63,7 @@
     "text_side": "right",
     "name": "Чистые пруды",
     "margin": 3,
-    "_id": "53d26a19c394423355463424"
+    "id": "53d26a19c394423355463424"
   },
   {
     "color": "#992C9C",
@@ -74,7 +74,7 @@
     "text_side": "top",
     "name": "Пушкинская",
     "margin": 8,
-    "_id": "53d26a25c394423355463425"
+    "id": "53d26a25c394423355463425"
   },
   {
     "color": "#FE7700",
@@ -85,7 +85,7 @@
     "text_side": "left",
     "name": "Тургеневская",
     "margin": 3,
-    "_id": "53d26a25c394423355463426"
+    "id": "53d26a25c394423355463426"
   },
   {
     "color": "#A0A0A1",
@@ -96,7 +96,7 @@
     "text_side": "right",
     "name": "Чеховская",
     "margin": 3,
-    "_id": "53d26a25c394423355463427"
+    "id": "53d26a25c394423355463427"
   },
   {
     "color": "#02C15D",
@@ -107,7 +107,7 @@
     "text_side": "left",
     "name": "Тверская",
     "margin": 3,
-    "_id": "53d26a25c39442335546342a"
+    "id": "53d26a25c39442335546342a"
   },
   {
     "color": "#904A2F",
@@ -118,7 +118,7 @@
     "text_side": "right",
     "name": "Проспект Мира (К)",
     "margin": 3,
-    "_id": "53d26a25c394423355463428"
+    "id": "53d26a25c394423355463428"
   },
   {
     "color": "#904A2F",
@@ -129,7 +129,7 @@
     "text_side": "bottom",
     "name": "Краснопресненская",
     "margin": 6,
-    "_id": "53d26a25c394423355463429"
+    "id": "53d26a25c394423355463429"
   },
   {
     "color": "#992C9C",
@@ -140,7 +140,7 @@
     "text_side": "top",
     "name": "Баррикадная",
     "margin": 8,
-    "_id": "53d26a5adbb1c34b55bfd449"
+    "id": "53d26a5adbb1c34b55bfd449"
   },
   {
     "color": "#A6DB3A",
@@ -151,7 +151,7 @@
     "text_side": "top",
     "name": "Сретенский бульвар",
     "margin": 8,
-    "_id": "53d26a5adbb1c34b55bfd44a"
+    "id": "53d26a5adbb1c34b55bfd44a"
   },
   {
     "color": "#02C15D",
@@ -162,7 +162,7 @@
     "text_side": "left",
     "name": "Белорусская",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd44b"
+    "id": "53d26a5adbb1c34b55bfd44b"
   },
   {
     "color": "#A6DB3A",
@@ -173,7 +173,7 @@
     "text_side": "right",
     "name": "Трубная",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd44c"
+    "id": "53d26a5adbb1c34b55bfd44c"
   },
   {
     "color": "#904A2F",
@@ -184,7 +184,7 @@
     "text_side": "right",
     "name": "Комсомольская (К)",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd44e"
+    "id": "53d26a5adbb1c34b55bfd44e"
   },
   {
     "color": "#FF0300",
@@ -195,7 +195,7 @@
     "text_side": "right",
     "name": "Комсомольская",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd44d"
+    "id": "53d26a5adbb1c34b55bfd44d"
   },
   {
     "color": "#904A2F",
@@ -206,7 +206,8 @@
     "text_side": "right",
     "name": "Новослободская",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd44f"
+    "id": "53d26a5adbb1c34b55bfd44f",
+    "bind": ["53d26a5adbb1c34b55bfd454"]
   },
   {
     "color": "#A0A0A1",
@@ -217,7 +218,7 @@
     "text_side": "left",
     "name": "Цветной бульвар",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd451"
+    "id": "53d26a5adbb1c34b55bfd451"
   },
   {
     "color": "#FE7700",
@@ -228,7 +229,7 @@
     "text_side": "right",
     "name": "Проспект Мира",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd450"
+    "id": "53d26a5adbb1c34b55bfd450"
   },
   {
     "color": "#A0A0A1",
@@ -239,7 +240,8 @@
     "text_side": "right",
     "name": "Менделеевская",
     "margin": 3,
-    "_id": "53d26a5adbb1c34b55bfd454"
+    "id": "53d26a5adbb1c34b55bfd454",
+    "bind": ["53d26a5adbb1c34b55bfd44f"]
   },
   {
     "color": "#FE7700",
@@ -250,7 +252,7 @@
     "text_side": "right",
     "name": "ВДНХ",
     "margin": 6,
-    "_id": "53d26a5adbb1c34b55bfd452"
+    "id": "53d26a5adbb1c34b55bfd452"
   },
   {
     "color": "#A0A0A1",
@@ -261,7 +263,7 @@
     "text_side": "right",
     "name": "Тимирязевская",
     "margin": 2,
-    "_id": "53d26a5adbb1c34b55bfd453"
+    "id": "53d26a5adbb1c34b55bfd453"
   },
   {
     "color": "#1FC1F2",
@@ -272,7 +274,7 @@
     "text_side": "right",
     "name": "Фили",
     "margin": 4,
-    "_id": "53d7b2f52d05607b6a993533"
+    "id": "53d7b2f52d05607b6a993533"
   },
   {
     "color": "#1FC1F2",
@@ -283,7 +285,7 @@
     "text_side": "right",
     "name": "Александровский сад",
     "margin": 3,
-    "_id": "53d272bc1686418855892ce0"
+    "id": "53d272bc1686418855892ce0"
   },
   {
     "color": "#FF0300",
@@ -294,7 +296,7 @@
     "text_side": "bottom",
     "name": "Библиотека им. Ленина",
     "margin": 3,
-    "_id": "53d272bc1686418855892cde"
+    "id": "53d272bc1686418855892cde"
   },
   {
     "color": "#0074C1",
@@ -305,7 +307,7 @@
     "text_side": "bottom",
     "name": "Славянский бульвар",
     "margin": 4,
-    "_id": "53d7b3252d05607b6a993536"
+    "id": "53d7b3252d05607b6a993536"
   },
   {
     "color": "#FE7700",
@@ -316,7 +318,7 @@
     "text_side": "right",
     "name": "Ботанический сад",
     "margin": 4,
-    "_id": "53d7b5ba2d05607b6a99353d"
+    "id": "53d7b5ba2d05607b6a99353d"
   },
   {
     "color": "#0074C1",
@@ -327,7 +329,7 @@
     "text_side": "bottom",
     "name": "Киевская (АП)",
     "margin": 1,
-    "_id": "53d2721f1686418855892cd9"
+    "id": "53d2721f1686418855892cd9"
   },
   {
     "color": "#FFCE01",
@@ -338,7 +340,7 @@
     "text_side": "bottom",
     "name": "Деловой центр",
     "margin": 3,
-    "_id": "53d2721f1686418855892cd5"
+    "id": "53d2721f1686418855892cd5"
   },
   {
     "color": "#FE7700",
@@ -349,7 +351,7 @@
     "text_side": "top",
     "name": "Парк культуры",
     "margin": 3,
-    "_id": "53d272631686418855892cdb"
+    "id": "53d272631686418855892cdb"
   },
   {
     "color": "#904A2F",
@@ -360,7 +362,7 @@
     "text_side": "left",
     "name": "Белорусская (К)",
     "margin": 3,
-    "_id": "53d272bc1686418855892cdc"
+    "id": "53d272bc1686418855892cdc"
   },
   {
     "color": "#FF0300",
@@ -371,7 +373,7 @@
     "text_side": "right",
     "name": "Кропоткинская",
     "margin": 5,
-    "_id": "53d7b5ad2d05607b6a99353b"
+    "id": "53d7b5ad2d05607b6a99353b"
   },
   {
     "color": "#0074C1",
@@ -382,7 +384,7 @@
     "text_side": "bottom",
     "name": "Смоленская (АП)",
     "margin": 4,
-    "_id": "53d7b5ba2d05607b6a99353c"
+    "id": "53d7b5ba2d05607b6a99353c"
   },
   {
     "color": "#02C15D",
@@ -393,7 +395,7 @@
     "text_side": "right",
     "name": "Сокол",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96bd"
+    "id": "53da3b8e4c5073a0174f96bd"
   },
   {
     "color": "#0074C1",
@@ -404,7 +406,7 @@
     "text_side": "right",
     "name": "Митино",
     "margin": 4,
-    "_id": "53da3cdf4c5073a0174f96de"
+    "id": "53da3cdf4c5073a0174f96de"
   },
   {
     "color": "#FFCE01",
@@ -415,7 +417,7 @@
     "text_side": "right",
     "name": "Перово",
     "margin": 4,
-    "_id": "53da3ea64c5073a0174f96f4"
+    "id": "53da3ea64c5073a0174f96f4"
   },
   {
     "color": "red",
@@ -426,7 +428,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da424e4c5073a0174f9715"
+    "id": "53da424e4c5073a0174f9715"
   },
   {
     "color": "red",
@@ -437,7 +439,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da424e4c5073a0174f9716"
+    "id": "53da424e4c5073a0174f9716"
   },
   {
     "color": "#FE7700",
@@ -448,7 +450,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9720"
+    "id": "53da429e4c5073a0174f9720"
   },
   {
     "color": "#FE7700",
@@ -459,7 +461,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9721"
+    "id": "53da429e4c5073a0174f9721"
   },
   {
     "color": "#FE7700",
@@ -470,7 +472,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9723"
+    "id": "53da429e4c5073a0174f9723"
   },
   {
     "color": "#FE7700",
@@ -481,7 +483,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9722"
+    "id": "53da429e4c5073a0174f9722"
   },
   {
     "color": "#FE7700",
@@ -492,7 +494,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9725"
+    "id": "53da429e4c5073a0174f9725"
   },
   {
     "color": "#5DD1CE",
@@ -503,7 +505,7 @@
     "text_side": "top",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9726"
+    "id": "53da429e4c5073a0174f9726"
   },
   {
     "color": "#A6DB3A",
@@ -514,7 +516,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da429e4c5073a0174f9728"
+    "id": "53da429e4c5073a0174f9728"
   },
   {
     "color": "#A6DB3A",
@@ -525,7 +527,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46674c5073a0174f973a"
+    "id": "53da46674c5073a0174f973a"
   },
   {
     "color": "#A6DB3A",
@@ -536,7 +538,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46674c5073a0174f973d"
+    "id": "53da46674c5073a0174f973d"
   },
   {
     "color": "#A6DB3A",
@@ -547,7 +549,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46674c5073a0174f973c"
+    "id": "53da46674c5073a0174f973c"
   },
   {
     "color": "#A0A0A1",
@@ -558,7 +560,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f974f"
+    "id": "53da46c94c5073a0174f974f"
   },
   {
     "color": "#A9BCE4",
@@ -569,7 +571,7 @@
     "text_side": "bottom",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f9750"
+    "id": "53da46c94c5073a0174f9750"
   },
   {
     "color": "#A9BCE4",
@@ -580,7 +582,7 @@
     "text_side": "bottom",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f9751"
+    "id": "53da46c94c5073a0174f9751"
   },
   {
     "color": "#FE7700",
@@ -591,7 +593,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f9753"
+    "id": "53da46c94c5073a0174f9753"
   },
   {
     "color": "#FE7700",
@@ -602,7 +604,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f9758"
+    "id": "53da46c94c5073a0174f9758"
   },
   {
     "color": "#FE7700",
@@ -613,7 +615,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f975a"
+    "id": "53da46c94c5073a0174f975a"
   },
   {
     "color": "#A6DB3A",
@@ -624,7 +626,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da46c94c5073a0174f9756"
+    "id": "53da46c94c5073a0174f9756"
   },
   {
     "color": "#A0A0A1",
@@ -635,7 +637,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da470c4c5073a0174f976b"
+    "id": "53da470c4c5073a0174f976b"
   },
   {
     "color": "#A0A0A1",
@@ -646,7 +648,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da470c4c5073a0174f9774"
+    "id": "53da470c4c5073a0174f9774"
   },
   {
     "color": "#A6DB3A",
@@ -657,7 +659,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da470c4c5073a0174f9775"
+    "id": "53da470c4c5073a0174f9775"
   },
   {
     "color": "#02C15D",
@@ -668,7 +670,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da470c4c5073a0174f9777"
+    "id": "53da470c4c5073a0174f9777"
   },
   {
     "color": "#02C15D",
@@ -679,7 +681,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da470c4c5073a0174f977a"
+    "id": "53da470c4c5073a0174f977a"
   },
   {
     "color": "#A9BCE4",
@@ -690,7 +692,7 @@
     "text_side": "left",
     "name": "New station",
     "margin": 4,
-    "_id": "53da546b5558e9c724a704f4"
+    "id": "53da546b5558e9c724a704f4"
   },
   {
     "color": "#A0A0A1",
@@ -701,7 +703,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da54a25558e9c724a704f7"
+    "id": "53da54a25558e9c724a704f7"
   },
   {
     "color": "#992C9C",
@@ -712,7 +714,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 4,
-    "_id": "53da470c4c5073a0174f977b"
+    "id": "53da470c4c5073a0174f977b"
   },
   {
     "color": "#0074C1",
@@ -723,7 +725,7 @@
     "text_side": "left",
     "name": "",
     "margin": 3,
-    "_id": "53da3c0b4c5073a0174f96dd"
+    "id": "53da3c0b4c5073a0174f96dd"
   },
   {
     "color": "#992C9C",
@@ -734,7 +736,7 @@
     "text_side": "right",
     "name": "Октябрьское поле",
     "margin": 4,
-    "_id": "53da3cf24c5073a0174f96e1"
+    "id": "53da3cf24c5073a0174f96e1"
   },
   {
     "color": "#A0A0A1",
@@ -745,7 +747,7 @@
     "text_side": "right",
     "name": "Петровско-Разумовская",
     "margin": 4,
-    "_id": "53da3b1e4c5073a0174f96b6"
+    "id": "53da3b1e4c5073a0174f96b6"
   },
   {
     "color": "#FF0300",
@@ -756,7 +758,7 @@
     "text_side": "right",
     "name": "Улица Подбельского",
     "margin": 4,
-    "_id": "53da3be24c5073a0174f96d4"
+    "id": "53da3be24c5073a0174f96d4"
   },
   {
     "color": "#FF0300",
@@ -768,7 +770,7 @@
     "text_side": "right",
     "name": "Преображенская площадь",
     "margin": 4,
-    "_id": "53da3dde4c5073a0174f96ec"
+    "id": "53da3dde4c5073a0174f96ec"
   },
   {
     "color": "#0074C1",
@@ -779,7 +781,7 @@
     "text_side": "right",
     "name": "Пятницкое шоссе",
     "margin": 3,
-    "_id": "53da3bc34c5073a0174f96d3"
+    "id": "53da3bc34c5073a0174f96d3"
   },
   {
     "color": "#992C9C",
@@ -790,7 +792,7 @@
     "text_side": "top",
     "name": "Планерная",
     "margin": 8,
-    "_id": "543fc8f341cac9f176f6d77d"
+    "id": "543fc8f341cac9f176f6d77d"
   },
   {
     "color": "#FE7700",
@@ -801,7 +803,7 @@
     "text_side": "right",
     "name": "Медведково",
     "margin": 4,
-    "_id": "53d7a5b52d05607b6a99352c"
+    "id": "53d7a5b52d05607b6a99352c"
   },
   {
     "color": "#0074C1",
@@ -812,7 +814,7 @@
     "text_side": "top",
     "name": "Арбатская",
     "margin": 4,
-    "_id": "53d272bc1686418855892cdd"
+    "id": "53d272bc1686418855892cdd"
   },
   {
     "color": "#FE7700",
@@ -823,7 +825,7 @@
     "text_side": "right",
     "name": "Рижская",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96ba"
+    "id": "53da3b8e4c5073a0174f96ba"
   },
   {
     "color": "#904A2F",
@@ -834,7 +836,7 @@
     "text_side": "right",
     "name": "Курская (К)",
     "margin": 3,
-    "_id": "53d2721f1686418855892cd3"
+    "id": "53d2721f1686418855892cd3"
   },
   {
     "color": "#02C15D",
@@ -845,7 +847,7 @@
     "text_side": "right",
     "name": "Маяковская",
     "margin": 5,
-    "_id": "53d7ae102d05607b6a99352e"
+    "id": "53d7ae102d05607b6a99352e"
   },
   {
     "color": "#A6DB3A",
@@ -856,7 +858,7 @@
     "text_side": "bottom",
     "name": "Чкаловская",
     "margin": 3,
-    "_id": "53d2721f1686418855892cd8"
+    "id": "53d2721f1686418855892cd8"
   },
   {
     "color": "#A0A0A1",
@@ -867,7 +869,7 @@
     "text_side": "left",
     "name": "Боровицкая",
     "margin": 3,
-    "_id": "53d272bc1686418855892cdf"
+    "id": "53d272bc1686418855892cdf"
   },
   {
     "color": "#1FC1F2",
@@ -878,7 +880,7 @@
     "text_side": "bottom",
     "name": "Кутузовская",
     "margin": 4,
-    "_id": "53d7b2e32d05607b6a993532"
+    "id": "53d7b2e32d05607b6a993532"
   },
   {
     "color": "#A0A0A1",
@@ -889,7 +891,7 @@
     "text_side": "right",
     "name": "Алтуфьево",
     "margin": 4,
-    "_id": "53d7a1e22d05607b6a99352b"
+    "id": "53d7a1e22d05607b6a99352b"
   },
   {
     "color": "#FFCE01",
@@ -900,7 +902,7 @@
     "text_side": "right",
     "name": "Новогиреево",
     "margin": 4,
-    "_id": "53d7b5ad2d05607b6a993538"
+    "id": "53d7b5ad2d05607b6a993538"
   },
   {
     "color": "#02C15D",
@@ -911,7 +913,7 @@
     "text_side": "right",
     "name": "Войковская",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96bc"
+    "id": "53da3b8e4c5073a0174f96bc"
   },
   {
     "color": "#1FC1F2",
@@ -922,7 +924,7 @@
     "text_side": "right",
     "name": "Арбатская (Ф)",
     "margin": 5,
-    "_id": "53d7b1bf2d05607b6a99352f"
+    "id": "53d7b1bf2d05607b6a99352f"
   },
   {
     "color": "#992C9C",
@@ -933,7 +935,7 @@
     "text_side": "right",
     "name": "Сходненская",
     "margin": 4,
-    "_id": "53da3d984c5073a0174f96e9"
+    "id": "53da3d984c5073a0174f96e9"
   },
   {
     "color": "#02C15D",
@@ -944,7 +946,7 @@
     "text_side": "right",
     "name": "Динамо",
     "margin": 5,
-    "_id": "53d9012e8367e94314e98560"
+    "id": "53d9012e8367e94314e98560"
   },
   {
     "color": "#0074C1",
@@ -955,7 +957,7 @@
     "text_side": "right",
     "name": "Крылатское",
     "margin": 4,
-    "_id": "53da3d2e4c5073a0174f96e4"
+    "id": "53da3d2e4c5073a0174f96e4"
   },
   {
     "color": "#A6DB3A",
@@ -966,7 +968,7 @@
     "text_side": "right",
     "name": "Достоевская",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96bf"
+    "id": "53da3b8e4c5073a0174f96bf"
   },
   {
     "color": "#1FC1F2",
@@ -977,7 +979,7 @@
     "text_side": "top",
     "name": "Киевская (Ф)",
     "margin": 8,
-    "_id": "53d2721f1686418855892cda"
+    "id": "53d2721f1686418855892cda"
   },
   {
     "color": "#1FC1F2",
@@ -988,7 +990,7 @@
     "text_side": "bottom",
     "name": "Студенческая",
     "margin": 4,
-    "_id": "53d7b3192d05607b6a993534"
+    "id": "53d7b3192d05607b6a993534"
   },
   {
     "color": "#02C15D",
@@ -999,7 +1001,7 @@
     "text_side": "top",
     "name": "Речной вокзал",
     "margin": 8,
-    "_id": "53d7a62a2d05607b6a99352d"
+    "id": "53d7a62a2d05607b6a99352d"
   },
   {
     "color": "#FE7700",
@@ -1010,7 +1012,7 @@
     "text_side": "right",
     "name": "Сухаревская",
     "margin": 5,
-    "_id": "53d7b5ba2d05607b6a99353f"
+    "id": "53d7b5ba2d05607b6a99353f"
   },
   {
     "color": "#0074C1",
@@ -1021,7 +1023,7 @@
     "text_side": "right",
     "name": "Строгино",
     "margin": 4,
-    "_id": "53da3d2e4c5073a0174f96e3"
+    "id": "53da3d2e4c5073a0174f96e3"
   },
   {
     "color": "#0074C1",
@@ -1032,7 +1034,7 @@
     "text_side": "top",
     "name": "Курская",
     "margin": 8,
-    "_id": "53d2721f1686418855892cd6"
+    "id": "53d2721f1686418855892cd6"
   },
   {
     "color": "#A0A0A1",
@@ -1043,7 +1045,7 @@
     "text_side": "right",
     "name": "Владыкино",
     "margin": 4,
-    "_id": "53d7b3252d05607b6a993537"
+    "id": "53d7b3252d05607b6a993537"
   },
   {
     "color": "#1FC1F2",
@@ -1054,7 +1056,7 @@
     "text_side": "right",
     "name": "Кунцевская",
     "margin": 4,
-    "_id": "53da3c0b4c5073a0174f96dc"
+    "id": "53da3c0b4c5073a0174f96dc"
   },
   {
     "color": "#A0A0A1",
@@ -1065,7 +1067,7 @@
     "text_side": "right",
     "name": "Дмитровская",
     "margin": 4,
-    "_id": "53d901428367e94314e98561"
+    "id": "53d901428367e94314e98561"
   },
   {
     "color": "#0074C1",
@@ -1076,7 +1078,7 @@
     "text_side": "right",
     "name": "Молодежная",
     "margin": 4,
-    "_id": "53da3d2e4c5073a0174f96e5"
+    "id": "53da3d2e4c5073a0174f96e5"
   },
   {
     "color": "#0074C1",
@@ -1087,7 +1089,7 @@
     "text_side": "right",
     "name": "Первомайская",
     "margin": 4,
-    "_id": "53da3dde4c5073a0174f96ef"
+    "id": "53da3dde4c5073a0174f96ef"
   },
   {
     "color": "#FE7700",
@@ -1098,7 +1100,7 @@
     "text_side": "right",
     "name": "Бабушкинская",
     "margin": 4,
-    "_id": "53d62160163d4bdb5f21bddd"
+    "id": "53d62160163d4bdb5f21bddd"
   },
   {
     "color": "#FF0300",
@@ -1109,7 +1111,7 @@
     "text_side": "right",
     "name": "Красносельская",
     "margin": 4,
-    "_id": "53da3dde4c5073a0174f96ee"
+    "id": "53da3dde4c5073a0174f96ee"
   },
   {
     "color": "#02C15D",
@@ -1120,7 +1122,7 @@
     "text_side": "right",
     "name": "Аэропорт",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96be"
+    "id": "53da3b8e4c5073a0174f96be"
   },
   {
     "color": "#1FC1F2",
@@ -1131,7 +1133,7 @@
     "text_side": "right",
     "name": "Багратионовская",
     "margin": 4,
-    "_id": "53da3d2e4c5073a0174f96e8"
+    "id": "53da3d2e4c5073a0174f96e8"
   },
   {
     "color": "#0074C1",
@@ -1142,7 +1144,7 @@
     "text_side": "right",
     "name": "Измайловская",
     "margin": 4,
-    "_id": "53da3e754c5073a0174f96f0"
+    "id": "53da3e754c5073a0174f96f0"
   },
   {
     "color": "#02C15D",
@@ -1153,7 +1155,7 @@
     "text_side": "right",
     "name": "Водный стадион",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96bb"
+    "id": "53da3b8e4c5073a0174f96bb"
   },
   {
     "color": "#0074C1",
@@ -1164,7 +1166,7 @@
     "text_side": "right",
     "name": "Электрозаводская",
     "margin": 4,
-    "_id": "53da3e754c5073a0174f96f3"
+    "id": "53da3e754c5073a0174f96f3"
   },
   {
     "color": "#FFCE01",
@@ -1175,7 +1177,7 @@
     "text_side": "right",
     "name": "Новокосино",
     "margin": 4,
-    "_id": "53dba907b8de042d2b8708ea"
+    "id": "53dba907b8de042d2b8708ea"
   },
   {
     "color": "#992C9C",
@@ -1186,7 +1188,7 @@
     "text_side": "right",
     "name": "Тушинская",
     "margin": 4,
-    "_id": "53da3d984c5073a0174f96ea"
+    "id": "53da3d984c5073a0174f96ea"
   },
   {
     "color": "#FE7700",
@@ -1197,7 +1199,7 @@
     "text_side": "right",
     "name": "Свиблово",
     "margin": 4,
-    "_id": "53d7b5ad2d05607b6a993539"
+    "id": "53d7b5ad2d05607b6a993539"
   },
   {
     "color": "#A6DB3A",
@@ -1208,7 +1210,7 @@
     "text_side": "right",
     "name": "Марьина роща",
     "margin": 5,
-    "_id": "53da3b8e4c5073a0174f96c0"
+    "id": "53da3b8e4c5073a0174f96c0"
   },
   {
     "color": "#1FC1F2",
@@ -1219,7 +1221,7 @@
     "text_side": "right",
     "name": "Пионерская",
     "margin": 4,
-    "_id": "53da3d2e4c5073a0174f96e6"
+    "id": "53da3d2e4c5073a0174f96e6"
   },
   {
     "color": "#FFCE01",
@@ -1230,7 +1232,7 @@
     "text_side": "right",
     "name": "Шоссе Энтузиастов",
     "margin": 4,
-    "_id": "53da3ea64c5073a0174f96f5"
+    "id": "53da3ea64c5073a0174f96f5"
   },
   {
     "color": "#0074C1",
@@ -1241,7 +1243,7 @@
     "text_side": "right",
     "name": "Волоколамская",
     "margin": 4,
-    "_id": "53da3cdf4c5073a0174f96df"
+    "id": "53da3cdf4c5073a0174f96df"
   },
   {
     "color": "#A0A0A1",
@@ -1252,7 +1254,7 @@
     "text_side": "right",
     "name": "New station",
     "margin": 7,
-    "_id": "53da575e5558e9c724a704ff"
+    "id": "53da575e5558e9c724a704ff"
   },
   {
     "color": "#1FC1F2",
@@ -1263,7 +1265,7 @@
     "text_side": "right",
     "name": "Выставочная",
     "margin": 3,
-    "_id": "53d2721f1686418855892cd4"
+    "id": "53d2721f1686418855892cd4"
   },
   {
     "color": "#904A2F",
@@ -1274,7 +1276,7 @@
     "text_side": "right",
     "name": "Киевская (К)",
     "margin": 3,
-    "_id": "53d2721f1686418855892cd7"
+    "id": "53d2721f1686418855892cd7"
   },
   {
     "color": "#0074C1",
@@ -1285,7 +1287,7 @@
     "text_side": "right",
     "name": "Бауманская",
     "margin": 5,
-    "_id": "53d7b5ba2d05607b6a99353e"
+    "id": "53d7b5ba2d05607b6a99353e"
   },
   {
     "color": "#A0A0A1",
@@ -1296,7 +1298,7 @@
     "text_side": "right",
     "name": "Бибирево",
     "margin": 4,
-    "_id": "53d61bd7163d4bdb5f21bddc"
+    "id": "53d61bd7163d4bdb5f21bddc"
   },
   {
     "color": "#FF0300",
@@ -1307,7 +1309,7 @@
     "text_side": "right",
     "name": "Сокольники",
     "margin": 4,
-    "_id": "53da3dde4c5073a0174f96ed"
+    "id": "53da3dde4c5073a0174f96ed"
   },
   {
     "color": "#FF0300",
@@ -1318,7 +1320,7 @@
     "text_side": "right",
     "name": "Черкизовская",
     "margin": 4,
-    "_id": "53da3dde4c5073a0174f96eb"
+    "id": "53da3dde4c5073a0174f96eb"
   },
   {
     "color": "#1FC1F2",
@@ -1329,7 +1331,7 @@
     "text_side": "right",
     "name": "Филевский парк",
     "margin": 4,
-    "_id": "53da3d2e4c5073a0174f96e7"
+    "id": "53da3d2e4c5073a0174f96e7"
   },
   {
     "color": "#0074C1",
@@ -1340,7 +1342,7 @@
     "text_side": "right",
     "name": "Мякинино",
     "margin": 4,
-    "_id": "53da3cf24c5073a0174f96e2"
+    "id": "53da3cf24c5073a0174f96e2"
   },
   {
     "color": "#A0A0A1",
@@ -1351,7 +1353,7 @@
     "text_side": "right",
     "name": "Отрадное",
     "margin": 4,
-    "_id": "53d7b3192d05607b6a993535"
+    "id": "53d7b3192d05607b6a993535"
   },
   {
     "color": "#0074C1",
@@ -1362,7 +1364,7 @@
     "text_side": "right",
     "name": "Щелковская",
     "margin": 4,
-    "_id": "53da3c0b4c5073a0174f96da"
+    "id": "53da3c0b4c5073a0174f96da"
   },
   {
     "color": "#1FC1F2",
@@ -1373,7 +1375,7 @@
     "text_side": "right",
     "name": "Международная",
     "margin": 4,
-    "_id": "53da3beb4c5073a0174f96d8"
+    "id": "53da3beb4c5073a0174f96d8"
   },
   {
     "color": "#FFCE01",
@@ -1384,7 +1386,7 @@
     "text_side": "right",
     "name": "Авиамоторная",
     "margin": 4,
-    "_id": "53da3ea64c5073a0174f96f6"
+    "id": "53da3ea64c5073a0174f96f6"
   },
   {
     "color": "#1FC1F2",
@@ -1395,7 +1397,7 @@
     "text_side": "top",
     "name": "Смоленская (Ф)",
     "margin": 6,
-    "_id": "53d7b1f12d05607b6a993531"
+    "id": "53d7b1f12d05607b6a993531"
   },
   {
     "color": "#FE7700",
@@ -1406,7 +1408,7 @@
     "text_side": "right",
     "name": "Алексеевская",
     "margin": 4,
-    "_id": "53da3b8e4c5073a0174f96b9"
+    "id": "53da3b8e4c5073a0174f96b9"
   },
   {
     "color": "#992C9C",
@@ -1417,7 +1419,7 @@
     "text_side": "right",
     "name": "Щукинская",
     "margin": 4,
-    "_id": "53da3cf24c5073a0174f96e0"
+    "id": "53da3cf24c5073a0174f96e0"
   },
   {
     "color": "#0074C1",
@@ -1428,7 +1430,7 @@
     "text_side": "right",
     "name": "Партизанская",
     "margin": 4,
-    "_id": "53da3e754c5073a0174f96f1"
+    "id": "53da3e754c5073a0174f96f1"
   },
   {
     "color": "#A0A0A1",
@@ -1439,7 +1441,8 @@
     "text_side": "right",
     "name": "Савеловская",
     "margin": 10,
-    "_id": "53da3b2c4c5073a0174f96b8"
+    "id": "53da3b2c4c5073a0174f96b8",
+    "bind": ["53d26a5adbb1c34b55bfd454"]
   },
   {
     "color": "#0074C1",
@@ -1450,7 +1453,7 @@
     "text_side": "right",
     "name": "Семеновская",
     "margin": 4,
-    "_id": "53da3e754c5073a0174f96f2"
+    "id": "53da3e754c5073a0174f96f2"
   },
   {
     "color": "#992C9C",
@@ -1461,7 +1464,7 @@
     "text_side": "right",
     "name": "Пролетарская",
     "margin": 3,
-    "_id": "53db5321b8de042d2b8708e8"
+    "id": "53db5321b8de042d2b8708e8"
   },
   {
     "color": "#FFCE01",
@@ -1472,7 +1475,7 @@
     "text_side": "right",
     "name": "Новокосино",
     "margin": 4,
-    "_id": "53dba8c5b8de042d2b8708e9"
+    "id": "53dba8c5b8de042d2b8708e9"
   },
   {
     "color": "#A0A0A1",
@@ -1483,7 +1486,7 @@
     "text_side": "right",
     "name": "Полянка",
     "margin": 8,
-    "_id": "53d7b1f12d05607b6a993530"
+    "id": "53d7b1f12d05607b6a993530"
   },
   {
     "color": "#992C9C",
@@ -1494,6 +1497,6 @@
     "text_side": "right",
     "name": "Волгоградский проспект",
     "margin": 4,
-    "_id": "53dba97db8de042d2b8708eb"
+    "id": "53dba97db8de042d2b8708eb"
   }
 ] 

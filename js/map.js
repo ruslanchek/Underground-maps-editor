@@ -24,6 +24,8 @@ var config = {
     circle_stroke_width_selected: 5
 };
 
+var m;
+
 var SText = function(s, data, shape){
     this.empty = false;
 
@@ -204,10 +206,19 @@ var SStation = function(s, data, options){
 
     var _shape = new SShape(s, data),
         _text = new SText(s, data, _shape.getShape()),
-        group = null;
+        group = null,
+        shape = null,
+        text = null,
+        text_bg = null;
 
     this.options = $.extend({
         onClick: function(station_instance){
+
+        },
+        onSelect: function(station_instance){
+
+        },
+        onUnselect: function(station_instance){
 
         },
         onMouseOver: function(station_instance){
@@ -332,29 +343,33 @@ var SStation = function(s, data, options){
         }
     }
 
-    function select(e, shape, text){
-        if(selected){
-            selected = false;
+    function select(shape, text){
+        selected = true;
 
-            shape.attr(getNormalStyle());
+        shape.attr(getSelectedStyle());
 
-            setTextAttrs(text, {
-                fill: config.text_idle_fill_color
-            });
-        }else{
-            selected = true;
+        setTextAttrs(text, {
+            fill: config.selected_color
+        });
 
-            shape.attr(getSelectedStyle());
-
-            setTextAttrs(text, {
-                fill: config.selected_color
-            });
-        }
-
-        _this.options.onClick(this);
+        _this.selectBinded();
+        _this.options.onSelect(_this);
     }
 
-    function mouseOver(e, shape, text){
+    function unselect(shape, text){
+        selected = false;
+
+        shape.attr(getNormalStyle());
+
+        setTextAttrs(text, {
+            fill: config.text_idle_fill_color
+        });
+
+        _this.unselectBinded();
+        _this.options.onUnselect(_this);
+    }
+
+    function mouseOver(shape, text){
         if(selected){
             shape.attr(getSelectedHoverStyle());
 
@@ -369,10 +384,10 @@ var SStation = function(s, data, options){
             });
         }
 
-        _this.options.onMouseOver(this);
+        _this.options.onMouseOver(_this);
     }
 
-    function mouseOut(e, shape, text){
+    function mouseOut(shape, text){
         if(selected){
             shape.attr(getSelectedStyle());
 
@@ -387,14 +402,11 @@ var SStation = function(s, data, options){
             });
         }
 
-        _this.options.onMouseOut(this);
+        _this.options.onMouseOut(_this);
     }
 
     function createGroup(){
-        var shape = _shape.getShape(),
-            text = null,
-            text_bg = null,
-            group;
+        shape = _shape.getShape();
 
         if(!_text.empty) {
             text_bg = _text.getBg();
@@ -404,16 +416,60 @@ var SStation = function(s, data, options){
             group = s.g(shape);
         }
 
-        group.hover(function(e){
-            mouseOver(e, shape, text);
-        }, function(e){
-            mouseOut(e, shape, text);
+        group.hover(function(){
+            mouseOver(shape, text);
+        }, function(){
+            mouseOut(shape, text);
         });
 
-        group.click(function(e){
-            select(e, shape, text);
+        group.click(function(){
+            if(selected){
+                unselect(shape, text);
+            }else{
+                select(shape, text);
+            }
+
+            _this.options.onClick(_this);
         });
     }
+
+    this.selectBinded = function(){
+        if(data.bind) {
+            for (var i = 0; i < data.bind.length; i++) {
+                var obj = data.bind[i],
+                    bs = m.getStationById(obj);
+
+                if(bs && !bs.isSelected()){
+                    bs.select();
+                }
+            }
+        }
+    };
+
+    this.unselectBinded = function(){
+        if(data.bind) {
+            for (var i = 0; i < data.bind.length; i++) {
+                var obj = data.bind[i],
+                    bs = m.getStationById(obj);
+
+                if(bs && bs.isSelected()){
+                    bs.unselect();
+                }
+            }
+        }
+    };
+
+    this.select = function(){
+        if(!selected){
+            select(shape, text);
+        }
+    };
+
+    this.unselect = function(){
+        if(selected){
+            unselect(shape, text);
+        }
+    };
 
     this.isSelected = function(){
         return selected;
@@ -476,13 +532,13 @@ var SMap = function(options) {
     function drawStation(data){
         stations.push(new SStation(s, data, {
             onClick: function(station){
-                console.log(data)
+
             },
             onMouseOver: function(station){
-                console.log(data)
+
             },
             onMouseOut: function(station){
-                console.log(data)
+
             }
         }));
     }
@@ -516,13 +572,23 @@ var SMap = function(options) {
         return stations;
     };
 
+    this.getStationById = function(id){
+        for (var i = 0; i < stations.length; i++) {
+            var obj = stations[i];
+
+            if(obj.getData().id == id){
+                return obj;
+            }
+        }
+    };
+
     this.init = function() {
         draw();
     };
 };
 
 $(function(){
-    var m = new SMap({
+    m = new SMap({
         selector: '#map',
         map_svg: 'img/moscow.svg',
         data_url: 'moscow.json',
