@@ -1143,7 +1143,7 @@
     "rotate": 0,
     "radius": 7,
     "width": 17,
-    "text_side": "bottom",
+    "text_side": "top",
     "name": "Планерная",
     "text_bg_opacity": 0.75,
     "margin": 8,

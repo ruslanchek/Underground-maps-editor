@@ -25,11 +25,12 @@ var SText = function(s, data, shape){
 
             case 'bottom' : {
                 x = shape_bb.cx - text_bb.width / 2 + offset;
-                y = shape_bb.y2 + offset;
+                y = shape_bb.y2 + text_bb.height - offset + data.margin;
             } break;
 
             case 'left' : {
-
+                x = shape_bb.x - text_bb.width + offset * 3 - data.margin;
+                y = shape_bb.cy + text_bb.height / 4;
             } break;
         }
 
