@@ -207,13 +207,13 @@ var SStation = function(s, data, options){
         group = null;
 
     this.options = $.extend({
-        onClick: function(e, data){
+        onClick: function(station_instance){
 
         },
-        onMouseOver: function(e, data){
+        onMouseOver: function(station_instance){
 
         },
-        onMouseOut: function(e, data){
+        onMouseOut: function(station_instance){
 
         }
     }, options);
@@ -351,12 +351,10 @@ var SStation = function(s, data, options){
             });
         }
 
-        _this.options.onClick(e, data);
+        _this.options.onClick(this);
     }
 
     function mouseOver(e, shape, text){
-        _this.options.onMouseOver(e, data);
-
         if(selected){
             shape.attr(getSelectedHoverStyle());
 
@@ -370,11 +368,11 @@ var SStation = function(s, data, options){
                 fill: config.hover_color
             });
         }
+
+        _this.options.onMouseOver(this);
     }
 
     function mouseOut(e, shape, text){
-        _this.options.onMouseOut(e, data);
-
         if(selected){
             shape.attr(getSelectedStyle());
 
@@ -388,6 +386,8 @@ var SStation = function(s, data, options){
                 fill: config.text_idle_fill_color
             });
         }
+
+        _this.options.onMouseOut(this);
     }
 
     function createGroup(){
@@ -414,6 +414,14 @@ var SStation = function(s, data, options){
             select(e, shape, text);
         });
     }
+
+    this.isSelected = function(){
+        return selected;
+    };
+
+    this.getData = function(){
+        return data;
+    };
 
     createGroup();
 };
@@ -461,28 +469,39 @@ var SMap = function(options) {
         });
     }
 
-    function drawStation(data){
-        stations.push(new SStation(s, data));
-    }
-
-	function loadStations(done){
-		$.ajax({
-			url: _this.options.data_url,
-			type: 'get',
-			dataType: 'json',
-			success: function(data){
-				for (var i = 0; i < data.length; i++) {
-                    drawStation(data[i]);
-				}
-
-                if(done) done();
-			}
-		})
-	}
-
     function zoomInit (done){
         if(done) done();
     }
+
+    function drawStation(data){
+        stations.push(new SStation(s, data, {
+            onClick: function(station){
+                console.log(data)
+            },
+            onMouseOver: function(station){
+                console.log(data)
+            },
+            onMouseOut: function(station){
+                console.log(data)
+            }
+        }));
+    }
+
+    function loadStations(done){
+        $.ajax({
+            url: _this.options.data_url,
+            type: 'get',
+            dataType: 'json',
+            success: function(data){
+                for (var i = 0; i < data.length; i++) {
+                    drawStation(data[i]);
+                }
+
+                if(done) done();
+            }
+        })
+    }
+
 
     // Public methods
     this.zoomOut = function(immediately){
@@ -491,6 +510,10 @@ var SMap = function(options) {
 
     this.zoomIn = function(immediately){
         s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
+    };
+
+    this.getStations = function(){
+        return stations;
     };
 
     this.init = function() {
@@ -522,5 +545,3 @@ $(function(){
         }
     });
 });
-
-
