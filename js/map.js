@@ -1,8 +1,8 @@
 var config = {
     shape_idle_fill_color : 'rgba(0, 0, 0, 0)',
-    selected_color        : 'rgba(245, 0, 0, 1)',
-    hover_color           : 'rgba(195, 0, 0, 1)',
-    hover_selected_color  : 'rgba(230, 0, 0, 1)',
+    selected_color        : 'rgba(240, 0, 0, 1)',
+    hover_color           : 'rgba(200, 0, 0, 1)',
+    hover_selected_color  : 'rgba(220, 0, 0, 1)',
     text_idle_fill_color  : 'rgba(0, 0, 0, 1)',
 
     bar_width             : 7,
