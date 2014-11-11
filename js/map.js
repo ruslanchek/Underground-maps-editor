@@ -493,6 +493,21 @@ var SMap = function(options) {
         zoom_animation_time: 500,
         onLoad: function(){
 
+        },
+        onStationClick: function(station){
+
+        },
+        onStationMouseOver: function(station){
+
+        },
+        onStationMouseOut: function(station){
+
+        },
+        onStationSelect: function(station){
+
+        },
+        onStationUnselect: function(station){
+
         }
     }, options);
 
@@ -529,14 +544,20 @@ var SMap = function(options) {
 
     function drawStation(data){
         stations.push(new SStation(s, data, {
-            onClick: function(station){
-
-            },
             onMouseOver: function(station){
-
+                _this.options.onStationMouseOver(station);
             },
             onMouseOut: function(station){
-
+                _this.options.onStationMouseOut(station);
+            },
+            onSelect: function(station){
+                _this.options.onStationSelect(station);
+            },
+            onUnselect: function(station){
+                _this.options.onStationUnselect(station);
+            },
+            onClick: function(station){
+                _this.options.onStationClick(station);
             }
         }, _this));
     }
@@ -586,11 +607,61 @@ var SMap = function(options) {
 };
 
 $(function(){
-    m = new SMap({
+    var stations = [];
+
+    var ractive = new Ractive({
+        el: '#stations',
+        template: '#template',
+        data: {
+            stations: stations
+        }
+    });
+
+    function deleteStation(data){
+        var arr = [];
+
+        for (var i = 0; i < stations.length; i++) {
+            var obj = stations[i];
+
+            if(obj.id != data.id){
+                arr.push(obj);
+            }
+        }
+
+        stations = arr;
+
+        ractive.set('stations', stations);
+    }
+
+    function addStation(data){
+        var in_arr = false;
+
+        for (var i = 0; i < stations.length; i++) {
+            var obj = stations[i];
+
+            if(obj.id == data.id){
+                in_arr = true;
+            }
+        }
+
+        if(!in_arr){
+            stations.push(data);
+        }
+
+        ractive.set('stations', stations);
+    }
+
+    var m = new SMap({
         selector: '#map',
         map_svg: 'img/moscow.svg',
         data_url: 'moscow.json',
-        min_zoom: 0.68
+        min_zoom: 0.68,
+        onStationSelect: function(station){
+            addStation(station.getData());
+        },
+        onStationUnselect: function(station){
+            deleteStation(station.getData());
+        }
     });
 
     m.init();

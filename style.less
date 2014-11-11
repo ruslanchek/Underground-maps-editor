@@ -1,3 +1,8 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 16px;
+}
+
 .map {
 	width: 900px;
 	height: 900px;
@@ -26,5 +31,32 @@
 		background: yellowgreen;
 	  }
   	}
+}
+
+.stations {
+  ul {
+	padding: 20px 0;
+	margin: 0;
+  }
+  
+  li {
+	list-style-type: none;
+	display: inline-block;
+  }
+
+  a {
+	padding: 4px 6px;
+	background: #FDECB5;
+	margin: 0 4px 4px 0;
+	font-size: 14px;
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+
+	&:hover {
+	  background: red;
+	  color: #fff;
+	}
+  }
 }
 
