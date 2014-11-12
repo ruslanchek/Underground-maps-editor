@@ -331,6 +331,7 @@ var SStation = function(s, data, options, map_superclass){
 
 	this.renewData = function(){
 		_text.changeText(data);
+		shape.attr(getSelectedStyle());
 	};
 
 	createGroup();

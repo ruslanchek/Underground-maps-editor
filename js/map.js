@@ -169,4 +169,8 @@ var SMap = function(options) {
     this.init = function() {
         draw();
     };
+
+    this.getSnap = function(){
+        return s;
+    };
 };

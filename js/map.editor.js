@@ -5,6 +5,9 @@ SStation.prototype.enableEdit = function(s){
 
 		$('#seditor-name').val(station.getDataParam('name'));
 		$('#seditor-color').val(station.getDataParam('color'));
+		$('#seditor-color-preview').css({
+			backgroundColor: station.getDataParam('color')
+		});
 		$('#seditor-margin').val(station.getDataParam('margin'));
 		$('#seditor-text_side').find('option[value="'+station.getDataParam('text_side')+'"]').attr('selected', 'selected');
 
@@ -13,6 +16,12 @@ SStation.prototype.enableEdit = function(s){
 			$('#add').show();
 
 			station.disableEdit(s);
+		});
+
+		$('#seditor-color').off('keyup keydown change focus blur').on('keyup keydown change focus blur', function(){
+			$('#seditor-color-preview').css({
+				backgroundColor: $(this).val()
+			});
 		});
 
 		$('#seditor-submit').off('click').on('click', function(e){
