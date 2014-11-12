@@ -8,12 +8,20 @@
 </head>
 <body>
 	<div id="edit" class="edit">
+		<span class="divider"></span>
 		<input type="text" id="seditor-name"/>
+		<span class="divider"></span>
 
 		<span class="color-preview" id="seditor-color-preview"></span>
 
 		<input type="text" id="seditor-color"/>
-		<input type="text" id="seditor-margin"/>
+		<span class="divider"></span>
+
+		<input type="text" id="seditor-margin" size="3"/>px
+		<span class="divider"></span>
+
+		<input type="text" id="seditor-rotate" size="3"/>&deg;
+		<span class="divider"></span>
 
 		<select id="seditor-text_side">
 			<option value="top">Top</option>
@@ -21,18 +29,29 @@
 			<option value="bottom">Bottom</option>
 			<option value="left">Left</option>
 		</select>
+		<span class="divider"></span>
 
 		<input id="seditor-submit" type="submit"/>
+		<span class="divider"></span>
 
 		<a id="seditor-edit-close" class="blue-button" href="#">Ok</a>
+		<span class="divider"></span>
+
 		<a class="red-button" href="#" id="seditor-delete">Delete</a>
 	</div>
 
 	<div id="add" class="edit">
+		<span class="divider"></span>
 		<a class="seditor-add" data-type="bar" href="#">Bar</a>
+
+		<span class="divider"></span>
 		<a class="seditor-add" data-type="end"  href="#">End</a>
+
+		<span class="divider"></span>
 		<a class="seditor-add" data-type="circle"  href="#">Circle</a>
-		<a class="seditor-upload blue-button" data-type="circle"  href="#">Upload</a>
+
+		<span class="divider"></span>
+		<a id="seditor-upload" class="blue-button" data-type="circle"  href="#">Upload</a>
 	</div>
 
 	<div class="container">

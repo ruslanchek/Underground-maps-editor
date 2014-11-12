@@ -93,6 +93,8 @@ $(function(){
 	});
 
 	$('#seditor-upload').on('click', function(e){
+		e.preventDefault();
+
 		if(confirm('are you sure to upload?')){
 
 		}

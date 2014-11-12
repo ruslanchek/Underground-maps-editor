@@ -79,8 +79,9 @@ body {
   border: 1px solid #fff;
   margin-bottom: -6px;
 }
-.edit input {
-  margin-right: 15px;
+.edit .divider {
+  width: 15px;
+  display: inline-block;
 }
 .edit a {
   background: #ddd;
@@ -88,7 +89,6 @@ body {
   display: inline-block;
   color: #000;
   text-decoration: none;
-  margin-right: 25px;
 }
 .edit a:hover {
   background: #e2e2e2;
