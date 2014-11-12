@@ -1,4 +1,19 @@
+SStation.prototype.deleteStation = function(){
+	if(confirm('Are you sure to delete?')){
+		current_station = null;
+
+		$('#edit').hide();
+		$('#add').show();
+
+		this.getGroup().remove();
+
+		this.getData().delete = true;
+	}
+};
+
 SStation.prototype.enableEdit = function(s){
+	current_station = this;
+
 	function edit(station){
 		$('#edit').show();
 		$('#add').hide();
@@ -12,10 +27,12 @@ SStation.prototype.enableEdit = function(s){
 		$('#seditor-text_side').find('option[value="'+station.getDataParam('text_side')+'"]').attr('selected', 'selected');
 
 		$('#seditor-edit-close').off('click').on('click', function(){
-			$('#edit').hide();
-			$('#add').show();
-
 			station.disableEdit(s);
+		});
+
+		$('#seditor-delete').off('click').on('click', function(e){
+			e.preventDefault();
+			station.deleteStation();
 		});
 
 		$('#seditor-color').off('keyup keydown change focus blur').on('keyup keydown change focus blur', function(){
@@ -109,6 +126,14 @@ SStation.prototype.enableEdit = function(s){
 				case 37 : { // left
 					x -= multiplier;
 				} break;
+
+				case 13 : { // left
+					station.disableEdit(s);
+				} break;
+
+				case 27 : { // left
+					station.disableEdit(s);
+				} break;
 			}
 
 			drag_data.lx = x + drag_data.ox;
@@ -127,6 +152,8 @@ SStation.prototype.enableEdit = function(s){
 };
 
 SStation.prototype.disableEdit = function(s){
+	current_station = null;
+
 	$('body').off('keydown.moveStation').off('keyup.moveStation');
 
 	s.zpd({
@@ -144,4 +171,3 @@ SStation.prototype.disableEdit = function(s){
 	$('#edit').hide();
 	$('#add').show();
 };
-

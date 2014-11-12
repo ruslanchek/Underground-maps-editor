@@ -80,10 +80,10 @@ body {
   margin-bottom: -6px;
 }
 .edit input {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .edit a {
-  background: #ccc;
+  background: #ddd;
   padding: 10px 20px;
   display: inline-block;
   color: #000;
@@ -91,7 +91,13 @@ body {
   margin-right: 25px;
 }
 .edit a:hover {
-  background: #999;
+  background: #e2e2e2;
+}
+.edit .red-button {
+  color: red;
+}
+.edit .blue-button {
+  color: #006aff;
 }
 #edit {
   display: none;

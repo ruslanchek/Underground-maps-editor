@@ -1,4 +1,6 @@
-var m;
+var m,
+	changed_stations,
+	current_station;
 
 $(function(){
 	m = new SMap({
@@ -44,20 +46,21 @@ $(function(){
 		}
 	});
 
-	$('#seditor-add-bar').on('click', function(){
+	$('.seditor-add').on('click', function(e){
+		e.preventDefault();
+
 		var data = {
 			"color": "#ff0000",
 			"x": 50,
 			"y": 50,
-			"type": "circle",
+			"type": $(this).data('type'),
 			"rotate": 0,
 			"text_side": "right",
 			"name": "New station",
-			"margin": 5,
-			"id": "53da3bc34c5073a0174f9123123213212226d3"
+			"margin": 5
 		};
 
-		m.getStations().push(new SStation(m.getSnap(), data, {
+		var new_station = new SStation(m.getSnap(), data, {
 			on_click_enabled: m.options.station_on_click_enabled,
 
 			onMouseOver: function(station){
@@ -83,6 +86,15 @@ $(function(){
 			onDblClick: function(station){
 				m.options.onStationDblClick(station, m.getSnap());
 			}
-		}, m));
+		}, m);
+
+		m.getStations().push(new_station);
+		changed_stations.push(new_station);
+	});
+
+	$('#seditor-upload').on('click', function(e){
+		if(confirm('are you sure to upload?')){
+
+		}
 	});
 });

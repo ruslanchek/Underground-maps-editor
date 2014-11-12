@@ -20,7 +20,7 @@ var SText = function(s, data, shape){
 
 			case 'right' : {
 				x = shape_bb.x2 + data.margin;
-				y = shape_bb.cy + text_bb.height / 4;
+				y = shape_bb.cy + text_bb.height / 2 - offset;
 			} break;
 
 			case 'bottom' : {
@@ -30,7 +30,7 @@ var SText = function(s, data, shape){
 
 			case 'left' : {
 				x = shape_bb.x - text_bb.width - data.margin - offset;
-				y = shape_bb.cy + text_bb.height / 4;
+				y = shape_bb.cy + text_bb.height / 2 - offset;
 			} break;
 		}
 

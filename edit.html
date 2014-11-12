@@ -8,8 +8,6 @@
 </head>
 <body>
 	<div id="edit" class="edit">
-		<a id="seditor-edit-close" href="#">&times;</a>
-
 		<input type="text" id="seditor-name"/>
 
 		<span class="color-preview" id="seditor-color-preview"></span>
@@ -25,12 +23,16 @@
 		</select>
 
 		<input id="seditor-submit" type="submit"/>
+
+		<a id="seditor-edit-close" class="blue-button" href="#">Ok</a>
+		<a class="red-button" href="#" id="seditor-delete">Delete</a>
 	</div>
 
 	<div id="add" class="edit">
-		<a id="seditor-add-bar" href="#">Bar</a>
-		<a id="seditor-add-end" href="#">End</a>
-		<a id="seditor-add-circle" href="#">Circle</a>
+		<a class="seditor-add" data-type="bar" href="#">Bar</a>
+		<a class="seditor-add" data-type="end"  href="#">End</a>
+		<a class="seditor-add" data-type="circle"  href="#">Circle</a>
+		<a class="seditor-upload blue-button" data-type="circle"  href="#">Upload</a>
 	</div>
 
 	<div class="container">
