@@ -13,16 +13,17 @@ var config = {
     bar_width_selected    : 7,
     bar_height_selected   : 7,
 
-    end_width             : 19,
+    end_width             : 21,
     end_height            : 7,
 
-    end_width_selected    : 19,
+    end_width_selected    : 21,
     end_height_selected   : 7,
 
     circle_radius         : 7,
     circle_stroke_width   : 5,
     circle_stroke_width_selected: 5
 };
+
 var SMap = function(options) {
     var _this = this,
         stations = [];
@@ -34,32 +35,29 @@ var SMap = function(options) {
         min_zoom: 0.75,
         max_zoom: 1,
         zoom_animation_time: 500,
+        station_on_click_enabled: true,
         onLoad: function(){
 
         },
-        onStationClick: function(station){
+        onStationClick: function(station, s){
 
         },
-        onStationMouseOver: function(station){
+        onStationMouseOver: function(station, s){
 
         },
-        onStationMouseOut: function(station){
+        onStationMouseOut: function(station, s){
 
         },
-        onStationSelect: function(station){
+        onStationSelect: function(station, s){
 
         },
-        onStationUnselect: function(station){
+        onStationUnselect: function(station, s){
 
         }
     }, options);
 
     var $container = $(this.options.selector),
         s = null;
-
-    function onLoad(){
-        _this.options.onLoad();
-    }
 
     function draw() {
         s = Snap(_this.options.selector);
@@ -75,7 +73,7 @@ var SMap = function(options) {
                 });
 
                 zoomInit(function(){
-                    onLoad();
+                    _this.options.onLoad();
                 });
             });
         });
@@ -87,20 +85,30 @@ var SMap = function(options) {
 
     function drawStation(data){
         stations.push(new SStation(s, data, {
+            on_click_enabled: _this.options.station_on_click_enabled,
+
             onMouseOver: function(station){
-                _this.options.onStationMouseOver(station);
+                _this.options.onStationMouseOver(station, s);
             },
+
             onMouseOut: function(station){
-                _this.options.onStationMouseOut(station);
+                _this.options.onStationMouseOut(station, s);
             },
+
             onSelect: function(station){
-                _this.options.onStationSelect(station);
+                _this.options.onStationSelect(station, s);
             },
+
             onUnselect: function(station){
-                _this.options.onStationUnselect(station);
+                _this.options.onStationUnselect(station, s);
             },
+
             onClick: function(station){
-                _this.options.onStationClick(station);
+                _this.options.onStationClick(station, s);
+            },
+
+            onDblClick: function(station){
+                _this.options.onStationDblClick(station, s);
             }
         }, _this));
     }
@@ -120,7 +128,6 @@ var SMap = function(options) {
         })
     }
 
-
     // Public methods
     this.zoomOut = function(immediately){
         s.zoomTo(this.options.max_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
@@ -134,23 +141,6 @@ var SMap = function(options) {
         return stations;
     };
 
-    this.stationsConv = function(){
-        var a = [];
-
-        for (var i = 0; i < stations.length; i++) {
-            var obj = stations[i].getData();
-
-            if(obj.type == 'bar'){
-                obj.x = obj.x - 2;
-                obj.y = obj.y - 2;
-            }
-
-            a.push(obj);
-        }
-
-        console.log(JSON.stringify(a))
-    };
-
     this.getStationById = function(id){
         for (var i = 0; i < stations.length; i++) {
             var obj = stations[i];
@@ -161,9 +151,19 @@ var SMap = function(options) {
         }
     };
 
+    this.unselectAllStations = function(){
+        for (var i = 0; i < stations.length; i++) {
+            stations[i].unselect();
+        }
+    };
+
+    this.iterateAllStations = function(done){
+        for (var i = 0; i < stations.length; i++) {
+            if(done) done(stations[i]);
+        }
+    };
+
     this.init = function() {
         draw();
     };
 };
-
-

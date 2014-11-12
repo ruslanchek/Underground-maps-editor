@@ -774,8 +774,8 @@
   },
   {
     "color": "#0074C1",
-    "x": 31,
-    "y": 238.5,
+    "x": 29,
+    "y": 237,
     "type": "end",
     "rotate": 0,
     "text_side": "right",
@@ -785,8 +785,8 @@
   },
   {
     "color": "#992C9C",
-    "x": 186,
-    "y": 194,
+    "x": 185,
+    "y": 193,
     "type": "end",
     "rotate": 0,
     "text_side": "top",
@@ -994,8 +994,8 @@
   },
   {
     "color": "#02C15D",
-    "x": 342,
-    "y": 195,
+    "x": 340,
+    "y": 194,
     "type": "end",
     "rotate": 0,
     "text_side": "top",

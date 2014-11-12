@@ -16,19 +16,29 @@ var SStation = function(s, data, options, map_superclass){
 		text_bg = null;
 
 	this.options = $.extend({
+		on_click_enabled: true,
+
 		onClick: function(station_instance){
 
 		},
+
 		onSelect: function(station_instance){
 
 		},
+
 		onUnselect: function(station_instance){
 
 		},
+
 		onMouseOver: function(station_instance){
 
 		},
+
 		onMouseOut: function(station_instance){
+
+		},
+
+		onDblClick: function(station_instance){
 
 		}
 	}, options);
@@ -246,14 +256,20 @@ var SStation = function(s, data, options, map_superclass){
 			mouseOut(shape, text);
 		});
 
-		group.click(function(){
-			if(selected){
-				unselect(shape, text);
-			}else{
-				select(shape, text);
-			}
+		if(_this.options.on_click_enabled === true) {
+			group.click(function () {
+				if (selected) {
+					unselect(shape, text);
+				} else {
+					select(shape, text);
+				}
 
-			_this.options.onClick(_this);
+				_this.options.onClick(_this);
+			});
+		}
+
+		group.dblclick(function(){
+			_this.options.onDblClick(_this);
 		});
 	}
 
@@ -301,6 +317,18 @@ var SStation = function(s, data, options, map_superclass){
 
 	this.getData = function(){
 		return data;
+	};
+
+	this.getGroup = function(){
+		return group;
+	};
+
+	this.setDataParam = function(param, value){
+		data[param] = value;
+	};
+
+	this.getDataParam = function(param){
+		return data[param];
 	};
 
 	createGroup();
