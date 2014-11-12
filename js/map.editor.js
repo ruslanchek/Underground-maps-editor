@@ -1,4 +1,34 @@
-SStation.prototype.enableDrag = function(s){
+SStation.prototype.enableEdit = function(s){
+	function edit(station){
+		$('#edit').show();
+		$('#add').hide();
+
+		$('#seditor-name').val(station.getDataParam('name'));
+		$('#seditor-color').val(station.getDataParam('color'));
+		$('#seditor-margin').val(station.getDataParam('margin'));
+		$('#seditor-text_side').find('option[value="'+station.getDataParam('text_side')+'"]').attr('selected', 'selected');
+
+		$('#seditor-edit-close').off('click').on('click', function(){
+			$('#edit').hide();
+			$('#add').show();
+
+			station.disableEdit(s);
+		});
+
+		$('#seditor-submit').off('click').on('click', function(e){
+			e.preventDefault();
+
+			station.setDataParam('name', $('#seditor-name').val());
+			station.setDataParam('color', $('#seditor-color').val());
+			station.setDataParam('margin', parseInt($('#seditor-margin').val()));
+			station.setDataParam('text_side', $('#seditor-text_side').val());
+
+			station.renewData();
+		});
+	}
+
+	edit(this);
+
 	s.zpd({
 		zoom: false,
 		pan: false,
@@ -37,11 +67,11 @@ SStation.prototype.enableDrag = function(s){
 		.off('keydown.moveStation')
 		.off('keyup.moveStation')
 		.on('keydown.moveStation', function(e){
-			e.preventDefault();
-			return false;
+			if($.inArray(e.keyCode, [37, 38, 39, 40]) >= 0) {
+				e.preventDefault();
+				return false;
+			}
 		}).on('keyup.moveStation', function(e){
-			e.preventDefault();
-
 			var x = 0,
 				y = 0,
 				multiplier = 1;
@@ -78,13 +108,16 @@ SStation.prototype.enableDrag = function(s){
 			moveFnc(x, y);
 			endFnc();
 
-			return false;
+			if($.inArray(e.keyCode, [37, 38, 39, 40]) >= 0) {
+				e.preventDefault();
+				return false;
+			}
 		});
 
 	group.drag(moveFnc, startFnc, endFnc);
 };
 
-SStation.prototype.disableDrag = function(s){
+SStation.prototype.disableEdit = function(s){
 	$('body').off('keydown.moveStation').off('keyup.moveStation');
 
 	s.zpd({
@@ -98,4 +131,8 @@ SStation.prototype.disableDrag = function(s){
 	var group = this.getGroup();
 
 	group.drag(false, false, false);
+
+	$('#edit').hide();
+	$('#add').show();
 };
+

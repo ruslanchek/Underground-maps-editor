@@ -7,7 +7,28 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="stations" class="stations"></div>
+	<div id="edit" class="edit">
+		<a id="seditor-edit-close" href="#">&times;</a>
+
+		<input type="text" id="seditor-name"/>
+		<input type="text" id="seditor-color"/>
+		<input type="text" id="seditor-margin"/>
+
+		<select id="seditor-text_side">
+			<option value="top">Top</option>
+			<option value="right">Right</option>
+			<option value="bottom">Bottom</option>
+			<option value="left">Left</option>
+		</select>
+
+		<input id="seditor-submit" type="submit"/>
+	</div>
+
+	<div id="add" class="edit">
+		<a id="add-bar" href="#">Bar</a>
+		<a id="add-end" href="#">End</a>
+		<a id="add-circle" href="#">Circle</a>
+	</div>
 
 	<div class="container">
 		<a href="#" class="zoomer"></a>

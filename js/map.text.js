@@ -1,11 +1,4 @@
 var SText = function(s, data, shape){
-	this.empty = false;
-
-	if(!data.name){
-		this.empty = true;
-		return;
-	}
-
 	var _this = this,
 		text = null,
 		bg = null,
@@ -26,7 +19,7 @@ var SText = function(s, data, shape){
 			} break;
 
 			case 'right' : {
-				x = shape_bb.x2 + offset + data.margin;
+				x = shape_bb.x2 + data.margin;
 				y = shape_bb.cy + text_bb.height / 4;
 			} break;
 
@@ -36,7 +29,7 @@ var SText = function(s, data, shape){
 			} break;
 
 			case 'left' : {
-				x = shape_bb.x - text_bb.width + offset * 3 - data.margin;
+				x = shape_bb.x - text_bb.width - data.margin;
 				y = shape_bb.cy + text_bb.height / 4;
 			} break;
 		}
@@ -94,6 +87,21 @@ var SText = function(s, data, shape){
 
 	this.getBg = function(){
 		return bg;
+	};
+
+	this.changeText = function(data){
+		text.attr({
+			text: data.name
+		});
+
+		var coords = getSnapCoords();
+
+		text.attr({
+			x: coords.x,
+			y: coords.y
+		});
+
+		snapBg();
 	};
 
 	createTextAndBg();

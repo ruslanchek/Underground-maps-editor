@@ -44,7 +44,9 @@ var SStation = function(s, data, options, map_superclass){
 	}, options);
 
 	function setTextAttrs(text, attrs){
-		text.attr(attrs);
+		if(text) {
+			text.attr(attrs);
+		}
 	}
 
 	function colorLuminance(hex, lum) {
@@ -242,13 +244,9 @@ var SStation = function(s, data, options, map_superclass){
 	function createGroup(){
 		shape = _shape.getShape();
 
-		if(!_text.empty) {
-			text_bg = _text.getBg();
-			text = _text.getText();
-			group = s.g(shape, text_bg, text);
-		}else{
-			group = s.g(shape);
-		}
+		text_bg = _text.getBg();
+		text = _text.getText();
+		group = s.g(shape, text_bg, text);
 
 		group.hover(function(){
 			mouseOver(shape, text);
@@ -329,6 +327,10 @@ var SStation = function(s, data, options, map_superclass){
 
 	this.getDataParam = function(param){
 		return data[param];
+	};
+
+	this.renewData = function(){
+		_text.changeText(data);
 	};
 
 	createGroup();

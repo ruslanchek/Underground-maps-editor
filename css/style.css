@@ -18,7 +18,7 @@ body {
 .container .zoomer {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 40px;
   height: 40px;
   background: #eee;
@@ -62,4 +62,25 @@ body {
   border-radius: 5px;
   margin-right: 6px;
   box-shadow: 0 0 0 1px #ffffff;
+}
+.edit {
+  padding: 0;
+  background: #eee;
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.edit a {
+  background: #ccc;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+.edit a:hover {
+  background: #999;
+}
+#edit {
+  display: none;
 }

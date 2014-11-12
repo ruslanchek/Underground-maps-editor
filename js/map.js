@@ -53,6 +53,9 @@ var SMap = function(options) {
         },
         onStationUnselect: function(station, s){
 
+        },
+        onStationDblClick: function(station, s){
+
         }
     }, options);
 

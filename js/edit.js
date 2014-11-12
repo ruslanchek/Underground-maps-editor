@@ -10,14 +10,14 @@ $(function(){
 		onStationDblClick: function(station, s){
 			m.iterateAllStations(function(_station){
 				if(_station.getData().id != station.getData().id){
-					_station.disableDrag(s);
+					_station.disableEdit(s);
 				}
 			});
 
 			if(station.isSelected()){
-				station.disableDrag(s);
+				station.disableEdit(s);
 			}else{
-				station.enableDrag(s);
+				station.enableEdit(s);
 			}
 		},
 		onStationSelect: function(station, s){
