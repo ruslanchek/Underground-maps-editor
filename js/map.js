@@ -23,7 +23,6 @@ var config = {
     circle_stroke_width   : 5,
     circle_stroke_width_selected: 5
 };
-
 var SMap = function(options) {
     var _this = this,
         stations = [];
@@ -133,6 +132,23 @@ var SMap = function(options) {
 
     this.getStations = function(){
         return stations;
+    };
+
+    this.stationsConv = function(){
+        var a = [];
+
+        for (var i = 0; i < stations.length; i++) {
+            var obj = stations[i].getData();
+
+            if(obj.type == 'bar'){
+                obj.x = obj.x - 2;
+                obj.y = obj.y - 2;
+            }
+
+            a.push(obj);
+        }
+
+        console.log(JSON.stringify(a))
     };
 
     this.getStationById = function(id){

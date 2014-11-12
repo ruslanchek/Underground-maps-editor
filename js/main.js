@@ -1,3 +1,5 @@
+var m;
+
 $(function(){
 	var stations = [];
 
@@ -43,7 +45,7 @@ $(function(){
 		ractive.set('stations', stations);
 	}
 
-	var m = new SMap({
+	m = new SMap({
 		selector: '#map',
 		map_svg: 'img/moscow.svg',
 		data_url: 'moscow.json',
