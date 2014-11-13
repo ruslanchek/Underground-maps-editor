@@ -785,8 +785,8 @@
   },
   {
     "color": "#992C9C",
-    "x": 295,
-    "y": 253,
+    "x": 185,
+    "y": 193,
     "type": "end",
     "rotate": 0,
     "text_side": "top",
@@ -828,7 +828,7 @@
     "id": "53da3b8e4c5073a0174f96ba"
   },
   {
-    "color": "#904A2F",
+    "color": "#904A2F", §
     "x": 1006,
     "y": 619,
     "type": "circle",
