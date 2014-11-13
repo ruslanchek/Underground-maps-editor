@@ -171,3 +171,16 @@ SStation.prototype.disableEdit = function(s){
 	$('#edit').hide();
 	$('#add').show();
 };
+
+SMap.prototype.setStationsOffset = function(x, y){
+	var stations = this.getStations();
+
+	for (var i = 0; i < stations.length; i++) {
+		var station = stations[i];
+
+		station.setDataParam('x', station.getDataParam('x') + x);
+		station.setDataParam('y', station.getDataParam('y') + y);
+
+		station.renewData();
+	}
+};

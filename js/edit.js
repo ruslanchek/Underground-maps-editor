@@ -5,7 +5,7 @@ var m,
 $(function(){
 	m = new SMap({
 		selector: '#map',
-		map_svg: 'img/moscow.svg',
+		map_svg: 'img/moscow_1.svg',
 		data_url: 'moscow.json',
 		min_zoom: 0.68,
 		station_on_click_enabled: false,

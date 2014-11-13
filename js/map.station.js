@@ -330,8 +330,25 @@ var SStation = function(s, data, options, map_superclass){
 	};
 
 	this.renewData = function(){
+		var g_bb = shape.getBBox(),
+			x = 0,
+			y = 0;
+
+		x = g_bb.x - data.x;
+		y = g_bb.y - data.y;
+
+		x = -x;
+		y = -y;
+
+		group.transform('t' + x + ',' + y);
+
 		_text.changeText(data);
-		shape.attr(getSelectedStyle());
+
+		if(this.isSelected()){
+			shape.attr(getSelectedStyle());
+		}else{
+			shape.attr(getNormalStyle());
+		}
 	};
 
 	createGroup();
