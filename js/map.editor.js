@@ -1,6 +1,6 @@
 SStation.prototype.deleteStation = function(){
 	if(confirm('Are you sure to delete?')){
-		current_station = null;
+		m.unsetCurrentStation();
 
 		$('#edit').hide();
 		$('#add').show();
@@ -12,7 +12,7 @@ SStation.prototype.deleteStation = function(){
 };
 
 SStation.prototype.enableEdit = function(s){
-	current_station = this;
+	m.setCurrentStation(this);
 
 	function save(){
 		station.setDataParam('name', $('#seditor-name').val());
@@ -21,6 +21,8 @@ SStation.prototype.enableEdit = function(s){
 		station.setDataParam('text_side', $('#seditor-text_side').val());
 		station.setDataParam('rotate', parseInt($('#seditor-rotate').val()));
 		station.renewData();
+
+		station.setDataParam('changed', true);
 	}
 
 	function edit(station){
@@ -157,7 +159,7 @@ SStation.prototype.enableEdit = function(s){
 };
 
 SStation.prototype.disableEdit = function(s){
-	current_station = null;
+	m.unsetCurrentStation();
 
 	$('body').off('keydown.moveStation').off('keyup.moveStation');
 
@@ -188,4 +190,68 @@ SMap.prototype.setStationsOffset = function(x, y){
 
 		station.renewData();
 	}
+};
+
+SMap.prototype.setCurrentStation = function(station){
+	this.current_station = station;
+};
+
+SMap.prototype.unsetCurrentStation = function(){
+	this.current_station = null;
+};
+
+SMap.prototype.getCurrentStation = function(){
+	return this.current_station;
+};
+
+SMap.prototype.getChangedStations = function(){
+	var stations = this.getStations(),
+		changed = [];
+
+	for (var i = 0; i < stations.length; i++) {
+		var station = stations[i],
+			data = station.getData();
+
+		if(data.changed === true){
+			changed.push(station);
+		}
+	}
+
+	return changed;
+};
+
+SMap.prototype.getChangedStationsData = function(){
+	var stations = this.getChangedStations(),
+		datas = [];
+
+	for (var i = 0; i < stations.length; i++) {
+		var station = stations[i];
+
+		datas.push(station.getData());
+	}
+
+	return datas;
+};
+
+SMap.prototype.generateId = function(){
+	function guid() {
+		function s4() {
+			return Math.floor((1 + Math.random()) * 0x10000)
+				.toString(16)
+				.substring(1);
+		}
+
+		return function() {
+			return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+				s4() + '-' + s4() + s4() + s4();
+		};
+	}
+
+	var g = guid();
+
+	if(this.getStationById(g)){
+		return this.generateId();
+	}
+
+	return g;
 };

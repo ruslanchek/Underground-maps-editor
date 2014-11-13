@@ -1,6 +1,4 @@
-var m,
-	changed_stations,
-	current_station;
+var m;
 
 $(function(){
 	m = new SMap({
@@ -57,7 +55,10 @@ $(function(){
 			"rotate": 0,
 			"text_side": "right",
 			"name": "New station",
-			"margin": 5
+			"margin": 5,
+			"id": m.generateId(),
+			"new": true,
+			"changed": true
 		};
 
 		var new_station = new SStation(m.getSnap(), data, {
@@ -88,8 +89,9 @@ $(function(){
 			}
 		}, m);
 
+		new_station.setDataParam('changed', true);
+
 		m.getStations().push(new_station);
-		changed_stations.push(new_station);
 	});
 
 	$('#seditor-upload').on('click', function(e){
