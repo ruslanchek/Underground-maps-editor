@@ -77,6 +77,7 @@ SStation.prototype.enableEdit = function(s){
 		$('#seditor-delete').off('click').on('click', function(e){
 			e.preventDefault();
 			station.deleteStation();
+			station.disableEdit(s);
 		});
 
 		$('#seditor-submit').off('click').on('click', function(e){
@@ -247,7 +248,9 @@ SMap.prototype.getStationsData = function(){
 		delete data.changed;
 		delete data.new;
 
-		datas.push(data);
+		if(data.delete !== true) {
+			datas.push(data);
+		}
 	}
 
 	return datas;
@@ -261,7 +264,7 @@ SMap.prototype.getChangedStations = function(){
 		var station = stations[i],
 			data = station.getData();
 
-		if(data.changed === true){
+		if(data.changed === true && data.delete !== true){
 			changed.push(station);
 		}
 	}
@@ -280,7 +283,9 @@ SMap.prototype.getChangedStationsData = function(){
 		delete data.changed;
 		delete data.new;
 
-		datas.push();
+		if(data.delete !== true) {
+			datas.push();
+		}
 	}
 
 	return datas;
