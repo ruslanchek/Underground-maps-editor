@@ -54,16 +54,27 @@ var SShape = function(s, data){
 	}
 
 	// Public methods
-	this.rotate = function(deg){
-		var t = new Snap.Matrix().rotate(deg, data.x + 2, data.y + 2);
+	this.rotate = function(deg, animate, done){
+		var s_bb = shape.getBBox(),
+			x = s_bb.cx,
+			y = s_bb.cy;
 
-		shape.transform(t);
+		if (animate === true) {
+			shape.animate({
+				transform: 'r' + deg + ',' + x + ',' + y
+			}, 200, function () {
+				if (done) done();
+			});
+		} else {
+			var t = new Snap.Matrix().rotate(deg, data.x + s_bb.width / 2, data.y + s_bb.height / 2);
+
+			shape.transform(t);
+		}
 	};
 
 	this.getShape = function(){
 		return shape;
 	};
-
 
 	create();
 	_this.rotate(data.rotate);

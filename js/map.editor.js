@@ -14,6 +14,15 @@ SStation.prototype.deleteStation = function(){
 SStation.prototype.enableEdit = function(s){
 	current_station = this;
 
+	function save(){
+		station.setDataParam('name', $('#seditor-name').val());
+		station.setDataParam('color', $('#seditor-color').val());
+		station.setDataParam('margin', parseInt($('#seditor-margin').val()));
+		station.setDataParam('text_side', $('#seditor-text_side').val());
+		station.setDataParam('rotate', parseInt($('#seditor-rotate').val()));
+		station.renewData();
+	}
+
 	function edit(station){
 		$('#edit').show();
 		$('#add').hide();
@@ -45,14 +54,7 @@ SStation.prototype.enableEdit = function(s){
 
 		$('#seditor-submit').off('click').on('click', function(e){
 			e.preventDefault();
-
-			station.setDataParam('name', $('#seditor-name').val());
-			station.setDataParam('color', $('#seditor-color').val());
-			station.setDataParam('margin', parseInt($('#seditor-margin').val()));
-			station.setDataParam('rotate', parseInt($('#seditor-rotate').val()));
-			station.setDataParam('text_side', $('#seditor-text_side').val());
-
-			station.renewData();
+			save();
 		});
 	}
 
@@ -131,7 +133,7 @@ SStation.prototype.enableEdit = function(s){
 				} break;
 
 				case 13 : { // left
-					station.disableEdit(s);
+					save();
 				} break;
 
 				case 27 : { // left

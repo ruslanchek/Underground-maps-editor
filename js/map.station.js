@@ -350,7 +350,9 @@ var SStation = function(s, data, options, map_superclass){
 			shape.attr(getNormalStyle());
 		}
 
-		_shape.rotate(data.rotate);
+		_shape.rotate(data.rotate, true, function(){
+			_text.changeText(data);
+		});
 	};
 
 	createGroup();
