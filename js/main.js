@@ -50,11 +50,15 @@ $(function(){
 		map_svg: 'img/moscow_1.svg',
 		data_url: 'moscow.json',
 		min_zoom: 0.68,
-		onStationSelect: function(station){
-			addStation(station.getData());
+		onStationSelect: function(station, s, from_bind){
+			if(!from_bind) {
+				addStation(station.getData());
+			}
 		},
-		onStationUnselect: function(station){
-			deleteStation(station.getData());
+		onStationUnselect: function(station, s, from_bind){
+			if(!from_bind) {
+				deleteStation(station.getData());
+			}
 		}
 	});
 

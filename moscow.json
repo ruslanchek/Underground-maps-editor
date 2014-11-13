@@ -791,6 +791,7 @@
     "rotate": 0,
     "text_side": "top",
     "name": "Планерная",
+    "selected": true,
     "margin": 8,
     "id": "543fc8f341cac9f176f6d77d"
   },
@@ -828,7 +829,7 @@
     "id": "53da3b8e4c5073a0174f96ba"
   },
   {
-    "color": "#904A2F", §
+    "color": "#904A2F",
     "x": 1006,
     "y": 619,
     "type": "circle",

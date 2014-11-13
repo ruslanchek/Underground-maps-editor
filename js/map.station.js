@@ -22,11 +22,11 @@ var SStation = function(s, data, options, map_superclass){
 
 		},
 
-		onSelect: function(station_instance){
+		onSelect: function(station_instance, from_bind){
 
 		},
 
-		onUnselect: function(station_instance){
+		onUnselect: function(station_instance, from_bind){
 
 		},
 
@@ -179,7 +179,7 @@ var SStation = function(s, data, options, map_superclass){
 		}
 	}
 
-	function select(shape, text){
+	function select(shape, text, from_bind){
 		selected = true;
 
 		shape.attr(getSelectedStyle());
@@ -189,10 +189,10 @@ var SStation = function(s, data, options, map_superclass){
 		});
 
 		_this.selectBinded();
-		_this.options.onSelect(_this);
+		_this.options.onSelect(_this, from_bind);
 	}
 
-	function unselect(shape, text){
+	function unselect(shape, text, from_bind){
 		selected = false;
 
 		shape.attr(getNormalStyle());
@@ -202,7 +202,7 @@ var SStation = function(s, data, options, map_superclass){
 		});
 
 		_this.unselectBinded();
-		_this.options.onUnselect(_this);
+		_this.options.onUnselect(_this, from_bind);
 	}
 
 	function mouseOver(shape, text){
@@ -278,7 +278,7 @@ var SStation = function(s, data, options, map_superclass){
 					bs = map_superclass.getStationById(obj);
 
 				if(bs && !bs.isSelected()){
-					bs.select();
+					bs.select(true);
 				}
 			}
 		}
@@ -291,21 +291,21 @@ var SStation = function(s, data, options, map_superclass){
 					bs = map_superclass.getStationById(obj);
 
 				if(bs && bs.isSelected()){
-					bs.unselect();
+					bs.unselect(true);
 				}
 			}
 		}
 	};
 
-	this.select = function(){
+	this.select = function(from_bind){
 		if(!selected){
-			select(shape, text);
+			select(shape, text, from_bind);
 		}
 	};
 
-	this.unselect = function(){
+	this.unselect = function(from_bind){
 		if(selected){
-			unselect(shape, text);
+			unselect(shape, text, from_bind);
 		}
 	};
 
@@ -352,4 +352,8 @@ var SStation = function(s, data, options, map_superclass){
 	};
 
 	createGroup();
+
+	if(data.selected){
+		this.select();
+	}
 };

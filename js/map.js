@@ -48,10 +48,10 @@ var SMap = function(options) {
         onStationMouseOut: function(station, s){
 
         },
-        onStationSelect: function(station, s){
+        onStationSelect: function(station, s, from_bind){
 
         },
-        onStationUnselect: function(station, s){
+        onStationUnselect: function(station, s, from_bind){
 
         },
         onStationDblClick: function(station, s){
@@ -98,12 +98,12 @@ var SMap = function(options) {
                 _this.options.onStationMouseOut(station, s);
             },
 
-            onSelect: function(station){
-                _this.options.onStationSelect(station, s);
+            onSelect: function(station, from_bind){
+                _this.options.onStationSelect(station, s, from_bind);
             },
 
-            onUnselect: function(station){
-                _this.options.onStationUnselect(station, s);
+            onUnselect: function(station, from_bind){
+                _this.options.onStationUnselect(station, s, from_bind);
             },
 
             onClick: function(station){
