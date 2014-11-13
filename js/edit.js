@@ -4,7 +4,7 @@ $(function(){
 	m = new SMap({
 		selector: '#map',
 		map_svg: 'img/moscow_1.svg',
-		data_url: 'moscow.json',
+		data_url: 'test.json',
 		min_zoom: 0.68,
 		station_on_click_enabled: false,
 		onStationDblClick: function(station, s){
@@ -98,7 +98,19 @@ $(function(){
 		e.preventDefault();
 
 		if(confirm('are you sure to upload?')){
-
+			$.ajax({
+				url: 'json.php',
+				type: 'post',
+				data: {
+					json: JSON.stringify(m.getStationsData())
+				},
+				beforeSend: function(){
+					$('body').append('<div class="loading"><div>Loading...</div></div>');
+				},
+				success: function(){
+					$('.loading').remove();
+				}
+			})
 		}
 	});
 });

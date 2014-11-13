@@ -102,3 +102,23 @@ body {
 #edit {
   display: none;
 }
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+}
+.loading div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 60px;
+  margin: -30px 0 0 -100px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
