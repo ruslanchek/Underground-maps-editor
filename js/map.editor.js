@@ -28,7 +28,16 @@ SStation.prototype.enableEdit = function(s){
 	}
 
 	function cancel(station){
-		station.setDataParam();
+		station.setDataParam('x', current_data.x);
+		station.setDataParam('y', current_data.y);
+		station.setDataParam('name', current_data.name);
+		station.setDataParam('color', current_data.color);
+		station.setDataParam('margin', current_data.margin);
+		station.setDataParam('text_side', current_data.text_side);
+		station.setDataParam('rotate', current_data.rotate);
+		station.setDataParam('changed', false);
+
+		station.renewData();
 	}
 
 	function edit(station){
@@ -100,12 +109,12 @@ SStation.prototype.enableEdit = function(s){
 	var group = this.getGroup(),
 		station = this;
 
-	var drag_data = {};
-
-	drag_data.lx = 0;
-	drag_data.ly = 0;
-	drag_data.ox = 0;
-	drag_data.oy = 0;
+	var drag_data = this.drag_data || {
+			lx: 0,
+			ly: 0,
+			ox: 0,
+			oy: 0
+		};
 
 	function moveFnc(dx, dy) {
 		drag_data.lx = dx + drag_data.ox;
@@ -119,8 +128,6 @@ SStation.prototype.enableEdit = function(s){
 	function endFnc() {
 		drag_data.ox = drag_data.lx;
 		drag_data.oy = drag_data.ly;
-
-		console.log(current_data.y, drag_data.ly)
 
 		station.setDataParam('x', current_data.x + drag_data.lx);
 		station.setDataParam('y', current_data.y + drag_data.ly);
