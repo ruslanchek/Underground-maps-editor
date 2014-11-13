@@ -66,7 +66,7 @@ var SShape = function(s, data){
 				if (done) done();
 			});
 		} else {
-			var t = new Snap.Matrix().rotate(deg, data.x + s_bb.width / 2, data.y + s_bb.height / 2);
+			var t = new Snap.Matrix().rotate(deg, x, y);
 
 			shape.transform(t);
 		}

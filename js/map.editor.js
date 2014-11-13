@@ -14,32 +14,63 @@ SStation.prototype.deleteStation = function(){
 SStation.prototype.enableEdit = function(s){
 	m.setCurrentStation(this);
 
-	function save(){
+	var current_data = $.extend({}, this.getData());
+
+	function save(station){
 		station.setDataParam('name', $('#seditor-name').val());
 		station.setDataParam('color', $('#seditor-color').val());
 		station.setDataParam('margin', parseInt($('#seditor-margin').val()));
 		station.setDataParam('text_side', $('#seditor-text_side').val());
 		station.setDataParam('rotate', parseInt($('#seditor-rotate').val()));
-		station.renewData();
-
 		station.setDataParam('changed', true);
+
+		station.renewData();
+	}
+
+	function cancel(station){
+		station.setDataParam();
 	}
 
 	function edit(station){
 		$('#edit').show();
 		$('#add').hide();
 
-		$('#seditor-name').val(station.getDataParam('name'));
-		$('#seditor-color').val(station.getDataParam('color'));
 		$('#seditor-color-preview').css({
 			backgroundColor: station.getDataParam('color')
 		});
-		$('#seditor-margin').val(station.getDataParam('margin'));
-		$('#seditor-rotate').val(station.getDataParam('rotate'));
+
+		$('#seditor-name').val(station.getDataParam('name')).off('keyup').on('keyup', function(){
+			station.setDataParam('name', $(this).val());
+			station.renewData();
+		});
+
+		$('#seditor-color').val(station.getDataParam('color')).off('keyup').on('keyup', function(){
+			station.setDataParam('color', $(this).val());
+			$('#seditor-color-preview').css({
+				backgroundColor: station.getDataParam('color')
+			});
+			station.renewData();
+		});
+
+		$('#seditor-margin').val(station.getDataParam('margin')).off('keyup').on('keyup', function(){
+			station.setDataParam('margin', $(this).val());
+			station.renewData();
+		});
+
+		$('#seditor-rotate').val(station.getDataParam('rotate')).off('keyup').on('keyup', function(){
+			station.setDataParam('rotate', $(this).val());
+			station.renewData();
+		});
 
 		$('#seditor-text_side').find('option[value="'+station.getDataParam('text_side')+'"]').attr('selected', 'selected');
+		$('#seditor-text_side').off('select change').on('select change', function(){
+			station.setDataParam('text_side', $(this).val());
+			station.renewData();
+		});
 
-		$('#seditor-edit-close').off('click').on('click', function(){
+		$('#seditor-edit-close').off('click').on('click', function(e){
+			e.preventDefault();
+			cancel(station);
 			station.disableEdit(s);
 		});
 
@@ -48,15 +79,10 @@ SStation.prototype.enableEdit = function(s){
 			station.deleteStation();
 		});
 
-		$('#seditor-color').off('keyup keydown change focus blur').on('keyup keydown change focus blur', function(){
-			$('#seditor-color-preview').css({
-				backgroundColor: $(this).val()
-			});
-		});
-
 		$('#seditor-submit').off('click').on('click', function(e){
 			e.preventDefault();
-			save();
+			save(station);
+			station.disableEdit(s);
 		});
 	}
 
@@ -71,8 +97,9 @@ SStation.prototype.enableEdit = function(s){
 	this.select();
 
 	var group = this.getGroup(),
-		station = this,
-		drag_data = this.drag_data || {};
+		station = this;
+
+	var drag_data = {};
 
 	drag_data.lx = 0;
 	drag_data.ly = 0;
@@ -92,8 +119,10 @@ SStation.prototype.enableEdit = function(s){
 		drag_data.ox = drag_data.lx;
 		drag_data.oy = drag_data.ly;
 
-		station.setDataParam('x', station.getDataParam('x') + drag_data.ox);
-		station.setDataParam('y', station.getDataParam('y') + drag_data.oy);
+		console.log(current_data.y, drag_data.ly)
+
+		station.setDataParam('x', current_data.x + drag_data.lx);
+		station.setDataParam('y', current_data.y + drag_data.ly);
 	}
 
 	$('body')
@@ -136,10 +165,12 @@ SStation.prototype.enableEdit = function(s){
 
 				case 13 : { // left
 					save();
+					station.disableEdit(s);
 				} break;
 
 				case 27 : { // left
 					station.disableEdit(s);
+					cancel();
 				} break;
 			}
 
@@ -187,6 +218,7 @@ SMap.prototype.setStationsOffset = function(x, y){
 
 		station.setDataParam('x', station.getDataParam('x') + x);
 		station.setDataParam('y', station.getDataParam('y') + y);
+		station.setDataParam('changed', true);
 
 		station.renewData();
 	}
@@ -202,6 +234,23 @@ SMap.prototype.unsetCurrentStation = function(){
 
 SMap.prototype.getCurrentStation = function(){
 	return this.current_station;
+};
+
+SMap.prototype.getStationsData = function(){
+	var stations = this.getStations(),
+		datas = [];
+
+	for (var i = 0; i < stations.length; i++) {
+		var station = stations[i],
+			data = station.getData();
+
+		delete data.changed;
+		delete data.new;
+
+		datas.push(data);
+	}
+
+	return datas;
 };
 
 SMap.prototype.getChangedStations = function(){
@@ -225,9 +274,13 @@ SMap.prototype.getChangedStationsData = function(){
 		datas = [];
 
 	for (var i = 0; i < stations.length; i++) {
-		var station = stations[i];
+		var station = stations[i],
+			data = station.getData();
 
-		datas.push(station.getData());
+		delete data.changed;
+		delete data.new;
+
+		datas.push();
 	}
 
 	return datas;
