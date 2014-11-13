@@ -349,6 +349,8 @@ var SStation = function(s, data, options, map_superclass){
 		}else{
 			shape.attr(getNormalStyle());
 		}
+
+		_shape.rotate(data.rotate);
 	};
 
 	createGroup();

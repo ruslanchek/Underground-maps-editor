@@ -24,6 +24,8 @@ SStation.prototype.enableEdit = function(s){
 			backgroundColor: station.getDataParam('color')
 		});
 		$('#seditor-margin').val(station.getDataParam('margin'));
+		$('#seditor-rotate').val(station.getDataParam('rotate'));
+
 		$('#seditor-text_side').find('option[value="'+station.getDataParam('text_side')+'"]').attr('selected', 'selected');
 
 		$('#seditor-edit-close').off('click').on('click', function(){
@@ -47,6 +49,7 @@ SStation.prototype.enableEdit = function(s){
 			station.setDataParam('name', $('#seditor-name').val());
 			station.setDataParam('color', $('#seditor-color').val());
 			station.setDataParam('margin', parseInt($('#seditor-margin').val()));
+			station.setDataParam('rotate', parseInt($('#seditor-rotate').val()));
 			station.setDataParam('text_side', $('#seditor-text_side').val());
 
 			station.renewData();

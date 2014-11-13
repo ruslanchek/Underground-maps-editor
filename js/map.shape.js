@@ -1,5 +1,6 @@
 var SShape = function(s, data){
-	var shape = null;
+	var _this = this,
+		shape = null;
 
 	function createCircle(){
 		var shape = s.circle(data.x, data.y, config.circle_radius);
@@ -21,10 +22,6 @@ var SShape = function(s, data){
 			fill: data.color,
 			cursor: 'pointer'
 		});
-
-		var t = new Snap.Matrix().rotate(data.rotate, data.x + 2, data.y + 2);
-
-		shape.transform(t);
 
 		return shape;
 	}
@@ -56,9 +53,18 @@ var SShape = function(s, data){
 		}
 	}
 
-	create();
+	// Public methods
+	this.rotate = function(deg){
+		var t = new Snap.Matrix().rotate(deg, data.x + 2, data.y + 2);
+
+		shape.transform(t);
+	};
 
 	this.getShape = function(){
 		return shape;
 	};
+
+
+	create();
+	_this.rotate(data.rotate);
 };
