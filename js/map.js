@@ -83,7 +83,11 @@ var SMap = function(options) {
     }
 
     function zoomInit (done){
-        if(done) done();
+        s.zoomTo(_this.options.min_zoom, 0, mina.easeinout);
+
+        setTimeout(function(){
+            s.panTo(-73, -70);
+        }, 100);
     }
 
     function drawStation(data){
@@ -133,11 +137,16 @@ var SMap = function(options) {
 
     // Public methods
     this.zoomOut = function(immediately){
-        s.zoomTo(this.options.max_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
+        s.zoomTo(this.options.max_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout, function(){
+
+        });
+
     };
 
     this.zoomIn = function(immediately){
-        s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
+        s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout, function(){
+            s.panTo(-73, -70, _this.options.zoom_animation_time, mina.easeinout);
+        });
     };
 
     this.getStations = function(){
