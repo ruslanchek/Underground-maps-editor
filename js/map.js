@@ -83,7 +83,9 @@ var SMap = function(options) {
     }
 
     function zoomInit (done){
+        s.zoomTo(_this.options.min_zoom, 0, mina.easeinout, function(){
 
+        });
     }
 
     function drawStation(data){
@@ -141,7 +143,7 @@ var SMap = function(options) {
 
     this.zoomIn = function(immediately){
         s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout, function(){
-            s.panTo(-73, -70, _this.options.zoom_animation_time, mina.easeinout);
+
         });
     };
 

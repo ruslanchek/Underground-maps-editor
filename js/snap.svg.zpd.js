@@ -585,11 +585,25 @@
                 var zpdElement = snapsvgzpd.dataStore[self.id].element;
 
                 // animate our element and call the callback afterwards
-                zpdElement.animate({ transform: new Snap.Matrix().scale(zoom) }, interval, ease || null, function () {
+                var m = new Snap.Matrix().scale(zoom);
+
+                var gw = 1430 * zoom,
+                    gh = 1650 * zoom,
+                    vpw = 900,
+                    vph = 900,
+                    x = (gw - vpw) / 2,
+                    y = (gh - vph) / 2;
+
+                m.e = -x;
+                m.f = -y;
+
+                zpdElement.animate({ transform: m }, interval, ease || null, function () {
                     if (callbackFunction) {
                         callbackFunction(null, zpdElement);
                     }
                 });
+
+
             }
         };
 
