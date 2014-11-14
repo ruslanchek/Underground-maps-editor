@@ -17,7 +17,7 @@
 	<script id='template' type='text/ractive'>
     	<ul>
     		{{#stations}}
-    		<li><a href="#"><span style="background-color: {{color}}"></span>{{name}}</a></li>
+    		<li><a href="#"><span style="background-color: {{color}}"></span>{{#name}}{{name}}{{/name}}{{#!name}}{{v_name}}{{/name}}</a></li>
     		{{/stations}}
     	</ul>
   	</script>
