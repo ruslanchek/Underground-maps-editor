@@ -86,16 +86,9 @@ var SText = function(s, data, shape){
 	};
 
 	this.changeText = function(data){
-		text.attr({
-			text: data.name
-		});
-
 		var coords = getSnapCoords();
 
-		text.attr({
-			x: coords.x,
-			y: coords.y
-		});
+		text.transform('t' + coords.x + ',' + coords.y);
 
 		snapBg();
 	};
