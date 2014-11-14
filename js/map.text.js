@@ -67,7 +67,7 @@ var SText = function(s, data, shape){
 	function createTextAndBg(){
 		createBg(); // todo: СДЕЛАТЬ ОПЦИЮ, ЧТОБЫ ГРУЗИТЬ/НЕ ГРУЗИТЬ ФОН ПРОЗРАЧНЫЙ
 
-		text = s.text(0, 0, data.name);
+		text = Snap("svg").multitext(0, 0, data.name);
 
 		text.attr({
 			fontSize: 14,

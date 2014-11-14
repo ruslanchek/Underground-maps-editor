@@ -91,6 +91,9 @@ $(function(){
 
 		new_station.setDataParam('changed', true);
 
+		new_station.setDataParam('x', new_station.getGroup().getBBox().x2);
+		new_station.setDataParam('y', new_station.getGroup().getBBox().y2);
+
 		m.getStations().push(new_station);
 	});
 

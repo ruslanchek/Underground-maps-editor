@@ -48,7 +48,7 @@ $(function(){
 	m = new SMap({
 		selector: '#map',
 		map_svg: 'img/moscow_1.svg',
-		data_url: 'moscow.json',
+		data_url: 'test.json',
 		min_zoom: 0.68,
 		onStationSelect: function(station, s, from_bind){
 			if(!from_bind) {

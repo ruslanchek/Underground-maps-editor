@@ -109,28 +109,32 @@ SStation.prototype.enableEdit = function(s){
 	var group = this.getGroup(),
 		station = this;
 
-	var drag_data = this.drag_data || {
-			lx: 0,
-			ly: 0,
-			ox: 0,
-			oy: 0
-		};
+	group.cx = 0;
+	group.cy = 0;
+	group.ox = 0;
+	group.oy = 0;
 
-	function moveFnc(dx, dy) {
-		drag_data.lx = dx + drag_data.ox;
-		drag_data.ly = dy + drag_data.oy;
+	group.drag(dragging, startDrag, function(evt) {
 
-		group.transform('t' + drag_data.lx + ',' + drag_data.ly);
+	});
+
+	function startDrag(posx, posy) {
+		this.ox = posx - this.cx;
+		this.oy = posy - this.cy;
 	}
 
-	function startFnc(x, y, e) {  }
+	function dragging(dx, dy, posx, posy) {
+		group.cx = posx - group.ox;
+		group.cy = posy - group.oy;
 
-	function endFnc() {
-		drag_data.ox = drag_data.lx;
-		drag_data.oy = drag_data.ly;
+		var t = 't' + group.cx + ',' + group.cy;
 
-		station.setDataParam('x', current_data.x + drag_data.lx);
-		station.setDataParam('y', current_data.y + drag_data.ly);
+		group.transform(t);
+
+		station.setDataParam('x', current_data.x + group.cx);
+		station.setDataParam('y', current_data.y + group.cy);
+
+		console.log(station.getDataParam('x'),station.getDataParam('y'))
 	}
 
 	$('body')
@@ -182,11 +186,11 @@ SStation.prototype.enableEdit = function(s){
 				} break;
 			}
 
-			drag_data.lx = x + drag_data.ox;
-			drag_data.ly = y + drag_data.oy;
+			x = x + group.cx;
+			y = y + group.cy;
 
-			moveFnc(x, y);
-			endFnc();
+			startDrag(x, y);
+			dragging(0, 0, x, y);
 
 			if($.inArray(e.keyCode, [37, 38, 39, 40]) >= 0) {
 				e.preventDefault();
@@ -194,7 +198,6 @@ SStation.prototype.enableEdit = function(s){
 			}
 		});
 
-	group.drag(moveFnc, startFnc, endFnc);
 };
 
 SStation.prototype.disableEdit = function(s){
@@ -306,10 +309,7 @@ SMap.prototype.generateId = function(){
 				.substring(1);
 		}
 
-		return function() {
-			return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-				s4() + '-' + s4() + s4() + s4();
-		};
+		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
 	}
 
 	var g = guid();

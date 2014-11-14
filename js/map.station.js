@@ -202,7 +202,7 @@ var SStation = function(s, data, options, map_superclass){
 		});
 
 		_this.unselectBinded();
-		_this.options.onUnselect(_this, from_bind);
+		_this.options.onUnselect(_this, false);
 	}
 
 	function mouseOver(shape, text){
