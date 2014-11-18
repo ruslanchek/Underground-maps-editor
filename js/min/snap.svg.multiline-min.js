@@ -1,0 +1,1 @@
+!function(t){t.plugin(function(t,n,i,l){i.prototype.multitext=function(t,n,i){i=i.split("\n");var l=0;if(i.length>1)for(var r=0;r<i.length;r++)l+=9*r;var e=this.text(t,n-l,i);e.selectAll("tspan:nth-child(n+2)").attr({dy:15,x:t});var a=this.g(e);return a}})}(Snap);
