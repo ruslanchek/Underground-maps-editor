@@ -40,6 +40,20 @@ var SText = function(s, data, shape){
 		}
 	}
 
+	function generateText(x, y, text){
+		var canvas = document.createElement('canvas');
+		var ctx = canvas.getContext("2d");
+
+		canvas.width  = 100;
+		canvas.height = 11;
+
+		ctx.fillStyle = "#000";
+		ctx.font = "14px Helvetica";
+		ctx.fillText("Fill text 121212", 0, 11);
+
+		return s.image(canvas.toDataURL(), x, y, 100, 11);
+	}
+
 	function createBg(){
 		bg = s.rect(0, 0, 0, 0);
 

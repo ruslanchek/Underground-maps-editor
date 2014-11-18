@@ -51,82 +51,102 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/map.editor.js": {
+	"\/js\/min\/edit-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/map.editor.js",
-		"outputAbbreviatedPath": "\/js\/min\/map.editor-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/edit-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/edit-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/map.js": {
+	"\/js\/min\/main-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/map.js",
-		"outputAbbreviatedPath": "\/js\/min\/map-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/map.shape.js": {
+	"\/js\/min\/map-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/map.shape.js",
-		"outputAbbreviatedPath": "\/js\/min\/map.shape-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/map-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/map-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/map.station.js": {
+	"\/js\/min\/map.editor-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/map.station.js",
-		"outputAbbreviatedPath": "\/js\/min\/map.station-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/map.editor-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/map.editor-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/map.text.js": {
+	"\/js\/min\/map.station-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/map.text.js",
-		"outputAbbreviatedPath": "\/js\/min\/map.text-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/map.station-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/map.station-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/snap.svg.js": {
+	"\/js\/min\/map.text-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/snap.svg.js",
-		"outputAbbreviatedPath": "\/js\/min\/snap.svg-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/map.text-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/map.text-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/snap.svg.zpd.js": {
+	"\/js\/min\/snap.svg.multiline-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/snap.svg.zpd.js",
-		"outputAbbreviatedPath": "\/js\/min\/snap.svg.zpd-min.js",
+		"inputAbbreviatedPath": "\/js\/min\/snap.svg.multiline-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/snap.svg.multiline-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/snap.svg.zpd-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/snap.svg.zpd-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/snap.svg.zpd-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/json.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/json.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/style.less": {
 		"allowInsecureImports": 0,

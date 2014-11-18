@@ -34,10 +34,9 @@ var SMap = function(options) {
         data_url: '',
         min_zoom: 0.75,
         max_zoom: 1,
-        zoom_animation_time: 500,
+        zoom_animation_time: 300,
         station_on_click_enabled: true,
         onLoad: function(){
-
         },
         onStationClick: function(station, s){
 
@@ -83,12 +82,22 @@ var SMap = function(options) {
     }
 
     function zoomInit (done){
+        setTimeout(function(){
+            $('#metro_container').css({
+                opacity: 1
+            });
+
+            $('#metro-loading').fadeOut(200);
+
+            if(done) done();
+        }, 600);
+
         s.zoomTo(_this.options.min_zoom, 0, mina.easeinout, function(){
 
         });
     }
 
-    function drawStation(data){
+    function drawStation(data, i){
         stations.push(new SStation(s, data, {
             on_click_enabled: _this.options.station_on_click_enabled,
 
@@ -125,12 +134,12 @@ var SMap = function(options) {
             dataType: 'json',
             success: function(data){
                 for (var i = 0; i < data.length; i++) {
-                    drawStation(data[i]);
+                    drawStation(data[i], i);
                 }
 
                 if(done) done();
             }
-        })
+        });
     }
 
     // Public methods
@@ -138,7 +147,6 @@ var SMap = function(options) {
         s.zoomTo(this.options.max_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout, function(){
 
         });
-
     };
 
     this.zoomIn = function(immediately){
@@ -171,6 +179,18 @@ var SMap = function(options) {
         for (var i = 0; i < stations.length; i++) {
             if(done) done(stations[i]);
         }
+    };
+
+    this.getSelectedStations = function(){
+        var arr = [];
+
+        for (var i = 0; i < stations.length; i++) {
+            if(stations[i].getDataParam('selected') === true){
+                arr.push(stations[i]);
+            }
+        }
+
+        return arr;
     };
 
     this.init = function() {

@@ -326,7 +326,7 @@
                     var dragPoint = _getEventPoint(event, zpdElement.data.svg).matrixTransform(g.getCTM().inverse());
 
                     _setCTM(zpdElement.data.stateTarget,
-                            zpdElement.data.root.createSVGMatrix()
+                        zpdElement.data.root.createSVGMatrix()
                             .translate(dragPoint.x - zpdElement.data.stateOrigin.x, dragPoint.y - zpdElement.data.stateOrigin.y)
                             .multiply(g.getCTM().inverse())
                             .multiply(zpdElement.data.stateTarget.getCTM()));
@@ -587,6 +587,9 @@
                 // animate our element and call the callback afterwards
                 var m = new Snap.Matrix().scale(zoom);
 
+                var offset_x = -43,
+                    offset_y = 30;
+
                 var gw = 1430 * zoom,
                     gh = 1650 * zoom,
                     vpw = 900,
@@ -594,8 +597,8 @@
                     x = (gw - vpw) / 2,
                     y = (gh - vph) / 2;
 
-                m.e = -x;
-                m.f = -y;
+                m.e = -x + offset_x;
+                m.f = -y + offset_y;
 
                 zpdElement.animate({ transform: m }, interval, ease || null, function () {
                     if (callbackFunction) {
