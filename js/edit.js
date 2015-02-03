@@ -1,6 +1,11 @@
 var m;
 
 $(function(){
+	$('.container, .map').css({
+		width: can_w,
+		height: can_h
+	});
+
 	m = new iMap.Map({
 		target_id: 'map',
 		map_svg: mapSvg,

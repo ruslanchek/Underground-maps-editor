@@ -1,6 +1,11 @@
 var m;
 
 $(function(){
+	$('.container, .map').css({
+		width: can_w,
+		height: can_h
+	});
+
 	var stations = [];
 
 	var ractive = new Ractive({
