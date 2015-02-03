@@ -61,7 +61,7 @@ $(function(){
 			"changed": true
 		};
 
-		var new_station = new SStation(m.getSnap(), data, {
+		var new_station = new iMap.Station(m.getSnapInstance(), data, {
 			on_click_enabled: m.options.station_on_click_enabled,
 
 			onMouseOver: function(station){
