@@ -613,8 +613,6 @@
                         callbackFunction(null, zpdElement);
                     }
                 });
-
-
             }
         };
 
