@@ -8,13 +8,21 @@
 </head>
 <body>
 	<div id="edit" class="edit">
+		<a href="#" id="seditor-submit" class="blue-button">Ok</a>
 		<span class="divider"></span>
+
+		<a id="seditor-edit-close" href="#">Cancel</a>
+		<span class="divider"></span>
+
+		<a class="red-button" href="#" id="seditor-delete">Delete</a>
+		<span class="divider"></span>
+
 		<input type="text" id="seditor-name"/>
 		<span class="divider"></span>
 
 		<span class="color-preview" id="seditor-color-preview"></span>
 
-		<input type="text" id="seditor-color"/>
+		<input type="text" id="seditor-color" size="7"/>
 		<span class="divider"></span>
 
 		<input type="text" id="seditor-margin" size="3"/>px
@@ -29,19 +37,11 @@
 			<option value="bottom">Bottom</option>
 			<option value="left">Left</option>
 		</select>
-		<span class="divider"></span>
 
-		<a href="#" id="seditor-submit" class="blue-button">Ok</a>
-		<span class="divider"></span>
-
-		<a id="seditor-edit-close" href="#">Cancel</a>
-		<span class="divider"></span>
-
-		<a class="red-button" href="#" id="seditor-delete">Delete</a>
+		<input type="text" readonly id="seditor-id"/>
 	</div>
 
 	<div id="add" class="edit">
-		<span class="divider"></span>
 		<a class="seditor-add" data-type="bar" href="#">Bar</a>
 
 		<span class="divider"></span>
