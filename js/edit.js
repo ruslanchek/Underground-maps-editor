@@ -6,6 +6,10 @@ $(function(){
 		map_svg: mapSvg,
 		data_url: dataJson,
 		min_zoom: 0.68,
+		viewport_width: can_w,
+		viewport_height: can_h,
+		map_width: map_w,
+		map_height: map_h,
 		station_on_click_enabled: false,
 		onStationDblClick: function(station, s){
 			m.iterateAllStations(function(_station){

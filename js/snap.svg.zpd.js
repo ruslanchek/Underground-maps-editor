@@ -249,6 +249,10 @@
          */
         var _getHandlerFunctions = function getHandlerFunctions(zpdElement) {
 
+            $(document).on('mouseup', function(){
+                zpdElement.data.state = 'none'
+            });
+
             var handleMouseUp = function handleMouseUp (event) {
 
                 if (event.preventDefault) {
@@ -320,6 +324,9 @@
 
                     _setCTM(g, zpdElement.data.stateTf.inverse().translate(x, y));
 
+
+
+
                 } else if (zpdElement.data.state == 'drag' && zpdElement.options.drag) {
 
                     // Drag mode
@@ -332,6 +339,7 @@
                             .multiply(zpdElement.data.stateTarget.getCTM()));
 
                     zpdElement.data.stateOrigin = dragPoint;
+
                 }
             };
 
@@ -565,7 +573,7 @@
         /**
          * zoom element to a certain zoom factor
          */
-        var zoomTo = function (zoom, interval, ease, callbackFunction) {
+        var zoomTo = function (zoom, interval, ease, callbackFunction, opts) {
 
             if (zoom < 0 || typeof zoom !== 'number') {
                 console.error('zoomTo(arg) should be a number and greater than 0');
@@ -590,10 +598,10 @@
                 var offset_x = -43,
                     offset_y = 30;
 
-                var gw = 1430 * zoom,
-                    gh = 1650 * zoom,
-                    vpw = 900,
-                    vph = 900,
+                var gw = opts.c_w * zoom,
+                    gh = opts.c_h * zoom,
+                    vpw = opts.vp_w,
+                    vph = opts.vp_h,
                     x = (gw - vpw) / 2,
                     y = (gh - vph) / 2;
 

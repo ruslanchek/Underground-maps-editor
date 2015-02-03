@@ -49,6 +49,10 @@ $(function(){
 		target_id: 'map',
 		map_svg: mapSvg,
 		data_url: dataJson,
+		viewport_width: can_w,
+		viewport_height: can_h,
+		map_width: map_w,
+		map_height: map_h,
 		min_zoom: 0.68,
 		onStationSelect: function(station, s, from_bind){
 			if(!from_bind) {

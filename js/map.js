@@ -37,6 +37,8 @@ iMap.Map = function(options) {
         min_zoom: 0.75,
         viewport_width: false,
         viewport_height: false,
+        map_width: false,
+        map_height: false,
         max_zoom: 1,
         zoom_animation_time: 300,
         station_on_click_enabled: true,
@@ -192,6 +194,11 @@ iMap.Map = function(options) {
 
         s.zoomTo(_this.options.min_zoom, 0, mina.easeinout, function(){
 
+        }, {
+            vp_w: _this.options.viewport_width,
+            vp_h: _this.options.viewport_height,
+            c_w: _this.options.map_width,
+            c_h: _this.options.map_height
         });
     }
 
@@ -244,12 +251,22 @@ iMap.Map = function(options) {
     this.zoomOut = function(immediately){
         s.zoomTo(this.options.max_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout, function(){
 
+        }, {
+            vp_w: _this.options.viewport_width,
+            vp_h: _this.options.viewport_height,
+            c_w: _this.options.map_width,
+            c_h: _this.options.map_height
         });
     };
 
     this.zoomIn = function(immediately){
         s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout, function(){
 
+        }, {
+            vp_w: _this.options.viewport_width,
+            vp_h: _this.options.viewport_height,
+            c_w: _this.options.map_width,
+            c_h: _this.options.map_height
         });
     };
 
