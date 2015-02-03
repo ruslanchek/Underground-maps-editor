@@ -1,4 +1,4 @@
-SStation.prototype.deleteStation = function(){
+iMap.Station.prototype.deleteStation = function(){
 	if(confirm('Are you sure to delete?')){
 		m.unsetCurrentStation();
 
@@ -11,7 +11,7 @@ SStation.prototype.deleteStation = function(){
 	}
 };
 
-SStation.prototype.enableEdit = function(s){
+iMap.Station.prototype.enableEdit = function(s){
 	m.setCurrentStation(this);
 
 	var current_data = $.extend({}, this.getData());
@@ -200,7 +200,7 @@ SStation.prototype.enableEdit = function(s){
 
 };
 
-SStation.prototype.disableEdit = function(s){
+iMap.Station.prototype.disableEdit = function(s){
 	m.unsetCurrentStation();
 
 	$('body').off('keydown.moveStation').off('keyup.moveStation');
@@ -221,7 +221,7 @@ SStation.prototype.disableEdit = function(s){
 	$('#add').show();
 };
 
-SMap.prototype.setStationsOffset = function(x, y){
+iMap.Map.prototype.setStationsOffset = function(x, y){
 	var stations = this.getStations();
 
 	for (var i = 0; i < stations.length; i++) {
@@ -235,19 +235,19 @@ SMap.prototype.setStationsOffset = function(x, y){
 	}
 };
 
-SMap.prototype.setCurrentStation = function(station){
+iMap.Map.prototype.setCurrentStation = function(station){
 	this.current_station = station;
 };
 
-SMap.prototype.unsetCurrentStation = function(){
+iMap.Map.prototype.unsetCurrentStation = function(){
 	this.current_station = null;
 };
 
-SMap.prototype.getCurrentStation = function(){
+iMap.Map.prototype.getCurrentStation = function(){
 	return this.current_station;
 };
 
-SMap.prototype.getStationsData = function(){
+iMap.Map.prototype.getStationsData = function(){
 	var stations = this.getStations(),
 		datas = [];
 
@@ -266,7 +266,7 @@ SMap.prototype.getStationsData = function(){
 	return datas;
 };
 
-SMap.prototype.getChangedStations = function(){
+iMap.Map.prototype.getChangedStations = function(){
 	var stations = this.getStations(),
 		changed = [];
 
@@ -282,7 +282,7 @@ SMap.prototype.getChangedStations = function(){
 	return changed;
 };
 
-SMap.prototype.getChangedStationsData = function(){
+iMap.Map.prototype.getChangedStationsData = function(){
 	var stations = this.getChangedStations(),
 		datas = [];
 
@@ -301,7 +301,7 @@ SMap.prototype.getChangedStationsData = function(){
 	return datas;
 };
 
-SMap.prototype.generateId = function(){
+iMap.Map.prototype.generateId = function(){
 	function guid() {
 		function s4() {
 			return Math.floor((1 + Math.random()) * 0x10000)

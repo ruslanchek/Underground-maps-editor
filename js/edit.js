@@ -1,10 +1,10 @@
 var m;
 
 $(function(){
-	m = new SMap({
-		selector: '#map',
-		map_svg: 'img/moscow_1.svg',
-		data_url: 'test.json',
+	m = new iMap.Map({
+		target_id: 'map',
+		map_svg: 'img/moscow.svg',
+		data_url: 'moscow.json',
 		min_zoom: 0.68,
 		station_on_click_enabled: false,
 		onStationDblClick: function(station, s){
