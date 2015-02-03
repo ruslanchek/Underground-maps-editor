@@ -39,6 +39,8 @@ iMap.Map = function(options) {
         viewport_height: false,
         map_width: false,
         map_height: false,
+        offset_x: false,
+        offset_y: false,
         max_zoom: 1,
         zoom_animation_time: 300,
         station_on_click_enabled: true,
@@ -198,7 +200,9 @@ iMap.Map = function(options) {
             vp_w: _this.options.viewport_width,
             vp_h: _this.options.viewport_height,
             c_w: _this.options.map_width,
-            c_h: _this.options.map_height
+            c_h: _this.options.map_height,
+            offset_x: _this.options.offset_x,
+            offset_y: _this.options.offset_y
         });
     }
 
@@ -255,7 +259,9 @@ iMap.Map = function(options) {
             vp_w: _this.options.viewport_width,
             vp_h: _this.options.viewport_height,
             c_w: _this.options.map_width,
-            c_h: _this.options.map_height
+            c_h: _this.options.map_height,
+            offset_x: _this.options.offset_x,
+            offset_y: _this.options.offset_y
         });
     };
 
@@ -266,7 +272,9 @@ iMap.Map = function(options) {
             vp_w: _this.options.viewport_width,
             vp_h: _this.options.viewport_height,
             c_w: _this.options.map_width,
-            c_h: _this.options.map_height
+            c_h: _this.options.map_height,
+            offset_x: _this.options.offset_x,
+            offset_y: _this.options.offset_y
         });
     };
 

@@ -15,6 +15,8 @@ $(function(){
 		viewport_height: can_h,
 		map_width: map_w,
 		map_height: map_h,
+		offset_x: offset_x,
+		offset_y: offset_y,
 		station_on_click_enabled: false,
 		onStationDblClick: function(station, s){
 			m.iterateAllStations(function(_station){

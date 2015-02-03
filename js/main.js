@@ -58,6 +58,8 @@ $(function(){
 		viewport_height: can_h,
 		map_width: map_w,
 		map_height: map_h,
+		offset_x: offset_x,
+		offset_y: offset_y,
 		min_zoom: 0.68,
 		onStationSelect: function(station, s, from_bind){
 			if(!from_bind) {

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e83844-e628-47b5-ab11-6f6c1852234c" name="Default" comment="Fixes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/spb-1.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.codekit" afterPath="$PROJECT_DIR$/config.codekit" />
+    <list default="true" id="13e83844-e628-47b5-ab11-6f6c1852234c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/edit-min.js" afterPath="$PROJECT_DIR$/js/min/edit-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/edit.js" afterPath="$PROJECT_DIR$/js/edit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/main-min.js" afterPath="$PROJECT_DIR$/js/min/main-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/map-min.js" afterPath="$PROJECT_DIR$/js/min/map-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moscow-edit.html" afterPath="$PROJECT_DIR$/moscow-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moscow.html" afterPath="$PROJECT_DIR$/moscow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/snap.svg.zpd-min.js" afterPath="$PROJECT_DIR$/js/min/snap.svg.zpd-min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/snap.svg.zpd.js" afterPath="$PROJECT_DIR$/js/snap.svg.zpd.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spb-edit.html" afterPath="$PROJECT_DIR$/spb-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spb.html" afterPath="$PROJECT_DIR$/spb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.less" afterPath="$PROJECT_DIR$/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="paper.map.iws" />
@@ -37,8 +41,8 @@
       <file leaf-file-name="spb.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="720">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="750">
+              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -48,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/moscow.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.46272492" vertical-offset="0" max-vertical-offset="1167">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -67,8 +71,8 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.37037" vertical-offset="32" max-vertical-offset="13080">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state vertical-scroll-proportion="-8.814815" vertical-offset="2657" max-vertical-offset="13200">
+              <caret line="193" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="874" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -77,8 +81,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1440">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -87,8 +91,8 @@
       <file leaf-file-name="snap.svg.zpd.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/snap.svg.zpd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8529" max-vertical-offset="10545">
-              <caret line="613" column="21" selection-start-line="613" selection-start-column="21" selection-end-line="613" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8139" max-vertical-offset="10545">
+              <caret line="563" column="39" selection-start-line="563" selection-start-column="39" selection-end-line="563" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -109,8 +113,8 @@
       <file leaf-file-name="edit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2025">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -119,8 +123,8 @@
       <file leaf-file-name="moscow-edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moscow-edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.0" vertical-offset="63" max-vertical-offset="1290">
-              <caret line="73" column="24" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="24" />
+            <state vertical-scroll-proportion="-43.625" vertical-offset="63" max-vertical-offset="1320">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -129,8 +133,8 @@
       <file leaf-file-name="spb-edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spb-edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-39.875" vertical-offset="123" max-vertical-offset="1290">
-              <caret line="72" column="19" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="19" />
+            <state vertical-scroll-proportion="-41.125" vertical-offset="123" max-vertical-offset="1320">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -152,13 +156,13 @@
         <option value="$PROJECT_DIR$/img/spb.svg" />
         <option value="$PROJECT_DIR$/img/moscow.svg" />
         <option value="$PROJECT_DIR$/data/spb.json" />
-        <option value="$PROJECT_DIR$/js/map.js" />
+        <option value="$PROJECT_DIR$/style.less" />
         <option value="$PROJECT_DIR$/js/snap.svg.zpd.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/edit.js" />
         <option value="$PROJECT_DIR$/spb-edit.html" />
         <option value="$PROJECT_DIR$/spb.html" />
-        <option value="$PROJECT_DIR$/style.less" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/edit.js" />
+        <option value="$PROJECT_DIR$/js/map.js" />
         <option value="$PROJECT_DIR$/moscow-edit.html" />
         <option value="$PROJECT_DIR$/moscow.html" />
       </list>
@@ -401,7 +405,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422980109226</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Sizes">
+      <created>1422981756327</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1422981756327</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -450,7 +460,8 @@
     <MESSAGE value="IDs" />
     <MESSAGE value="SPB" />
     <MESSAGE value="Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <MESSAGE value="Sizes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sizes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -623,68 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.37037" vertical-offset="32" max-vertical-offset="13080">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/snap.svg.zpd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8529" max-vertical-offset="10545">
-          <caret line="613" column="21" selection-start-line="613" selection-start-column="21" selection-end-line="613" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/map.editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="4950">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/spb-1.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8445">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spb-edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.875" vertical-offset="123" max-vertical-offset="1290">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="720">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -697,10 +650,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spb-edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.125" vertical-offset="123" max-vertical-offset="1320">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="750">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1440">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map.editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="302" max-vertical-offset="4950">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2025">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.814815" vertical-offset="2657" max-vertical-offset="13200">
+          <caret line="193" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="874" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/snap.svg.zpd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8139" max-vertical-offset="10545">
+          <caret line="563" column="39" selection-start-line="563" selection-start-column="39" selection-end-line="563" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/moscow-edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.0" vertical-offset="63" max-vertical-offset="1290">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="24" />
+        <state vertical-scroll-proportion="-43.625" vertical-offset="63" max-vertical-offset="1320">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -708,7 +719,7 @@
     <entry file="file://$PROJECT_DIR$/moscow.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46272492" vertical-offset="0" max-vertical-offset="1167">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="24" />
           <folding />
         </state>
       </provider>

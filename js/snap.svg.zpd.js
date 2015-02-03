@@ -595,8 +595,8 @@
                 // animate our element and call the callback afterwards
                 var m = new Snap.Matrix().scale(zoom);
 
-                var offset_x = -43,
-                    offset_y = 30;
+                var offset_x = opts.offset_x,
+                    offset_y = opts.offset_y;
 
                 var gw = opts.c_w * zoom,
                     gh = opts.c_h * zoom,
