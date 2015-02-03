@@ -369,10 +369,10 @@
         "text_side": "bottom",
         "name": "Киевская",
         "margin": 5,
-        "id": "6873bf62-cf41-c3fd-a7a6-c68bf669b424",
+        "id": 1027,
         "bind": [
-            "2af3ecf6-0f2f-0be1-eb7d-e8ac1ed4bb34",
-            "d33cb4d0-6db5-f6ff-6e35-b9f3f8cd5485"
+            1056,
+            1087
         ]
     },
     {
@@ -1024,10 +1024,10 @@
         "text_side": "top",
         "name": "Киевская",
         "margin": 8,
-        "id": "2af3ecf6-0f2f-0be1-eb7d-e8ac1ed4bb34",
+        "id": 1056,
         "bind": [
-            "6873bf62-cf41-c3fd-a7a6-c68bf669b424",
-            "d33cb4d0-6db5-f6ff-6e35-b9f3f8cd5485"
+            1027,
+            1087
         ]
     },
     {
@@ -1318,10 +1318,10 @@
         "text_side": "right",
         "name": "Киевская",
         "margin": 7,
-        "id": "d33cb4d0-6db5-f6ff-6e35-b9f3f8cd5485",
+        "id": 1087,
         "bind": [
-            "2af3ecf6-0f2f-0be1-eb7d-e8ac1ed4bb34",
-            "6873bf62-cf41-c3fd-a7a6-c68bf669b424"
+            1056,
+            1027
         ]
     },
     {
@@ -1599,8 +1599,8 @@
         "name": "",
         "v_name": "Парк Победы",
         "margin": 7,
-        "id": "1052",
-        "bind": ["c908728b-2bb8-b8a8-9bd8-2854bf487d86"]
+        "id": "1028",
+        "bind": ["1052"]
     },
     {
         "color": "#FFCE01",
@@ -1622,8 +1622,8 @@
         "text_side": "right",
         "name": "Парк победы",
         "margin": 7,
-        "id": "c908728b-2bb8-b8a8-9bd8-2854bf487d86",
-        "bind": ["1052"]
+        "id": "1052",
+        "bind": ["1028"]
     },
     {
         "color": "#ff0000",
