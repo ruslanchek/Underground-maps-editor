@@ -47,8 +47,8 @@ $(function(){
 
 	m = new iMap.Map({
 		target_id: 'map',
-		map_svg: 'img/moscow.svg',
-		data_url: 'moscow.json',
+		map_svg: mapSvg,
+		data_url: dataJson,
 		min_zoom: 0.68,
 		onStationSelect: function(station, s, from_bind){
 			if(!from_bind) {

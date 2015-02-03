@@ -163,8 +163,6 @@ iMap.Map = function(options) {
 
         s = Snap('#' + _this.options.target_id + '-svg');
 
-        console.log(_this.options.target_id + '-svg')
-
         Snap.load(_this.options.map_svg, function(data) {
             s.append(data);
 
