@@ -76,27 +76,27 @@ $(function(){
 			on_click_enabled: m.options.station_on_click_enabled,
 
 			onMouseOver: function(station){
-				m.options.onStationMouseOver(station, m.getSnap());
+				m.options.onStationMouseOver(station, m.getSnapInstance());
 			},
 
 			onMouseOut: function(station){
-				m.options.onStationMouseOut(station, m.getSnap());
+				m.options.onStationMouseOut(station, m.getSnapInstance());
 			},
 
 			onSelect: function(station){
-				m.options.onStationSelect(station, m.getSnap());
+				m.options.onStationSelect(station, m.getSnapInstance());
 			},
 
 			onUnselect: function(station){
-				m.options.onStationUnselect(station, m.getSnap());
+				m.options.onStationUnselect(station, m.getSnapInstance());
 			},
 
 			onClick: function(station){
-				m.options.onStationClick(station, m.getSnap());
+				m.options.onStationClick(station, m.getSnapInstance());
 			},
 
 			onDblClick: function(station){
-				m.options.onStationDblClick(station, m.getSnap());
+				m.options.onStationDblClick(station, m.getSnapInstance());
 			}
 		}, m);
 

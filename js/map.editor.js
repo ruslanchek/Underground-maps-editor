@@ -17,6 +17,7 @@ iMap.Station.prototype.enableEdit = function(s){
 	var current_data = $.extend({}, this.getData());
 
 	function save(station){
+		console.station
 		station.setDataParam('name', $('#seditor-name').val());
 		station.setDataParam('color', $('#seditor-color').val());
 		station.setDataParam('margin', parseInt($('#seditor-margin').val()));
