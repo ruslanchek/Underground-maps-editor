@@ -1,12 +1,14 @@
 var iMap = {};
 
 iMap.config = {
-    text_idle_fill_color  : 'rgba(0, 0, 0, 1)',
+    text_idle_fill_color  : 'rgba(120, 120, 120, 1)',
+    text_selected_color   : 'rgba(0, 0, 0, 1)',
+    text_selected_color_hover   : 'rgba(40, 40, 40, 1)',
 
     shape_idle_fill_color : 'rgba(255, 255, 255, 1)',
-    selected_color        : 'rgba(240, 0, 0, 1)',
+    selected_color        : 'rgba(255, 0, 0, 1)',
 
-    hover_color           : 'rgba(200, 0, 0, 1)',
+    hover_color           : 'rgba(80, 80, 80, 1)',
     hover_selected_color  : 'rgba(220, 0, 0, 1)',
 
     bar_width             : 7,
@@ -74,14 +76,8 @@ iMap.Map = function(options) {
         s = null;
 
     this.drawWraps = function(){
-        var time_selector = '<div class="map-transport-times">До станции <a class="type-selector link-dotted" href="#"><span class="dotted">пешком</span></a><span class="time"><i class="icon-font unactive icon-font-arr-left"></i><span>10 мин</span><i class="icon-font icon-font-arr-right"></i></span></div>';
-
-        var transport_types = ['пешком', 'на машине'];
-        var transport_times = [10, 15, 20];
-        var current_time = 0;
-
         $container.html(
-            '<div class="map-loading-overlay"></div>' + time_selector + '<a href="#" class="zoomer" id="' + _this.options.target_id + '-zoomer"><i class="icon-font icon-font-zoom_in"></i></a><svg id="' + _this.options.target_id + '-svg"></svg>'
+            '<div class="map-loading-overlay"></div><a href="#" class="zoomer" id="' + _this.options.target_id + '-zoomer"><i class="icon-font icon-font-zoom_in"></i></a><svg id="' + _this.options.target_id + '-svg"></svg>'
         );
 
         var $all = $('#' + _this.options.target_id + ', #' + _this.options.target_id + '-svg');
@@ -106,58 +102,6 @@ iMap.Map = function(options) {
                 height: _this.options.viewport_height
             });
         }
-
-        var $tt = $('.map-transport-times');
-
-        $tt.find('.type-selector').on('click', function(e){
-            e.preventDefault();
-
-            var curr = $(this).find('span').text(),
-                in_a = $.inArray(curr, transport_types),
-                next = 0;
-
-            if(in_a > -1){
-                next = in_a + 1;
-
-                if(next > transport_types.length - 1){
-                    next = 0;
-                }
-            }
-
-            $(this).find('span').text(transport_types[next]);
-        });
-
-        $tt.find('.icon-font').on('click', function(e){
-            e.preventDefault();
-
-            if($(this).hasClass('icon-font-arr-left')){
-                if(current_time - 1 < 0){
-                    current_time = 0;
-                }else{
-                    current_time--;
-                }
-            }else{
-                if(current_time + 1 > transport_times.length - 1){
-                    current_time = transport_times.length - 1;
-                }else{
-                    current_time++;
-                }
-            }
-
-            if(current_time == transport_times.length - 1){
-                $('.icon-font-arr-right').addClass('unactive');
-            }else{
-                $('.icon-font-arr-right').removeClass('unactive');
-            }
-
-            if(current_time == 0){
-                $('.icon-font-arr-left').addClass('unactive');
-            }else{
-                $('.icon-font-arr-left').removeClass('unactive');
-            }
-
-            $tt.find('.time > span').text(transport_times[current_time] + ' мин');
-        });
 
         this.wrapper = true;
     };
@@ -611,7 +555,7 @@ iMap.Station = function(s, data, options, map_superclass){
         shape.attr(getSelectedStyle());
 
         setTextAttrs(text, {
-            fill: iMap.config.selected_color
+            fill: iMap.config.text_selected_color
         });
 
         _this.selectBinded();
@@ -636,7 +580,7 @@ iMap.Station = function(s, data, options, map_superclass){
             shape.attr(getSelectedHoverStyle());
 
             text.attr({
-                fill: iMap.config.hover_selected_color
+                fill: iMap.config.text_selected_color_hover
             });
         }else{
             shape.attr(getHoverStyle());
@@ -654,7 +598,7 @@ iMap.Station = function(s, data, options, map_superclass){
             shape.attr(getSelectedStyle());
 
             text.attr({
-                fill: iMap.config.selected_color
+                fill: iMap.config.text_selected_color
             });
         }else{
             shape.attr(getNormalStyle());
@@ -848,6 +792,7 @@ iMap.Text = function(s, data, shape){
         text = Snap("svg").multitext(0, 0, data.name);
 
         text.attr({
+            fill: iMap.config.text_idle_fill_color,
             fontSize: 15,
             cursor: 'pointer'
         });
