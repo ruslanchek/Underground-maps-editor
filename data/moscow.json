@@ -736,7 +736,7 @@
         "x": 502,
         "y": 1535,
         "type": "bar",
-        "rotate": 90,
+        "rotate": 0,
         "text_side": "bottom",
         "name": "Улица Горчакова",
         "margin": 3,
@@ -1114,7 +1114,7 @@
     },
     {
         "color": "#A0A0A1",
-        "x": 618,
+        "x": 619,
         "y": 351,
         "type": "bar",
         "rotate": 0,
@@ -1472,7 +1472,7 @@
     },
     {
         "color": "#A0A0A1",
-        "x": 618,
+        "x": 619,
         "y": 322,
         "type": "bar",
         "rotate": 0,

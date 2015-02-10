@@ -2,14 +2,16 @@ var iMap = {};
 
 iMap.config = {
     text_idle_fill_color  : 'rgba(120, 120, 120, 1)',
+    text_idle_fill_hover_color  : 'rgba(80, 80, 80, 1)',
+
     text_selected_color   : 'rgba(0, 0, 0, 1)',
     text_selected_color_hover   : 'rgba(40, 40, 40, 1)',
 
     shape_idle_fill_color : 'rgba(255, 255, 255, 1)',
-    selected_color        : 'rgba(255, 0, 0, 1)',
+    selected_color        : 'rgba(0, 0, 0, 0)',
 
-    hover_color           : 'rgba(80, 80, 80, 1)',
-    hover_selected_color  : 'rgba(220, 0, 0, 1)',
+    hover_color           : 'rgba(0, 0, 0, 0)',
+    hover_selected_color  : 'rgba(0, 0, 0, 0)',
 
     bar_width             : 7,
     bar_height            : 7,
@@ -560,6 +562,7 @@ iMap.Station = function(s, data, options, map_superclass){
 
         _this.selectBinded();
         _this.options.onSelect(_this, from_bind);
+        _this.selected.show();
     }
 
     function unselect(shape, text, from_bind){
@@ -573,6 +576,7 @@ iMap.Station = function(s, data, options, map_superclass){
 
         _this.unselectBinded();
         _this.options.onUnselect(_this, false);
+        _this.selected.hide();
     }
 
     function mouseOver(shape, text){
@@ -586,7 +590,7 @@ iMap.Station = function(s, data, options, map_superclass){
             shape.attr(getHoverStyle());
 
             setTextAttrs(text, {
-                fill: iMap.config.hover_color
+                fill: iMap.config.text_idle_fill_hover_color
             });
         }
 
@@ -611,12 +615,68 @@ iMap.Station = function(s, data, options, map_superclass){
         _this.options.onMouseOut(_this);
     }
 
+    function CreateSelectedBall(shape){
+        var x = shape.getBBox().cx,
+            y = shape.getBBox().cy,
+            w = iMap.config.bar_width;
+
+        if(data.type == 'bar' && data.rotate == 0){
+            if(data.text_side == 'right'){
+                x = x - w
+            }
+
+            if(data.text_side == 'left'){
+                x = x + w
+            }
+
+            if(data.text_side == 'top'){
+                y = y + w;
+            }
+
+            if(data.text_side == 'bottom'){
+                y = y - w;
+            }
+        }
+
+        if(data.type == 'bar' && (data.rotate == 45 || data.rotate == -45)){
+            if(data.text_side == 'right'){
+                x = x - w * 1.5;
+            }
+
+            if(data.text_side == 'left'){
+                x = x + w * 1.5;
+            }
+        }
+
+        this.shape = s.circle(x, y, iMap.config.circle_radius + iMap.config.circle_stroke_width - 1)
+
+
+        this.shape.attr({
+            fill: '#4C4C4C',
+            opacity: 0,
+            cursor: 'pointer'
+        });
+
+        this.show = function(){
+            this.shape.attr({
+                opacity: 1
+            });
+        };
+
+        this.hide = function(){
+            this.shape.attr({
+                opacity: 0
+            });
+        };
+    }
+
     function createGroup(){
         shape = _shape.getShape();
 
         text_bg = _text.getBg();
         text = _text.getText();
-        group = s.g(shape, text_bg, text);
+        _this.selected = new CreateSelectedBall(shape);
+        group = s.g(shape, text_bg, text, _this.selected.shape);
 
         group.hover(function(){
             mouseOver(shape, text);
