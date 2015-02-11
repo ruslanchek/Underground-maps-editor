@@ -648,13 +648,26 @@ iMap.Station = function(s, data, options, map_superclass){
             }
         }
 
-        this.shape = s.circle(x, y, iMap.config.circle_radius + iMap.config.circle_stroke_width - 1)
+        var circle = s.circle(x, y, iMap.config.circle_radius + iMap.config.circle_stroke_width - 1),
+            path = Snap.parsePathString('M13.5,15.5c-0.266,0-0.52-0.105-0.707-0.293l-3.141-3.141c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l2.434,2.434l4.391-4.392c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414l-5.098,5.099C14.02,15.395,13.766,15.5,13.5,15.5z'),
+            polyline = s.path(path);
 
+        polyline.transform('translate(' + (x - 14) + ',' + (y - 12) + ')');
+
+        this.shape = s.group(circle, polyline);
+
+        polyline.attr({
+            fill: '#fff',
+            cursor: 'pointer'
+        });
+
+        circle.attr({
+            fill: '#4C4C4C',
+            cursor: 'pointer'
+        });
 
         this.shape.attr({
-            fill: '#4C4C4C',
-            opacity: 0,
-            cursor: 'pointer'
+            opacity: 0
         });
 
         this.show = function(){
