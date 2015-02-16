@@ -36,14 +36,10 @@ $(function(){
 		},
 		onStationUnselect: function(station, s){
 
-		},
-		onLoad: function(_m){
-			_m.zoomOut();
 		}
 	});
 
 	m.init();
-	
 
 	$('.zoomer').on('click', function(e){
 		e.preventDefault();
@@ -120,7 +116,6 @@ $(function(){
 				url: 'json.php',
 				type: 'post',
 				data: {
-					file: dataJson,
 					json: JSON.stringify(m.getStationsData())
 				},
 				beforeSend: function(){
