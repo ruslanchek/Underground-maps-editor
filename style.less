@@ -1,17 +1,12 @@
-body {
-  font-family: Helvetica Neue, Helvetica, Arial;
-  font-size: 16px;
-}
-
 .map {
-	width: 908px;
+	width: 900px;
 	height: 900px;
   	overflow: hidden;
   	font-family: sans-serif;
 }
 
 .container {
-  	width: 908px;
+  	width: 900px;
   	height: 900px;
   	border: 1px solid #ddd;
   	margin: 0 auto 0;
@@ -20,12 +15,12 @@ body {
   	.zoomer {
 	  position: absolute;
 	  top: 0;
-	  right: 0;
+	  left: 0;
 	  width: 40px;
 	  height: 40px;
 	  background: #eee;
 	  opacity: 0.75;
-	  display: none;
+	  display: block;
 
 	  &.active {
 		background: yellowgreen;
@@ -33,112 +28,3 @@ body {
   	}
 }
 
-.stations {
-  width: 908px;
-  margin: 0 auto;
-  padding: 10px 0;
-  height: 60px;
-
-  ul {
-	padding: 0;
-	margin-left: -2px;
-  }
-  
-  li {
-	list-style-type: none;
-	display: inline-block;
-  }
-
-  a {
-	padding: 4px 6px;
-	background: #FDECB5;
-	margin: 0 4px 4px 0;
-	font-size: 14px;
-	display: inline-block;
-	text-decoration: none;
-	color: #000;
-
-	&:hover {
-	  background: red;
-	  color: #fff;
-	}
-
-	span {
-	  display: inline-block;
-	  height: 10px;
-	  width: 10px;
-	  border-radius: 5px;
-	  margin-right: 6px;
-	  box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
-	}
-  }
-}
-
-.edit {
-  padding: 0;
-  background: #eee;
-  width: 908px;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  border-bottom: none;
-
-  .color-preview {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border-radius: 20px;
-	border: 1px solid #fff;
-	margin-bottom: -6px;
-  }
-
-  .divider {
-	width: 10px;
-	display: inline-block;
-  }
-
-  a {
-	background: #ddd;
-	padding: 10px 20px;
-	display: inline-block;
-	color: #000;
-	text-decoration: none;
-
-	&:hover {
-	  background: #ddd + 5;
-	}
-  }
-
-  .red-button {
-	color: red;
-  }
-
-  .blue-button {
-	color: #006aff;
-  }
-}
-
-#edit {
-  display: none;
-}
-
-.loading {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.75);
-
-  div {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 200px;
-	height: 60px;
-	margin: -30px 0 0 -100px;
-	background: #333;
-	color: #fff;
-	text-align: center;
-	line-height: 60px;
-  }
-}

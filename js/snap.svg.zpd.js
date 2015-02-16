@@ -249,10 +249,6 @@
          */
         var _getHandlerFunctions = function getHandlerFunctions(zpdElement) {
 
-            $(document).on('mouseup', function(){
-                zpdElement.data.state = 'none'
-            });
-
             var handleMouseUp = function handleMouseUp (event) {
 
                 if (event.preventDefault) {
@@ -324,22 +320,18 @@
 
                     _setCTM(g, zpdElement.data.stateTf.inverse().translate(x, y));
 
-
-
-
                 } else if (zpdElement.data.state == 'drag' && zpdElement.options.drag) {
 
                     // Drag mode
                     var dragPoint = _getEventPoint(event, zpdElement.data.svg).matrixTransform(g.getCTM().inverse());
 
                     _setCTM(zpdElement.data.stateTarget,
-                        zpdElement.data.root.createSVGMatrix()
+                            zpdElement.data.root.createSVGMatrix()
                             .translate(dragPoint.x - zpdElement.data.stateOrigin.x, dragPoint.y - zpdElement.data.stateOrigin.y)
                             .multiply(g.getCTM().inverse())
                             .multiply(zpdElement.data.stateTarget.getCTM()));
 
                     zpdElement.data.stateOrigin = dragPoint;
-
                 }
             };
 
@@ -573,7 +565,7 @@
         /**
          * zoom element to a certain zoom factor
          */
-        var zoomTo = function (zoom, interval, ease, callbackFunction, opts) {
+        var zoomTo = function (zoom, interval, ease, callbackFunction) {
 
             if (zoom < 0 || typeof zoom !== 'number') {
                 console.error('zoomTo(arg) should be a number and greater than 0');
@@ -593,22 +585,7 @@
                 var zpdElement = snapsvgzpd.dataStore[self.id].element;
 
                 // animate our element and call the callback afterwards
-                var m = new Snap.Matrix().scale(zoom);
-
-                var offset_x = opts.offset_x,
-                    offset_y = opts.offset_y;
-
-                var gw = opts.c_w * zoom,
-                    gh = opts.c_h * zoom,
-                    vpw = opts.vp_w,
-                    vph = opts.vp_h,
-                    x = (gw - vpw) / 2,
-                    y = (gh - vph) / 2;
-
-                m.e = -x + offset_x;
-                m.f = -y + offset_y;
-
-                zpdElement.animate({ transform: m }, interval, ease || null, function () {
+                zpdElement.animate({ transform: new Snap.Matrix().scale(zoom) }, interval, ease || null, function () {
                     if (callbackFunction) {
                         callbackFunction(null, zpdElement);
                     }
