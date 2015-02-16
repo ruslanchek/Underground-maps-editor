@@ -49,7 +49,7 @@ iMap.Station.prototype.enableEdit = function(s){
 			backgroundColor: station.getDataParam('color')
 		});
 
-		$('#seditor-id').val(station.getDataParam('id'));
+		$('#seditor-id').val('ID ' + station.getDataParam('id'));
 
 		$('#seditor-name').val(station.getDataParam('name')).off('keyup').on('keyup', function(){
 			station.setDataParam('name', $(this).val());
