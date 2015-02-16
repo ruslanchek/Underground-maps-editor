@@ -8,9 +8,9 @@ iMap.config = {
     text_selected_color_hover   : 'rgba(40, 40, 40, 1)',
 
     shape_idle_fill_color : 'rgba(255, 255, 255, 1)',
-    selected_color        : 'rgba(0, 0, 0, 0)',
+    selected_color        : 'rgba(255, 0, 0, 1)',
 
-    hover_color           : 'rgba(0, 0, 0, 0)',
+    hover_color           : 'rgba(255, 0, 0, 1)',
     hover_selected_color  : 'rgba(0, 0, 0, 0)',
 
     bar_width             : 7,
@@ -124,7 +124,8 @@ iMap.Map = function(options) {
                 });
 
                 zoomInit(function(){
-                    _this.options.onLoad();
+                    _this.options.onLoad(_this);
+
                     $('.map-loading-overlay').addClass('hidden');
 
                     setTimeout(function(){
@@ -672,7 +673,7 @@ iMap.Station = function(s, data, options, map_superclass){
 
         this.show = function(){
             this.shape.attr({
-                opacity: 1
+                opacity: 0
             });
         };
 
