@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="edit" class="edit">
+	<a href="#" id="seditor-submit" class="blue-button">Ok</a>
+	<span class="divider"></span>
+
+	<a id="seditor-edit-close" href="#">Cancel</a>
+	<span class="divider"></span>
+
+	<a class="red-button" href="#" id="seditor-delete">Delete</a>
+	<span class="divider"></span>
+
+	<input type="text" id="seditor-name"/>
+	<span class="divider"></span>
+
+	<span class="color-preview" id="seditor-color-preview"></span>
+
+	<input type="text" id="seditor-color" size="7"/>
+	<span class="divider"></span>
+
+	<input type="text" id="seditor-margin" size="3"/>px
+	<span class="divider"></span>
+
+	<input type="text" id="seditor-rotate" size="3"/>&deg;
+	<span class="divider"></span>
+
+	<select id="seditor-text_side">
+		<option value="top">Top</option>
+		<option value="right">Right</option>
+		<option value="bottom">Bottom</option>
+		<option value="left">Left</option>
+	</select>
+
+	<input type="text" readonly id="seditor-id"/>
+</div>
+
+<div id="add" class="edit">
+	<a class="seditor-add" data-type="bar" href="#">Bar</a>
+
+	<span class="divider"></span>
+	<a class="seditor-add" data-type="end"  href="#">End</a>
+
+	<span class="divider"></span>
+	<a class="seditor-add" data-type="circle"  href="#">Circle</a>
+
+	<span class="divider"></span>
+	<a id="seditor-upload" class="blue-button" data-type="circle"  href="#">Upload</a>
+</div>
+
+<div class="container">
+	<a href="#" class="zoomer"></a>
+	<svg class="map" id="map-svg"></svg>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+
+<script src="js/snap.svg.js"></script>
+<script src="js/snap.svg.zpd.js"></script>
+<script src="js/snap.svg.multiline.js"></script>
+<script>
+	var mapSvg = 'img/spb-3.svg';
+	var dataJson = 'data/spb.json';
+	var map_w = 1430;
+	var map_h = 820;
+	var can_w = 908;
+	var can_h = 700;
+	var offset_x = -55;
+	var offset_y = -235;
+</script>
+<script src="js/map.js"></script>
+<script src="js/map.editor.js"></script>
+
+<script src="js/edit.js"></script>
+</body>
+</html>
