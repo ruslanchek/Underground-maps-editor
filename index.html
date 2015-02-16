@@ -4,35 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="stations" class="stations"></div>
-
 	<div class="container">
 		<a href="#" class="zoomer"></a>
 		<svg class="map" id="map"></svg>
 	</div>
 
-	<script id='template' type='text/ractive'>
-    	<ul>
-    		{{#stations}}
-    		<li><a href="#"><span style="background-color: {{color}}"></span>{{name}}</a></li>
-    		{{/stations}}
-    	</ul>
-  	</script>
-
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
-
 	<script src="js/snap.svg.js"></script>
 	<script src="js/snap.svg.zpd.js"></script>
-
 	<script src="js/map.js"></script>
-	<script src="js/map.text.js"></script>
-	<script src="js/map.shape.js"></script>
-	<script src="js/map.station.js"></script>
-
-	<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,32 +1,174 @@
-var config = {
-    text_idle_fill_color  : 'rgba(0, 0, 0, 1)',
+var SText = function(s, data, shape){
+    var _this = this,
+        text = null,
+        bg = null,
+        snap_offset_x = 2,
+        snap_offset_y = 0;
 
-    shape_idle_fill_color : 'rgba(0, 0, 0, 0)',
-    selected_color        : 'rgba(240, 0, 0, 1)',
+    function getSnapCoords(){
+        var x = 0,
+            y = 0,
+            text_bb = text.getBBox(),
+            shape_bb = shape.getBBox(),
+            offset = 3;
 
-    hover_color           : 'rgba(200, 0, 0, 1)',
-    hover_selected_color  : 'rgba(220, 0, 0, 1)',
+        switch(data.text_side){
+            case 'top' : {
+                x = shape_bb.cx - text_bb.width / 2 + offset;
+                y = shape_bb.y - offset - data.margin;
+            } break;
 
-    bar_width             : 7,
-    bar_height            : 7,
+            case 'right' : {
+                x = shape_bb.x2 + offset + data.margin;
+                y = shape_bb.cy + text_bb.height / 4;
+            } break;
 
-    bar_width_selected    : 7,
-    bar_height_selected   : 7,
+            case 'bottom' : {
+                x = shape_bb.cx - text_bb.width / 2 + offset;
+                y = shape_bb.y2 + offset;
+            } break;
 
-    end_width             : 21,
-    end_height            : 7,
+            case 'left' : {
 
-    end_width_selected    : 21,
-    end_height_selected   : 7,
+            } break;
+        }
 
-    circle_radius         : 7,
-    circle_stroke_width   : 5,
-    circle_stroke_width_selected: 5
+        return {
+            x: x,
+            y: y
+        }
+    }
+
+    function createBg(){
+        bg = s.rect(0, 0, 0, 0);
+
+        bg.attr({
+            fill: 'rgba(255, 255, 255, 0.75)',
+            cursor: 'pointer'
+        });
+    }
+
+    function snapBg(){
+        var bb = text.getBBox(),
+            x = bb.x - snap_offset_x,
+            y = bb.y - snap_offset_y,
+            w = bb.width + snap_offset_x * 2,
+            h = bb.height + snap_offset_y * 2;
+
+        bg.attr({
+            x: x,
+            y: y,
+            width: w,
+            height: h
+        });
+    }
+
+    function createTextAndBg(){
+        text = s.text(0, 0, data.name);
+
+        var coords = getSnapCoords();
+
+        text.attr({
+            x: coords.x,
+            y: coords.y,
+            fontSize: 14,
+            cursor: 'pointer'
+        });
+
+        createBg(); // todo: СДЕЛАТЬ ОПЦИЮ, ЧТОБЫ ГРУЗИТЬ/НЕ ГРУЗИТЬ ФОН ПРОЗРАЧНЫЙ
+        snapBg();
+    }
+
+    createTextAndBg();
+};
+
+var SShape = function(s, data){
+    this.shape = null;
+
+    function createCircle(){
+        var shape = s.circle(data.x, data.y, data.width * 2 - 1);
+
+        shape.attr({
+            fill: 'rgba(0,0,0,0)',
+            stroke: data.color,
+            strokeWidth: data.stroke_width,
+            cursor: 'pointer'
+        });
+
+        return shape;
+    }
+
+    function createBar(){
+        var shape = s.rect(data.x, data.y, data.width, 4);
+
+        shape.attr({
+            fill: data.color,
+            stroke: data.color,
+            strokeWidth: 3,
+            cursor: 'pointer'
+        });
+
+        var t = new Snap.Matrix().rotate(data.rotate, data.x + 2, data.y + 2);
+
+        shape.transform(t);
+
+        return shape;
+    }
+
+    function createEnd(){
+        var shape = s.circle(data.x, data.y, data.width * 2 - 1);
+
+        shape.attr({
+            fill: 'rgba(0,0,0,0)',
+            stroke: data.color,
+            strokeWidth: data.stroke_width,
+            cursor: 'pointer'
+        });
+
+        return shape;
+    }
+
+    function create(){
+        switch(data.type){
+            case 'circle' : {
+                shape = createCircle();
+            } break;
+
+            case 'bar' : {
+                shape = createBar();
+            } break;
+
+            case 'end' : {
+                shape = createEnd();
+            } break;
+        }
+    }
+
+    create();
+
+    this.getObject = function(){
+        return shape;
+    };
+};
+
+var SStation = function(s, data){
+    function dataNormalizer(){
+        data.x = parseFloat(data.x);
+        data.y = parseFloat(data.y);
+        data.width = parseInt(data.width);
+        data.stroke_width = parseInt(data.stroke_width);
+        data.rotate = parseInt(data.rotate);
+        data.margin = parseInt(data.margin);
+    }
+
+    dataNormalizer();
+
+    var _shape = new SShape(s, data),
+        _text = new SText(s, data, _shape.getObject());
 };
 
 var SMap = function(options) {
-    var _this = this,
-        stations = [];
+    var _this = this;
 
     this.options = $.extend({
         selector: '',
@@ -35,32 +177,19 @@ var SMap = function(options) {
         min_zoom: 0.75,
         max_zoom: 1,
         zoom_animation_time: 500,
-        station_on_click_enabled: true,
         onLoad: function(){
-
-        },
-        onStationClick: function(station, s){
-
-        },
-        onStationMouseOver: function(station, s){
-
-        },
-        onStationMouseOut: function(station, s){
-
-        },
-        onStationSelect: function(station, s){
-
-        },
-        onStationUnselect: function(station, s){
-
-        },
-        onStationDblClick: function(station, s){
 
         }
     }, options);
 
     var $container = $(this.options.selector),
+        c_width = $container.width(),
+        c_height = $container.height(),
         s = null;
+
+    function onLoad(){
+        _this.options.onLoad();
+    }
 
     function draw() {
         s = Snap(_this.options.selector);
@@ -75,61 +204,31 @@ var SMap = function(options) {
                     drag: false
                 });
 
-                zoomInit(function(){
-                    _this.options.onLoad();
+                _this.zoomInit(function(){
+                    onLoad();
                 });
             });
         });
     }
 
-    function zoomInit (done){
-        if(done) done();
-    }
-
     function drawStation(data){
-        stations.push(new SStation(s, data, {
-            on_click_enabled: _this.options.station_on_click_enabled,
-
-            onMouseOver: function(station){
-                _this.options.onStationMouseOver(station, s);
-            },
-
-            onMouseOut: function(station){
-                _this.options.onStationMouseOut(station, s);
-            },
-
-            onSelect: function(station){
-                _this.options.onStationSelect(station, s);
-            },
-
-            onUnselect: function(station){
-                _this.options.onStationUnselect(station, s);
-            },
-
-            onClick: function(station){
-                _this.options.onStationClick(station, s);
-            },
-
-            onDblClick: function(station){
-                _this.options.onStationDblClick(station, s);
-            }
-        }, _this));
+        var station = new SStation(s, data);
     }
 
-    function loadStations(done){
-        $.ajax({
-            url: _this.options.data_url,
-            type: 'get',
-            dataType: 'json',
-            success: function(data){
-                for (var i = 0; i < data.length; i++) {
+	function loadStations(done){
+		$.ajax({
+			url: _this.options.data_url,
+			type: 'get',
+			dataType: 'json',
+			success: function(data){
+				for (var i = 0; i < data.length; i++) {
                     drawStation(data[i]);
-                }
+				}
 
                 if(done) done();
-            }
-        })
-    }
+			}
+		})
+	}
 
     // Public methods
     this.zoomOut = function(immediately){
@@ -140,37 +239,40 @@ var SMap = function(options) {
         s.zoomTo(this.options.min_zoom, (immediately) ? 0 : this.options.zoom_animation_time, mina.easeinout);
     };
 
-    this.getStations = function(){
-        return stations;
-    };
-
-    this.getStationById = function(id){
-        for (var i = 0; i < stations.length; i++) {
-            var obj = stations[i];
-
-            if(obj.getData().id == id){
-                return obj;
-            }
-        }
-    };
-
-    this.unselectAllStations = function(){
-        for (var i = 0; i < stations.length; i++) {
-            stations[i].unselect();
-        }
-    };
-
-    this.iterateAllStations = function(done){
-        for (var i = 0; i < stations.length; i++) {
-            if(done) done(stations[i]);
-        }
+    this.zoomInit = function(done){
+        s.attr({
+            opacity: 1
+        });
     };
 
     this.init = function() {
         draw();
     };
-
-    this.getSnap = function(){
-        return s;
-    };
 };
+
+$(function(){
+    var m = new SMap({
+        selector: '#map',
+        map_svg: 'img/moscow.svg',
+        data_url: 'moscow.json',
+        min_zoom: 0.68
+    });
+
+    m.init();
+
+    $('.zoomer').on('click', function(e){
+        e.preventDefault();
+
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+
+            m.zoomIn();
+        }else{
+            $(this).addClass('active');
+
+            m.zoomOut();
+        }
+    });
+});
+
+
