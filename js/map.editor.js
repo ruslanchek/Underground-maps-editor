@@ -6,7 +6,6 @@ iMap.Station.prototype.deleteStation = function(){
 		$('#add').show();
 
 		this.getGroup().remove();
-
 		this.getData().delete = true;
 	}
 };
@@ -23,6 +22,8 @@ iMap.Station.prototype.enableEdit = function(s){
 		station.setDataParam('margin', parseInt($('#seditor-margin').val()));
 		station.setDataParam('text_side', $('#seditor-text_side').val());
 		station.setDataParam('rotate', parseInt($('#seditor-rotate').val()));
+		station.setDataParam('id', $('#seditor-id').val());
+		station.setDataParam('pid', $('#seditor-pid').val());
 		station.setDataParam('changed', true);
 
 		station.renewData();
@@ -50,9 +51,12 @@ iMap.Station.prototype.enableEdit = function(s){
 		});
 
 		$('#seditor-id').val(station.getDataParam('id'));
+		$('#seditor-pid').val(station.getDataParam('pid'));
 
 		$('#seditor-name').val(station.getDataParam('name')).off('keyup').on('keyup', function(){
 			station.setDataParam('name', $(this).val());
+
+			console.log(station)
 			station.renewData();
 		});
 

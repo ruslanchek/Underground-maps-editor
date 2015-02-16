@@ -14,6 +14,7 @@ body {
   border: 1px solid #ddd;
   margin: 0 auto 0;
   position: relative;
+
 }
 .container .zoomer {
   position: absolute;
@@ -23,7 +24,7 @@ body {
   height: 40px;
   background: #eee;
   opacity: 0.75;
-  display: block;
+  display: none;
 }
 .container .zoomer.active {
   background: yellowgreen;
