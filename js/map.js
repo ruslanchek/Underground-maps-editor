@@ -154,7 +154,7 @@ iMap.Map = function(options) {
     }
 
     function drawStation(data, i){
-        stations.push(new iMap.Station(s, data, {
+        var station = new iMap.Station(s, data, {
             on_click_enabled: _this.options.station_on_click_enabled,
 
             onMouseOver: function(station){
@@ -180,7 +180,17 @@ iMap.Map = function(options) {
             onDblClick: function(station){
                 _this.options.onStationDblClick(station, s);
             }
-        }, _this));
+        }, _this);
+
+        if(data.type == 'end'){
+            if(data.line_selector){
+                station.line_end = new iMap.LineButton(s, _this, data.line_selector);
+            }
+        }else{
+            station.line_end = null;
+        }
+
+        stations.push(station);
     }
 
     function loadStations(done){
@@ -255,7 +265,7 @@ iMap.Map = function(options) {
         var arr = [];
 
         for (var i = 0; i < stations.length; i++) {
-            if(stations[i].getDataParam('selected') === true){
+            if(stations[i].isSelected() === true){
                 arr.push(stations[i]);
             }
         }
@@ -891,4 +901,66 @@ iMap.Text = function(s, data, shape){
     };
 
     createTextAndBg();
+};
+
+iMap.LineButton = function(s, map, data){
+    var shape, text, group;
+
+    var create = function(){
+        shape = s.rect(data.x, data.y, iMap.config.end_width, iMap.config.end_width);
+
+        shape.attr({
+            fill: data.color,
+            cursor: 'pointer'
+        });
+
+        text = s.text(data.x + 6, data.y + 16, data.name);
+
+        text.attr({
+            fill: '#fff',
+            fontWeight: 800,
+            cursor: 'pointer'
+        });
+
+        group = s.g(shape, text);
+
+        group.click(function(){
+            if(data.select){
+                var selected = [],
+                    unselected = [];
+
+                for(var i = 0, l = data.select.length; i < l; i++){
+                    var station = map.getStationById(data.select[i]);
+
+                    if(station) {
+                        if (station.isSelected()) {
+                            selected.push(data.select[i]);
+                        } else {
+                            unselected.push(data.select[i])
+                        }
+                    }
+                }
+
+                if(data.select.length == selected.length){
+                    for(var i = 0, l = data.select.length; i < l; i++){
+                        var station = map.getStationById(data.select[i]);
+
+                        if(station){
+                            station.unselect();
+                        }
+                    }
+                }else{
+                    for(var i = 0, l = data.select.length; i < l; i++){
+                        var station = map.getStationById(data.select[i]);
+
+                        if(station){
+                            station.select();
+                        }
+                    }
+                }
+            }
+        });
+    };
+
+    create();
 };
