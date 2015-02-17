@@ -918,7 +918,7 @@ iMap.LineButton = function(s, map, data){
 
         text.attr({
             fill: '#fff',
-            fontWeight: 800,
+            fontWeight: 100,
             cursor: 'pointer'
         });
 
