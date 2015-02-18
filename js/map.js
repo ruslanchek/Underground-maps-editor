@@ -32,7 +32,8 @@ iMap.config = {
 
 iMap.Map = function(options) {
     var _this = this,
-        stations = [];
+        stations = [],
+        selectors = [];
 
     this.options = $.extend({
         target_id: '',
@@ -153,7 +154,7 @@ iMap.Map = function(options) {
         });
     }
 
-    function drawStation(data, i){
+    function drawStation(data){
         var station = new iMap.Station(s, data, {
             on_click_enabled: _this.options.station_on_click_enabled,
 
@@ -182,15 +183,13 @@ iMap.Map = function(options) {
             }
         }, _this);
 
-        if(data.type == 'end'){
-            if(data.line_selector){
-                station.line_end = new iMap.LineButton(s, _this, data.line_selector);
-            }
-        }else{
-            station.line_end = null;
-        }
-
         stations.push(station);
+    }
+
+    function drawSelector(data){
+        var selector = new iMap.LineButton(s, _this, data);
+
+        selectors.push(selector);
     }
 
     function loadStations(done){
@@ -199,8 +198,12 @@ iMap.Map = function(options) {
             type: 'get',
             dataType: 'json',
             success: function(data){
-                for (var i = 0; i < data.length; i++) {
-                    drawStation(data[i], i);
+                for (var i = 0; i < data.stations.length; i++) {
+                    drawStation(data.stations[i]);
+                }
+
+                for (var i = 0; i < data.selectors.length; i++) {
+                    drawSelector(data.selectors[i]);
                 }
 
                 if(done) done();
@@ -914,11 +917,18 @@ iMap.LineButton = function(s, map, data){
             cursor: 'pointer'
         });
 
-        text = s.text(data.x + 6, data.y + 16, data.name);
+        text = s.text(data.x, data.y + 16, data.name);
+
+        var x = data.x + iMap.config.end_width / 2;
+
+        x = x - (text.getBBox().width / 2);
+
+        text.attr({
+            x: x
+        });
 
         text.attr({
             fill: '#fff',
-            fontWeight: 100,
             cursor: 'pointer'
         });
 
