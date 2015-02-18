@@ -907,32 +907,44 @@ iMap.Text = function(s, data, shape){
 };
 
 iMap.LineButton = function(s, map, data){
-    var shape, text, group;
+    var shape, text, group, title;
 
     var create = function(){
-        shape = s.rect(data.x, data.y, iMap.config.end_width, iMap.config.end_width);
+        shape = s.rect(data.x, data.y, iMap.config.end_width, iMap.config.end_width, 3);
 
         shape.attr({
-            fill: data.color,
-            cursor: 'pointer'
+            fill: data.color
         });
 
-        text = s.text(data.x, data.y + 16, data.name);
+        text = s.text(data.x, data.y, data.name);
 
-        var x = data.x + iMap.config.end_width / 2;
+        var x = data.x + iMap.config.end_width / 2,
+            y = data.y + 16;
 
         x = x - (text.getBBox().width / 2);
 
         text.attr({
-            x: x
+            x: x,
+            y: y
         });
 
         text.attr({
-            fill: '#fff',
-            cursor: 'pointer'
+            fill: '#fff'
         });
 
-        group = s.g(shape, text);
+        if(data.title){
+            title = s.text(data.x + 30, y, data.title);
+        }
+
+        if(data.title){
+            group = s.g(shape, text, title);
+        }else{
+            group = s.g(shape, text);
+        }
+
+        group.attr({
+            cursor: 'pointer'
+        });
 
         group.click(function(){
             if(data.select){
