@@ -705,6 +705,10 @@ iMap.Station = function(s, data, options, map_superclass){
         _this.selected = new CreateSelectedBall(shape);
         group = s.g(shape, text_bg, text, _this.selected.shape);
 
+        group.attr({
+            id: 'station-' + data.id
+        });
+
         group.hover(function(){
             mouseOver(shape, text);
         }, function(){
@@ -784,6 +788,12 @@ iMap.Station = function(s, data, options, map_superclass){
 
     this.getDataParam = function(param){
         return data[param];
+    };
+
+    this.extractSVG = function(){
+        var g = this.getGroup();
+
+        return g.outerSVG();
     };
 
     this.renewData = function(){

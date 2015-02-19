@@ -327,3 +327,19 @@ iMap.Map.prototype.generateId = function(){
 
 	return g;
 };
+
+iMap.Map.prototype.generateStationsSVG = function(){
+	var stations = this.getStations();
+
+	var svg = '<g x="0" y="0">';
+
+	for (var i = 0; i < stations.length; i++) {
+		var station = stations[i];
+
+		svg += station.extractSVG();
+	}
+
+	svg += '</g>';
+
+	return svg;
+};
