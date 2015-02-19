@@ -8,9 +8,9 @@ iMap.config = {
     text_selected_color_hover   : 'rgba(40, 40, 40, 1)',
 
     shape_idle_fill_color : 'rgba(255, 255, 255, 1)',
-    selected_color        : 'rgba(255, 0, 0, 1)',
+    selected_color        : 'rgba(0, 0, 0, 0)',
 
-    hover_color           : 'rgba(255, 0, 0, 1)',
+    hover_color           : 'rgba(0, 0, 0, 0)',
     hover_selected_color  : 'rgba(0, 0, 0, 0)',
 
     bar_width             : 7,
@@ -79,30 +79,38 @@ iMap.Map = function(options) {
         s = null;
 
     this.drawWraps = function(){
+        var zoomer = '';
+
+        if($.browser && !$.browser.mobile){
+            zoomer = '<a href="#" class="zoomer" id="' + _this.options.target_id + '-zoomer"><i class="icon-font icon-font-zoom_in"></i></a>';
+        }
+
         $container.html(
-            '<div class="map-loading-overlay"></div><a href="#" class="zoomer" id="' + _this.options.target_id + '-zoomer"><i class="icon-font icon-font-zoom_in"></i></a><svg id="' + _this.options.target_id + '-svg"></svg>'
+            '<div class="map-loading-overlay"></div>' + zoomer + '<svg id="' + _this.options.target_id + '-svg"></svg>'
         );
 
         var $all = $('#' + _this.options.target_id + ', #' + _this.options.target_id + '-svg');
 
-        $('#' + _this.options.target_id + '-zoomer').on('click', function(e){
-            e.preventDefault();
+        if($.browser && !$.browser.mobile) {
+            $('#' + _this.options.target_id + '-zoomer').on('click', function (e) {
+                e.preventDefault();
 
-            if($(this).hasClass('active')){
-                $(this).removeClass('active');
-                $(this).find('.icon-font').removeClass('icon-font-zoom_out').addClass('icon-font-zoom_in');
-                _this.zoomIn();
-            }else{
-                $(this).addClass('active');
-                $(this).find('.icon-font').removeClass('icon-font-zoom_in').addClass('icon-font-zoom_out');
-                _this.zoomOut();
-            }
-        });
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).find('.icon-font').removeClass('icon-font-zoom_out').addClass('icon-font-zoom_in');
+                    _this.zoomIn();
+                } else {
+                    $(this).addClass('active');
+                    $(this).find('.icon-font').removeClass('icon-font-zoom_in').addClass('icon-font-zoom_out');
+                    _this.zoomOut();
+                }
+            });
+        }
 
         if(_this.options.viewport_width && _this.options.viewport_height){
             $all.css({
                 width: _this.options.viewport_width,
-                height: _this.options.viewport_height
+                height: 100
             });
         }
 
@@ -111,6 +119,8 @@ iMap.Map = function(options) {
 
     function draw(onLoad) {
         _this.initialized = true;
+
+        var $all = $('#' + _this.options.target_id + ', #' + _this.options.target_id + '-svg');
 
         s = Snap('#' + _this.options.target_id + '-svg');
 
@@ -125,15 +135,26 @@ iMap.Map = function(options) {
                 });
 
                 zoomInit(function(){
-                    _this.options.onLoad(_this);
+                    _this.options.onLoad();
 
-                    $('.map-loading-overlay').addClass('hidden');
+                    if(_this.options.viewport_width && _this.options.viewport_height){
+                        setTimeout(function(){
+                            $all.animate({
+                                width: _this.options.viewport_width,
+                                height: _this.options.viewport_height
+                            }, 300, function(){
 
-                    setTimeout(function(){
-                        $('.map-loading-overlay').remove();
-                    }, 300);
+                                setTimeout(function(){
+                                    $('.map-loading-overlay').addClass('hidden');
 
-                    if(onLoad) onLoad();
+                                    setTimeout(function(){
+                                        $('.map-loading-overlay').remove();
+                                        if(onLoad) onLoad();
+                                    }, 300);
+                                }, 300);
+                            });
+                        }, 700);
+                    }
                 });
             });
         });
@@ -182,6 +203,14 @@ iMap.Map = function(options) {
                 _this.options.onStationDblClick(station, s);
             }
         }, _this);
+
+        if(data.type == 'end'){
+            if(data.line_selector){
+                station.line_end = new iMap.LineButton(s, _this, data.line_selector);
+            }
+        }else{
+            station.line_end = null;
+        }
 
         stations.push(station);
     }
@@ -686,7 +715,7 @@ iMap.Station = function(s, data, options, map_superclass){
 
         this.show = function(){
             this.shape.attr({
-                opacity: 0
+                opacity: 1
             });
         };
 
@@ -704,10 +733,6 @@ iMap.Station = function(s, data, options, map_superclass){
         text = _text.getText();
         _this.selected = new CreateSelectedBall(shape);
         group = s.g(shape, text_bg, text, _this.selected.shape);
-
-        group.attr({
-            id: 'station-' + data.id
-        });
 
         group.hover(function(){
             mouseOver(shape, text);
@@ -788,12 +813,6 @@ iMap.Station = function(s, data, options, map_superclass){
 
     this.getDataParam = function(param){
         return data[param];
-    };
-
-    this.extractSVG = function(){
-        var g = this.getGroup();
-
-        return g.outerSVG();
     };
 
     this.renewData = function(){
@@ -920,7 +939,7 @@ iMap.LineButton = function(s, map, data){
     var shape, text, group, title;
 
     var create = function(){
-        shape = s.rect(data.x, data.y, iMap.config.end_width, iMap.config.end_width, 3);
+        shape = s.rect(data.x - 0.5, data.y, iMap.config.end_width, iMap.config.end_width, 3);
 
         shape.attr({
             fill: data.color
