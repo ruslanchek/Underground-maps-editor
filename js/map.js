@@ -203,15 +203,7 @@ iMap.Map = function(options) {
                 _this.options.onStationDblClick(station, s);
             }
         }, _this);
-
-        if(data.type == 'end'){
-            if(data.line_selector){
-                station.line_end = new iMap.LineButton(s, _this, data.line_selector);
-            }
-        }else{
-            station.line_end = null;
-        }
-
+        
         stations.push(station);
     }
 
@@ -728,11 +720,14 @@ iMap.Station = function(s, data, options, map_superclass){
 
     function createGroup(){
         shape = _shape.getShape();
-
         text_bg = _text.getBg();
         text = _text.getText();
         _this.selected = new CreateSelectedBall(shape);
         group = s.g(shape, text_bg, text, _this.selected.shape);
+
+        group.attr({
+            id: 'um-station-' + data.id
+        });
 
         group.hover(function(){
             mouseOver(shape, text);
@@ -938,6 +933,8 @@ iMap.Text = function(s, data, shape){
 iMap.LineButton = function(s, map, data){
     var shape, text, group, title;
 
+    console.log(data)
+
     var create = function(){
         shape = s.rect(data.x - 0.5, data.y, iMap.config.end_width, iMap.config.end_width, 3);
 
@@ -972,6 +969,7 @@ iMap.LineButton = function(s, map, data){
         }
 
         group.attr({
+            id: 'um-select-line-' + data.id,
             cursor: 'pointer'
         });
 
