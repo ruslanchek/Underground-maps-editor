@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1199px" height="955px" viewBox="0 0 1199 955" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title></title>
+    <desc></desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="spb-13" sketch:type="MSLayerGroup" transform="translate(7.000000, 20.000000)">
+            <path d="M330.5,350.675 L381.5,401.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M330.5,453.675 L382.5,505.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M280.5,453.675 L330.5,453.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M233.5,646.712 L330.406,646.712" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M280.5,453.675 C311.5,508.675 378.5,505.675 382.5,505.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M539.5,350.675 L590.5,401.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M539.5,453.675 L591.5,505.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M539.5,557.675 L585.5,609.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M880.5,454.675 L920.5,505.675" id="Shape" stroke="#B3B3B3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M382.5,505.675 L920.5,505.675 L920.5,655.675" id="Shape" stroke="#FF7800" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M330.5,43.675 L330.5,884.712" id="Shape" stroke="#007DBE" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M245.5,315.675 L245.5,382.151 C245.088,393.151 254.5,401.675 265.5,401.675 L860.5,401.675 C871.5,401.675 880.5,410.675 880.5,421.675 L880.424,723.675" id="Shape" stroke="#32B446" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M280.5,43.675 L280.5,497.392 C280.405,502.892 283.59,510.575 287.478,514.462 L375.651,602.635 C380.501,606.712 386.501,609.705 392.722,609.705 L573.412,609.705 C580.499,609.705 586.258,613.192 589.732,617.454 L611.091,643.642 C614.568,647.906 617.411,655.892 617.497,661.392 L617.497,871.736" id="Shape" stroke="#9B2D9B" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M539.487,42.675 L539.501,557.675 L283.574,557.675 C256.074,557.63 233.574,580.093 233.501,607.593 L233.501,849.675" id="Shape" stroke="#FF0000" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            
+            <g id="Group" transform="translate(0.500000, 0.000000)">
+                <g id="um-station-1209" transform="translate(318.000000, 66.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="172.875" height="15"></rect>
+                    <text id="Проспект-Просвещения" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Проспект Просвещения</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1208" transform="translate(318.000000, 32.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="0.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="55.703125" height="15"></rect>
+                    <text id="Парнас" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Парнас</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1210" transform="translate(318.000000, 100.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="56.828125" height="15"></rect>
+                    <text id="Озерки" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Озерки</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1211" transform="translate(318.000000, 133.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="72.609375" height="15"></rect>
+                    <text id="Удельная" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Удельная</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1212" transform="translate(318.000000, 167.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="89.390625" height="15"></rect>
+                    <text id="Пионерская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Пионерская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1213" transform="translate(318.000000, 201.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="101" height="15"></rect>
+                    <text id="Черная-речка" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Черная речка</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1214" transform="translate(318.000000, 235.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="111.609375" height="15"></rect>
+                    <text id="Петроградская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Петроградская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1267" transform="translate(175.000000, 133.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="94.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.9375" y="4" width="87.9375" height="15"></rect>
+                    <text id="Чкаловская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.9375" y="16" fill="#000000">Чкаловская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(94.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1215" transform="translate(318.000000, 269.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="93.1875" height="15"></rect>
+                    <text id="Горьковская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Горьковская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1265" transform="translate(144.000000, 65.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="125.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.9219" y="4" width="118.953125" height="15"></rect>
+                    <text id="Старая-деревня" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.9219" y="16" fill="#000000">Старая деревня</tspan>
+                    </text>
+                    <g id="Group" transform="translate(125.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1266" transform="translate(115.000000, 100.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="154.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.9844" y="4" width="147.890625" height="15"></rect>
+                    <text id="Крестовский-остров" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.9844" y="16" fill="#000000">Крестовский остров</tspan>
+                    </text>
+                    <g id="Group" transform="translate(154.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1230" transform="translate(527.000000, 167.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="141.859375" height="15"></rect>
+                    <text id="Площадь-мужества" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Площадь мужества</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1268" transform="translate(174.000000, 167.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="95.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.4844" y="4" width="89.390625" height="15"></rect>
+                    <text id="Спортивная" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.4844" y="16" fill="#000000">Спортивная</tspan>
+                    </text>
+                    <g id="Group" transform="translate(95.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1269" transform="translate(139.000000, 202.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="130.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.5313" y="4" width="124.34375" height="15"></rect>
+                    <text id="Адмиралтейская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.5313" y="16" fill="#000000">Адмиралтейская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(130.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1229" transform="translate(527.000000, 134.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="129.828125" height="15"></rect>
+                    <text id="Политехническая" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Политехническая</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1228" transform="translate(527.000000, 100.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="115.765625" height="15"></rect>
+                    <text id="Академическая" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Академическая</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1227" transform="translate(527.000000, 66.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="168.265625" height="15"></rect>
+                    <text id="Гражданский-проспект" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Гражданский проспект</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1231" transform="translate(527.000000, 201.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="55.203125" height="15"></rect>
+                    <text id="Лесная" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Лесная</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1232" transform="translate(527.000000, 236.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="88.34375" height="15"></rect>
+                    <text id="Выборгская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Выборгская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1233" transform="translate(527.000000, 270.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="125.1875" height="15"></rect>
+                    <text id="Площадь-Ленина" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Площадь Ленина</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1262" transform="translate(908.000000, 609.000000)">
+                    <rect id="Rectangle-path" fill="#FD7822" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="171.734375" height="15"></rect>
+                    <text id="Проспект-Большевиков" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Проспект Большевиков</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1250" transform="translate(759.000000, 575.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="110.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.3281" y="4" width="104.546875" height="15"></rect>
+                    <text id="Елизаровская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.3281" y="16" fill="#000000">Елизаровская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(110.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1258" transform="translate(686.000000, 493.000000)">
+                    <rect id="Rectangle-path" fill="#FD7822" sketch:type="MSShapeGroup" x="70.875" y="15" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.3828" y="25" width="147.984375" height="15"></rect>
+                    <text id="Лиговский-проспект" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.3828" y="37" fill="#000000">Лиговский проспект</tspan>
+                    </text>
+                    <g id="Group" transform="translate(63.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1261" transform="translate(908.000000, 575.000000)">
+                    <rect id="Rectangle-path" fill="#FD7822" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="84.203125" height="15"></rect>
+                    <text id="Ладожская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Ладожская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1260" transform="translate(908.000000, 541.000000)">
+                    <rect id="Rectangle-path" fill="#FD7822" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="120.984375" height="15"></rect>
+                    <text id="Новочеркасская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Новочеркасская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1272" transform="translate(605.000000, 757.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="121.125" height="15"></rect>
+                    <text id="Обводной-канал" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Обводной канал</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1219" transform="translate(318.000000, 668.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="97.640625" height="15"></rect>
+                    <text id="Фрунзенская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Фрунзенская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1264" transform="translate(79.000000, 32.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="190.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.25" y="4" width="184.625" height="15"></rect>
+                    <text id="Комендантский-проспект" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.25" y="16" fill="#000000">Комендантский проспект</tspan>
+                    </text>
+                    <g id="Group" transform="translate(190.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1226" transform="translate(527.000000, 32.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="0.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="23.875" y="4" width="80.609375" height="15"></rect>
+                    <text id="Девяткино" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="25.875" y="16" fill="#000000">Девяткино</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1234" transform="translate(527.000000, 303.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="110.296875" height="15"></rect>
+                    <text id="Чернышевская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Чернышевская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1273" transform="translate(605.000000, 791.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="88.171875" height="15"></rect>
+                    <text id="Волковская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Волковская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1221" transform="translate(318.000000, 736.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="97.40625" height="15"></rect>
+                    <text id="Электросила" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Электросила</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1222" transform="translate(318.000000, 770.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="97.203125" height="15"></rect>
+                    <text id="Парк-победы" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Парк победы</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1220" transform="translate(318.000000, 702.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="143.1875" height="15"></rect>
+                    <text id="Московские-ворота" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Московские ворота</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1239" transform="translate(128.000000, 668.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="94.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.5469" y="4" width="88.328125" height="15"></rect>
+                    <text id="Балтийская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.5469" y="16" fill="#000000">Балтийская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(94.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1246" transform="translate(92.000000, 337.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="142.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.6406" y="4" width="136.234375" height="15"></rect>
+                    <text id="Василеостровская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.6406" y="16" fill="#000000">Василеостровская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(142.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1223" transform="translate(318.000000, 804.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="89.546875" height="15"></rect>
+                    <text id="Московская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Московская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1242" transform="translate(66.000000, 804.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="156.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.4688" y="4" width="150.40625" height="15"></rect>
+                    <text id="Ленинский-проспект" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.4688" y="16" fill="#000000">Ленинский проспект</tspan>
+                    </text>
+                    <g id="Group" transform="translate(156.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1241" transform="translate(90.000000, 736.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="132.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.3281" y="4" width="126.546875" height="15"></rect>
+                    <text id="Кировский-завод" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.3281" y="16" fill="#000000">Кировский завод</tspan>
+                    </text>
+                    <g id="Group" transform="translate(132.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1240" transform="translate(144.000000, 702.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="78.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.7031" y="4" width="72.171875" height="15"></rect>
+                    <text id="Нарвская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.7031" y="16" fill="#000000">Нарвская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(78.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1243" transform="translate(162.000000, 770.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="60.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.0781" y="4" width="54.796875" height="15"></rect>
+                    <text id="Автово" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.0781" y="16" fill="#000000">Автово</tspan>
+                    </text>
+                    <g id="Group" transform="translate(60.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1244" transform="translate(65.000000, 838.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="157.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.5" y="4" width="151.375" height="15"></rect>
+                    <text id="Проспект-Ветеранов" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.5" y="16" fill="#000000">Проспект Ветеранов</tspan>
+                    </text>
+                    <g id="Group" transform="translate(157.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1225" transform="translate(318.000000, 872.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="0.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="63.359375" height="15"></rect>
+                    <text id="Купчино" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Купчино</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1275" transform="translate(605.000000, 860.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="0.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="120.640625" height="15"></rect>
+                    <text id="Международная" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Международная</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1274" transform="translate(605.000000, 825.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="101.390625" height="15"></rect>
+                    <text id="Бухарестская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Бухарестская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1251" transform="translate(749.000000, 609.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="120.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.7188" y="4" width="114.15625" height="15"></rect>
+                    <text id="Ломоносовская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.7188" y="16" fill="#000000">Ломоносовская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(120.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1245" transform="translate(136.000000, 304.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="97.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.8281" y="4" width="91.046875" height="15"></rect>
+                    <text id="Приморская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.8281" y="16" fill="#000000">Приморская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(97.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1252" transform="translate(758.000000, 643.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="111.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.7813" y="4" width="105.09375" height="15"></rect>
+                    <text id="Пролетарская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.7813" y="16" fill="#000000">Пролетарская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(111.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1253" transform="translate(799.000000, 677.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="70.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.9531" y="4" width="63.921875" height="15"></rect>
+                    <text id="Обухово" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.9531" y="16" fill="#000000">Обухово</tspan>
+                    </text>
+                    <g id="Group" transform="translate(70.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1263" transform="translate(908.000000, 643.000000)">
+                    <rect id="Rectangle-path" fill="#FD7822" sketch:type="MSShapeGroup" x="0.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="25.875" y="4" width="115.390625" height="15"></rect>
+                    <text id="Улица-Дыбенко" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="27.875" y="16" fill="#000000">Улица Дыбенко</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1224" transform="translate(318.000000, 838.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="14.875" y="8" width="7" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.875" y="4" width="72.203125" height="15"></rect>
+                    <text id="Звездная" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.875" y="16" fill="#000000">Звездная</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1254" transform="translate(787.000000, 711.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="81.875" y="8" width="21" height="7"></rect>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.875" y="4" width="75" height="15"></rect>
+                    <text id="Рыбацкое" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.875" y="16" fill="#000000">Рыбацкое</tspan>
+                    </text>
+                    <g id="Group" transform="translate(81.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.375" cy="11.5" r="11"></circle>
+                        <path d="M10.875,15 C10.609,15 10.355,14.895 10.168,14.707 L7.027,11.566 C6.636,11.175 6.636,10.543 7.027,10.152 C7.418,9.761 8.05,9.761 8.441,10.152 L10.875,12.586 L15.266,8.194 C15.657,7.803 16.289,7.803 16.68,8.194 C17.071,8.585 17.071,9.217 16.68,9.608 L11.582,14.707 C11.395,14.895 11.141,15 10.875,15 L10.875,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1216" transform="translate(318.000000, 338.000000)">
+                    <circle id="Oval" stroke="#007DBE" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.5104" y="3.5" width="133.71875" height="15"></rect>
+                    <text id="Невский-проспект" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.5104" y="15.5" fill="#000000">Невский проспект</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1235" transform="translate(527.000000, 338.000000)">
+                    <circle id="Oval" stroke="#FF0000" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.5" cy="11.5" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.5104" y="4" width="147.4375" height="15"></rect>
+                    <text id="Площадь-Восстания" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.5104" y="16" fill="#000000">Площадь Восстания</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11.5" r="11"></circle>
+                        <path d="M11,15 C10.734,15 10.48,14.895 10.293,14.707 L7.152,11.566 C6.761,11.175 6.761,10.543 7.152,10.152 C7.543,9.761 8.175,9.761 8.566,10.152 L11,12.586 L15.391,8.194 C15.782,7.803 16.414,7.803 16.805,8.194 C17.196,8.585 17.196,9.217 16.805,9.608 L11.707,14.707 C11.52,14.895 11.266,15 11,15 L11,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1247" transform="translate(322.000000, 390.000000)">
+                    <circle id="Oval" stroke="#39B24C" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="59.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.3438" y="23" width="118.3125" height="15"></rect>
+                    <text id="Гостинный-двор" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.3438" y="35" fill="#000000">Гостинный двор</tspan>
+                    </text>
+                    <g id="Group" transform="translate(48.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1248" transform="translate(542.000000, 389.000000)">
+                    <circle id="Oval" stroke="#39B24C" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="45.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.2891" y="23" width="90.421875" height="15"></rect>
+                    <text id="Маяковская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.2891" y="35" fill="#000000">Маяковская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(34.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1249" transform="translate(868.000000, 442.000000)">
+                    <circle id="Oval" stroke="#39B24C" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.5104" y="3.5" width="249.75" height="15"></rect>
+                    <text id="Площадь-Александра-Невского---1" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.5104" y="15.5" fill="#000000">Площадь Александра Невского - 1</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1259" transform="translate(908.000000, 494.000000)">
+                    <circle id="Oval" stroke="#FD7822" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.8854065" cy="11.5" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.8958" y="4" width="249.75" height="15"></rect>
+                    <text id="Площадь-Александра-Невского---2" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.8958" y="16" fill="#000000">Площадь Александра Невского - 2</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.8854065" cy="11.5" r="11"></circle>
+                        <path d="M11.3854,15 C11.1194,15 10.8654,14.895 10.6784,14.707 L7.5374,11.566 C7.1464,11.175 7.1464,10.543 7.5374,10.152 C7.9284,9.761 8.5604,9.761 8.9514,10.152 L11.3854,12.586 L15.7764,8.194 C16.1674,7.803 16.7994,7.803 17.1904,8.194 C17.5814,8.585 17.5814,9.217 17.1904,9.608 L12.0924,14.707 C11.9054,14.895 11.6514,15 11.3854,15 L11.3854,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1257" transform="translate(542.000000, 494.000000)">
+                    <circle id="Oval" stroke="#FD7822" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="48.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.8984" y="24" width="95.203125" height="15"></rect>
+                    <text id="Достоевская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.8984" y="36" fill="#000000">Достоевская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(37.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1236" transform="translate(527.000000, 442.000000)">
+                    <circle id="Oval" stroke="#FF0000" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.8854065" cy="11.5" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="21.8958" y="4" width="108.328125" height="15"></rect>
+                    <text id="Владимирская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="23.8958" y="16" fill="#000000">Владимирская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.8854065" cy="11.5" r="11"></circle>
+                        <path d="M11.3854,15 C11.1194,15 10.8654,14.895 10.6784,14.707 L7.5374,11.566 C7.1464,11.175 7.1464,10.543 7.5374,10.152 C7.9284,9.761 8.5604,9.761 8.9514,10.152 L11.3854,12.586 L15.7764,8.194 C16.1674,7.803 16.7994,7.803 17.1904,8.194 C17.5814,8.585 17.5814,9.217 17.1904,9.608 L12.0924,14.707 C11.9054,14.895 11.6514,15 11.3854,15 L11.3854,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1271" transform="translate(571.000000, 597.000000)">
+                    <circle id="Oval" stroke="#9A3299" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.8854065" cy="11.5" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.8958" y="4" width="120.25" height="15"></rect>
+                    <text id="Звенигородская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.8958" y="16" fill="#000000">Звенигородская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.8854065" cy="11.5" r="11"></circle>
+                        <path d="M11.3854,15 C11.1194,15 10.8654,14.895 10.6784,14.707 L7.5374,11.566 C7.1464,11.175 7.1464,10.543 7.5374,10.152 C7.9284,9.761 8.5604,9.761 8.9514,10.152 L11.3854,12.586 L15.7764,8.194 C16.1674,7.803 16.7994,7.803 17.1904,8.194 C17.5814,8.585 17.5814,9.217 17.1904,9.608 L12.0924,14.707 C11.9054,14.895 11.6514,15 11.3854,15 L11.3854,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1217" transform="translate(318.000000, 442.000000)">
+                    <circle id="Oval" stroke="#007DBE" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.5104" y="3.5" width="122.859375" height="15"></rect>
+                    <text id="Сенная-площадь" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.5104" y="15.5" fill="#000000">Сенная площадь</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1256" transform="translate(344.000000, 494.000000)">
+                    <circle id="Oval" stroke="#FD7822" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="36.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.7734" y="24" width="71.453125" height="15"></rect>
+                    <text id="Спасская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.7734" y="36" fill="#000000">Спасская</tspan>
+                    </text>
+                    <g id="Group" transform="translate(25.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1218" transform="translate(318.000000, 634.000000)">
+                    <circle id="Oval" stroke="#007DBE" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.5" cy="11.5" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.5104" y="4" width="216.265625" height="15"></rect>
+                    <text id="Технологический-институт---2" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.5104" y="16" fill="#000000">Технологический институт - 2</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11.5" r="11"></circle>
+                        <path d="M11,15 C10.734,15 10.48,14.895 10.293,14.707 L7.152,11.566 C6.761,11.175 6.761,10.543 7.152,10.152 C7.543,9.761 8.175,9.761 8.566,10.152 L11,12.586 L15.391,8.194 C15.782,7.803 16.414,7.803 16.805,8.194 C17.196,8.585 17.196,9.217 16.805,9.608 L11.707,14.707 C11.52,14.895 11.266,15 11,15 L11,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1270" transform="translate(197.000000, 442.000000)">
+                    <circle id="Oval" stroke="#9A3299" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="82.5" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.9427" y="3.5" width="65.546875" height="15"></rect>
+                    <text id="Садовая" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.9427" y="15.5" fill="#000000">Садовая</tspan>
+                    </text>
+                    <g id="Group" transform="translate(71.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.5" cy="11" r="11"></circle>
+                        <path d="M11,14.5 C10.734,14.5 10.48,14.395 10.293,14.207 L7.152,11.066 C6.761,10.675 6.761,10.043 7.152,9.652 C7.543,9.261 8.175,9.261 8.566,9.652 L11,12.086 L15.391,7.694 C15.782,7.303 16.414,7.303 16.805,7.694 C17.196,8.085 17.196,8.717 16.805,9.108 L11.707,14.207 C11.52,14.395 11.266,14.5 11,14.5 L11,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1238" transform="translate(0.000000, 634.000000)">
+                    <circle id="Oval" stroke="#FF0000" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="232.885406" cy="11.5" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="0.6093" y="4" width="216.265625" height="15"></rect>
+                    <text id="Технологический-институт---1" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="2.6093" y="16" fill="#000000">Технологический институт - 1</tspan>
+                    </text>
+                    <g id="Group" transform="translate(221.000000, 0.000000)" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.8854065" cy="11.5" r="11"></circle>
+                        <path d="M11.3854,15 C11.1194,15 10.8654,14.895 10.6784,14.707 L7.5374,11.566 C7.1464,11.175 7.1464,10.543 7.5374,10.152 C7.9284,9.761 8.5604,9.761 8.9514,10.152 L11.3854,12.586 L15.7764,8.194 C16.1674,7.803 16.7994,7.803 17.1904,8.194 C17.5814,8.585 17.5814,9.217 17.1904,9.608 L12.0924,14.707 C11.9054,14.895 11.6514,15 11.3854,15 L11.3854,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-station-1237" transform="translate(527.000000, 546.000000)">
+                    <circle id="Oval" stroke="#FF0000" stroke-width="5" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="11.8854065" cy="11" r="7"></circle>
+                    <rect id="Rectangle-path" fill="#000000" sketch:type="MSShapeGroup" x="24.8958" y="3.5" width="91.75" height="15"></rect>
+                    <text id="Пушкинская" fill="#787878" sketch:type="MSTextLayer" font-size="15" font-weight="normal">
+                        <tspan x="26.8958" y="15.5" fill="#000000">Пушкинская</tspan>
+                    </text>
+                    <g id="Group" sketch:type="MSShapeGroup">
+                        <circle id="Oval" fill="#4C4C4C" cx="11.8854065" cy="11" r="11"></circle>
+                        <path d="M11.3854,14.5 C11.1194,14.5 10.8654,14.395 10.6784,14.207 L7.5374,11.066 C7.1464,10.675 7.1464,10.043 7.5374,9.652 C7.9284,9.261 8.5604,9.261 8.9514,9.652 L11.3854,12.086 L15.7764,7.694 C16.1674,7.303 16.7994,7.303 17.1904,7.694 C17.5814,8.085 17.5814,8.717 17.1904,9.108 L12.0924,14.207 C11.9054,14.395 11.6514,14.5 11.3854,14.5 L11.3854,14.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="um-select-line-1" transform="translate(269.000000, 0.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="5" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">5</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-2" transform="translate(318.000000, 0.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="2" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">2</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-3" transform="translate(527.000000, 0.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="1" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">1</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-4" transform="translate(233.000000, 272.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="3" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">3</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-5" transform="translate(222.000000, 872.000000)">
+                    <rect id="Rectangle-path" fill="#FF0000" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="1" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">1</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-6" transform="translate(318.000000, 906.000000)">
+                    <rect id="Rectangle-path" fill="#007DBE" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="2" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">2</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-7" transform="translate(605.000000, 894.000000)">
+                    <rect id="Rectangle-path" fill="#9A3299" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="5" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">5</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-8" transform="translate(868.000000, 745.000000)">
+                    <rect id="Rectangle-path" fill="#39B24C" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="3" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">3</tspan>
+                    </text>
+                </g>
+                <g id="um-select-line-8" transform="translate(908.000000, 677.000000)">
+                    <rect id="Rectangle-path" fill="#FD7822" sketch:type="MSShapeGroup" x="0.375" y="0" width="21" height="21" rx="3"></rect>
+                    <text id="4" fill="#FFFFFF" sketch:type="MSTextLayer" font-size="13" font-weight="normal">
+                        <tspan x="6.921875" y="16" fill="#000000">4</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
