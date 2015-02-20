@@ -331,6 +331,34 @@ iMap.Map = function(options) {
 };
 
 iMap.Station = function(s, data, options, map_superclass){
+    this.options = $.extend({
+        on_click_enabled: true,
+
+        onClick: function(station_instance){
+
+        },
+
+        onSelect: function(station_instance, from_bind){
+
+        },
+
+        onUnselect: function(station_instance, from_bind){
+
+        },
+
+        onMouseOver: function(station_instance){
+
+        },
+
+        onMouseOut: function(station_instance){
+
+        },
+
+        onDblClick: function(station_instance){
+
+        }
+    }, options);
+
     var _this = this,
         selected = false,
         $node = $('#um-station-' + data.id),
@@ -339,18 +367,26 @@ iMap.Station = function(s, data, options, map_superclass){
         unselected_g = $chld[0],
         text = $chld[2];
 
-    this.select = function(){
-        selected = true;
-        $(selected_g).css({opacity: 1});
-        $(unselected_g).css({opacity: 0});
-        $(text).attr('fill', iMap.config.text_selected_color);
+    this.select = function(from_bind){
+        if(!selected){
+            selected = true;
+            $(selected_g).css({opacity: 1});
+            $(unselected_g).css({opacity: 0});
+            $(text).attr('fill', iMap.config.text_selected_color);
+            _this.selectBinded();
+           _this.options.onSelect(_this, from_bind);
+        }
     };
 
-    this.unselect = function(){
-        selected = false;
-        $(selected_g).css({opacity: 0});
-        $(unselected_g).css({opacity: 1});
-        $(text).attr('fill', iMap.config.text_idle_fill_color);
+    this.unselect = function(from_bind){
+        if(selected){
+            selected = false;
+            $(selected_g).css({opacity: 0});
+            $(unselected_g).css({opacity: 1});
+            $(text).attr('fill', iMap.config.text_idle_fill_color);
+            _this.unselectBinded();
+            _this.options.onUnselect(_this, false);
+        }
     };
 
     this.isSelected = function(){
@@ -361,11 +397,7 @@ iMap.Station = function(s, data, options, map_superclass){
         return data;
     };
 
-    this.getDataParam = function(param){
-        return data[param];
-    };
-
-    this.trigger = function(){
+    this.toggle = function(){
         if(selected){
             this.unselect();
         }else{
@@ -373,12 +405,110 @@ iMap.Station = function(s, data, options, map_superclass){
         }
     };
 
+    this.selectBinded = function(){
+        if(data.bind) {
+            for (var i = 0; i < data.bind.length; i++) {
+                var obj = data.bind[i],
+                    bs = map_superclass.getStationById(obj);
+
+                if(bs && !bs.isSelected()){
+                    bs.select(true);
+                }
+            }
+        }
+    };
+
+    this.unselectBinded = function(){
+        if(data.bind) {
+            for (var i = 0; i < data.bind.length; i++) {
+                var obj = data.bind[i],
+                    bs = map_superclass.getStationById(obj);
+
+                if(bs && bs.isSelected()){
+                    bs.unselect(true);
+                }
+            }
+        }
+    };
+
+    this.getGroup = function(){
+        return group;
+    };
+
+    this.setDataParam = function(param, value){
+        data[param] = value;
+    };
+
+    this.getDataParam = function(param){
+        return data[param];
+    };
+
+    this.renewData = function(){};
+
     $node.on('click', function(e){
         e.preventDefault();
-        _this.trigger();
+        _this.options.onClick(_this);
+        _this.toggle();
+    });
+
+    $node.on('bblClick', function(e){
+        e.preventDefault();
+        _this.options.onDblClick(_this);
+    });
+
+    $node.on('mouseover', function(){
+        _this.options.onMouseOver(_this);
+    });
+
+    $node.on('mouseout', function(){
+        _this.options.onMouseOut(_this);
     });
 };
 
 iMap.LineButton = function(s, map, data){
+    var _this = this,
+        $btn = $('#um-select-line-' + data.id);
 
+    this.toggle = function(){
+        if(data.select){
+            var selected = [],
+                unselected = [];
+
+            for(var i = 0, l = data.select.length; i < l; i++){
+                var station = map.getStationById(data.select[i]);
+
+                if(station) {
+                    if (station.isSelected()) {
+                        selected.push(data.select[i]);
+                    } else {
+                        unselected.push(data.select[i])
+                    }
+                }
+            }
+
+            if(data.select.length == selected.length){
+                for(var i = 0, l = data.select.length; i < l; i++){
+                    var station = map.getStationById(data.select[i]);
+
+                    if(station){
+                        station.unselect();
+                    }
+                }
+            }else{
+                for(var i = 0, l = data.select.length; i < l; i++){
+                    var station = map.getStationById(data.select[i]);
+
+                    if(station){
+                        station.select();
+                    }
+                }
+            }
+        }
+    };
+
+    $btn.on('click', function(e){
+        console.log(data.select)
+        _this.toggle();
+        e.preventDefault();
+    });
 };
