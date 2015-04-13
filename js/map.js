@@ -716,7 +716,7 @@ iMap.Station = function(s, data, options, map_superclass){
         group = s.g(shape, text_bg, text, _this.selected.shape);
 
         group.attr({
-            id: 'station-' + data.id
+            id: 'um-station-' + data.id
         });
 
         group.hover(function(){
