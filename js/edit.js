@@ -121,7 +121,10 @@ $(function(){
 				type: 'post',
 				data: {
 					file: dataJson,
-					json: JSON.stringify(m.getStationsData())
+					json: JSON.stringify({
+						stations: m.getStationsData(),
+						selectors: m.getSelectorsData()
+					})
 				},
 				beforeSend: function(){
 					$('body').append('<div class="loading"><div>Loading...</div></div>');

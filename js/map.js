@@ -252,6 +252,16 @@ iMap.Map = function(options) {
         }
     };
 
+    this.getSelectorsData = function(){
+        var a = [];
+
+        for (var i = 0; i < selectors.length; i++) {
+            a.push(selectors[i].getData());
+        }
+
+        return a;
+    };
+
     this.unselectAllStations = function(){
         for (var i = 0; i < stations.length; i++) {
             stations[i].unselect();
@@ -918,6 +928,10 @@ iMap.Text = function(s, data, shape){
 
 iMap.LineButton = function(s, map, data){
     var shape, text, group, title;
+
+    this.getData = function(){
+        return data;
+    };
 
     var create = function(){
         shape = s.rect(data.x, data.y, iMap.config.end_width, iMap.config.end_width, 3);
