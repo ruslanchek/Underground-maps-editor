@@ -967,6 +967,7 @@ iMap.LineButton = function(s, map, data){
         }
 
         group.attr({
+            id: 'um-select-line-' + data.id,
             cursor: 'pointer'
         });
 

@@ -1,0 +1,133 @@
+{
+    "stations": [{
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 616,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Северный вокзал",
+        "margin": 5,
+        "id": 1294,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 685,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Козья слобода",
+        "margin": 5,
+        "id": 1296,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 719,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Кремлёвская",
+        "margin": 5,
+        "id": 1297,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 753,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Площадь Габдуллы Тукая",
+        "margin": 5,
+        "id": 1298,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 855,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Горки",
+        "margin": 5,
+        "id": 1301,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 787,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Суконная слобода",
+        "margin": 5,
+        "id": 1299,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 651,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Яшьлек",
+        "margin": 5,
+        "id": 1295,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 821,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Аметьево",
+        "margin": 5,
+        "id": 1300,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 783.875,
+        "y": 888,
+        "type": "end",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Проспект Победы",
+        "margin": 5,
+        "id": 1302,
+        "pid": 1234
+    }, {
+        "color": "#ff0000",
+        "x": 784.875,
+        "y": 583,
+        "type": "end",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Авиастроительная",
+        "margin": 5,
+        "id": 1293,
+        "pid": 1234
+    }],
+    "selectors": [{
+        "color": "#ff0000",
+        "x": 785,
+        "y": 545,
+        "name": "1",
+        "id": 1,
+        "line_id": 1234,
+        "select": [
+            1293,
+            1300,
+            1301,
+            1296,
+            1297,
+            1298,
+            1302,
+            1294,
+            1299,
+            1295
+        ]
+    }]
+}
