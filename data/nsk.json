@@ -1,0 +1,178 @@
+{
+    "stations": [{
+        "color": "#ff0000",
+        "x": 741.875,
+        "y": 601,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "right",
+        "name": "Гагаринская",
+        "margin": 5,
+        "id": "1322",
+        "pid": "1228"
+    }, {
+        "color": "#ff0000",
+        "x": 728.875,
+        "y": 731,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Площадь Ленина",
+        "margin": 5,
+        "id": "1324",
+        "pid": "1228"
+    }, {
+        "color": "#ff0000",
+        "x": 728.875,
+        "y": 765,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Октябрьская",
+        "margin": 5,
+        "id": "1325",
+        "pid": "1228"
+    }, {
+        "color": "#ff0000",
+        "x": 728.875,
+        "y": 799,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Речной вокзал",
+        "margin": 5,
+        "id": "1326",
+        "pid": "1228"
+    }, {
+        "color": "#ff0000",
+        "x": 728.875,
+        "y": 833,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Студенческая",
+        "margin": 5,
+        "id": "1327",
+        "pid": "1228"
+    }, {
+        "color": "#ff0000",
+        "x": 727.875,
+        "y": 867,
+        "type": "end",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Площадь Маркса",
+        "margin": 5,
+        "id": "1328",
+        "pid": "1228"
+    }, {
+        "color": "#ff0000",
+        "x": 728.875,
+        "y": 567,
+        "type": "end",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Заельцовская",
+        "margin": 5,
+        "id": "1321",
+        "pid": "1228"
+    }, {
+        "color": "#39B24C",
+        "x": 833.875,
+        "y": 799,
+        "type": "end",
+        "rotate": 0,
+        "text_side": "right",
+        "name": "Золотая Нива",
+        "margin": 5,
+        "id": "1333",
+        "pid": "1227"
+    }, {
+        "color": "#39B24C",
+        "x": 540.875,
+        "y": 640,
+        "type": "end",
+        "rotate": 90,
+        "text_side": "left",
+        "name": "Площадь Гарина-Михайловского",
+        "margin": 5,
+        "id": "1329",
+        "pid": "1227"
+    }, {
+        "color": "#39B24C",
+        "x": 847.875,
+        "y": 731,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "right",
+        "name": "Маршала Покрышкина",
+        "margin": 5,
+        "id": "1331",
+        "pid": "1227"
+    }, {
+        "color": "#39B24C",
+        "x": 847.875,
+        "y": 765,
+        "type": "bar",
+        "rotate": 0,
+        "text_side": "right",
+        "name": "Березовая Роща",
+        "margin": 5,
+        "id": "1332",
+        "pid": "1227"
+    }, {
+        "color": "#ff0000",
+        "x": 739.3854064941406,
+        "y": 690,
+        "type": "circle",
+        "rotate": 0,
+        "text_side": "left",
+        "name": "Красный проспект",
+        "margin": 5,
+        "id": "1323",
+        "pid": "1228"
+    }, {
+        "color": "#39B24C",
+        "x": 691.3854064941406,
+        "y": 644,
+        "type": "circle",
+        "rotate": 0,
+        "text_side": "top",
+        "name": "Сибирская",
+        "margin": 11,
+        "id": "1330",
+        "pid": "1227"
+    }],
+    "selectors": [{
+        "color": "#ff0000",
+        "x": 728,
+        "y": 528,
+        "name": "1",
+        "id": 1,
+        "line_id": 1228,
+        "select": [
+        	1322,
+        	1321,
+        	1323,
+        	1325,
+        	1324,
+        	1328,
+        	1326,
+        	1327
+        ]
+    }, {
+        "color": "#39B24C",
+        "x": 834,
+        "y": 825,
+        "name": "2",
+        "id": 3,
+        "line_id": 1227,
+        "select": [
+        	1332,
+        	1333,
+        	1331,
+        	1329,
+        	1330
+        ]
+    }]
+}
